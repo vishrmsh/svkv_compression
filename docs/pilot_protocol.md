@@ -1,6 +1,6 @@
 # Pilot protocol and interpretation
 
-This is a decision experiment, not a paper benchmark. The main protocol is
+This is a small-scale evaluation of KV-cache selectors. The main protocol is
 recorded in [`configs/pilot_protocol.json`](../configs/pilot_protocol.json).
 The exploratory 8k smoke case in `results/smoke` is excluded from the main
 aggregate. After that implementation check, the literature review motivated
@@ -120,7 +120,7 @@ sources, so independence and generalization are limited. Also report retrieval
 on the common subgroup where the full-cache arm has score one; do not discard
 base-model failures from the main table.
 
-## Correctness and decision limits
+## Correctness and scope
 
 The tests check exact budgets, solver behavior and a counterexample to
 softmax losslessness. Opt-in real-model Metal checks cover stock/full-budget
@@ -129,11 +129,11 @@ causal masking, and SnapKV scores against an independent float64 reference.
 Quantized batched and single-token kernels need not be bitwise identical;
 the tests compare distributions and exact masks separately.
 
-The pilot can reject a weak implementation or identify a reason for a bounded
-follow-up. It cannot establish significance across model families, superiority
-over official CUDA systems, streaming stability, or novelty by itself. H2O,
-PyramidKV, TOVA, full Compactor, a KV-quantization baseline, official RULER and
-larger/newer models remain necessary before a full paper commitment.
+The results characterize the tested implementation and settings. They do not
+establish significance across model families, superiority over official CUDA
+systems, streaming stability, or novelty. H2O, PyramidKV, TOVA, full Compactor,
+KV quantization, official RULER, and additional model families are outside
+the scope of this evaluation.
 
 The earlier SV deletion theorem does not apply to ordinary softmax. No result
 here should be described as certified lossless KV eviction.

@@ -1,25 +1,23 @@
-# SVKV compression decision pilot
+# SVKV compression
 
-A standalone experiment testing whether support-vector data description can
-select useful KV cache entries for a frozen language model. Attention over the
-retained entries remains ordinary softmax. `plain_jane` is a read-only reference;
-this project neither imports it nor needs it to run.
+An empirical evaluation of support-vector data description (SVDD) for KV-cache
+selection in a frozen language model. Selected K/V tensors are physically
+compacted, and attention over the retained entries uses ordinary softmax.
 
-**Decision: close the SVDD KV-compression direction.**
-The completed pilot contains 54 contexts and 1,350 answers. At 20% retained KV,
+The main experiment contains 54 contexts and 1,350 answers. At 20% retained KV,
 mean custom-needle recall is 31.9% for post-RoPE SVDD and 29.2% for pre-RoPE
 SVDD, versus 100% for KeyDiff and leverage scoring. Small natural-QA results
-are mixed. This rejects the tested implementation as a promising starting
-point; it does not rule out every SVDD design.
+are mixed. The tested SVDD rankers do not improve the quality–cost tradeoff
+over the geometric baselines in this evaluation.
 
-Two fixed follow-ups are complete. Decision-score ranking yields **45.8%**
+A separate decision-score evaluation yields **45.8%**
 needle recall at 20% KV versus **100%** for KeyDiff and leverage (360 separate
 new answers). Repeating the original selection probes with exact linear and
 same-RBF kernel leverage leaves a **2.5-point synthetic advantage** over kernel
-leverage, but **no ICU advantage**. See the [follow-up findings](docs/followup_findings.md)
+leverage, but **no ICU advantage**. See the [additional comparisons](docs/followup_findings.md)
 for paired intervals and the limits of that small synthetic result.
 
-Start with the [decision memo](docs/decision_memo.md), then the
+Start with the [results and analysis](docs/results.md), then the
 [literature review](docs/literature_review.md) and
 [prior-work audit](docs/prior_work_status.md). The
 [pilot protocol](docs/pilot_protocol.md) and
@@ -115,7 +113,7 @@ job has finished:
 | `configs/redundancy_check.json` | Original selection protocols plus fixed exact linear and kernel leverage |
 | `results/redundancy/` | Synthetic trial evidence, aggregate-only ICU results, paired intervals, source snapshots, and figure |
 | `results/followup_validation.xml` | Current suite: 102 passed, including real-model checks; 2 optional CVXPY tests skipped |
-| `results/redundancy_validation.xml` | CPU closure suite: all 10 passed, including the optional CVXPY checks |
+| `results/redundancy_validation.xml` | CPU selection-probe suite: all 10 passed, including the optional CVXPY checks |
 | `references.bib` | Primary-source bibliography |
 
 The `.gitignore` excludes the environment, downloaded weights, original dataset
@@ -123,7 +121,7 @@ and full tokenized cases. Large repetitive solver logs have deterministic gzip
 copies; the uncompressed copies are excluded from Git. The manifests and experiment evidence are
 intended to remain with the repository.
 
-## Reproduce the closure checks
+## Reproduce the additional experiments
 
 After preparing the same pinned model and cases as above, use a new output
 directory for the fixed decision-score rerun:

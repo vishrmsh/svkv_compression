@@ -1,12 +1,13 @@
-# Closure checks: stop the KV-compression direction
+# Decision-score ranking and exact-leverage comparisons
 
-Completed September 27, 2026 (Pacific time). The decision-score rerun still
-loses badly at tight KV budgets. The original selection probes show a small
+Completed September 27, 2026 (Pacific time). Decision-score ranking
+underperforms KeyDiff and leverage at tight KV budgets. The original selection
+probes show a small
 synthetic advantage over same-kernel leverage, but no advantage on ICU event
-retention. These fixed checks do not justify a full compression paper or more
-parameter tuning.
+retention. These comparisons use fixed settings and the previously evaluated
+protocols, with no parameter search.
 
-## Decision ranking does not rescue the KV selector
+## Decision-score ranking on needle retrieval
 
 The follow-up reuses all 36 original needle contexts and generates **360 new
 answers**, separate from the original 1,350. It changes only the SVDD ranking
@@ -28,8 +29,8 @@ geometric baselines. It wins on zero cases, ties on ten, and loses on 26 against
 each. At 50%, it only matches those cheaper baselines. Every repeated baseline
 answer and score agrees exactly with the original run (252/252).
 
-The tempting claim that decision scores eliminate all ties is also incorrect:
-95.52% of fitted positive-dual coordinates are free supports, whose decision
+Decision scores retain boundary ties: 95.52% of fitted positive-dual coordinates
+are free supports, whose decision
 scores lie on the fitted boundary within solver precision. This observation
 does not by itself explain a particular retrieval failure. All 297,024 fits
 converged, and all 1,813,392 compared fit-metadata values matched the original
@@ -95,7 +96,7 @@ SVDD-specific redundancy advantage while preserving the small synthetic result.
 Intervals are descriptive: these protocols and data were already inspected,
 multiple contrasts are unadjusted, and ICU resampling assumes independent stays
 without patient clustering. In particular, the tiny negative upper endpoint
-for the linear ICU contrast should not be sold as a robust significance claim.
+for the linear ICU contrast does not support a robust significance claim.
 Only aggregate clinical evidence is published; no patient-level records or
 selected indices are included.
 
@@ -111,20 +112,17 @@ targets, and aggregate consistency. Clinical paired intervals cannot be
 independently reconstructed from public aggregates; doing so requires the
 credentialed cache and the frozen runner.
 
-## Decision and release
+## Interpretation and validation
 
-Close this KV-compression project as a documented negative pilot. The small
-synthetic residual is worth reporting as a scoped observation, not turning
-into a new compression claim. No new sweep, global solve, or held-out campaign
-is warranted by these results. The coefficient-weighted deletion certificate
-still does not transfer to ordinary softmax.
+The tested selectors offer no demonstrated KV-compression advantage over the
+geometric baselines. The small synthetic residual concerns the documented
+RBF readout and does not establish an advantage for ordinary-softmax KV
+compression. The coefficient-weighted deletion certificate does not transfer
+to that readout.
 
-The repository is public at [vishrmsh/svkv_compression](https://github.com/vishrmsh/svkv_compression).
 The original evidence remains separate from both follow-ups. Current runtime
 validation passes 102 tests, including real-model Metal checks; the two tests
 requiring the optional CVXPY environment are skipped there and pass in the
-separate 10-test CPU closure suite. See
+separate 10-test CPU selection-probe suite. See
 [runtime validation](../results/followup_validation.log) and
-[CPU closure validation](../results/redundancy_validation.log).
-The earlier preprints and `plain_jane` remain unchanged. A standalone
-negative-results manuscript or workshop submission is a separate optional step.
+[CPU selection-probe validation](../results/redundancy_validation.log).

@@ -1,10 +1,10 @@
-# Frozen redundancy closure comparison
+# Redundancy comparison protocol
 
-This is a bounded re-evaluation of the original SV Attention selection probes.
-It does not reopen the KV-compression direction, tune the pilot selector, or
-establish a new held-out benchmark. The original examples and published results
-are already known. The question is whether their advantage over weak proxies
-survives comparison against inexpensive geometric selectors.
+This comparison re-evaluates the original SV Attention selection probes against
+KeyDiff and exact linear and kernel ridge leverage. It tests whether the reported
+advantage over similarity proxies persists against geometric selectors. The
+original examples and published results are already known, so this is not a
+held-out benchmark.
 
 The parameter manifest is [redundancy_check.json](../configs/redundancy_check.json).
 All three new methods are included unconditionally, before inspecting results:
@@ -13,7 +13,8 @@ There is no bandwidth, ridge, budget, or seed search.
 
 ## Original synthetic
 
-The original `svattn/eviction_benchmark.py` defines 60 trials from one
+The [SV Attention implementation](https://github.com/VyLabs-AI/sv-attention)
+defines 60 trials from one
 `numpy.random.RandomState(0)` stream. Each context contains 66 four-dimensional
 keys: six singleton groups and six groups with ten near-duplicates each. Twelve
 Gaussian centers have scale 1.5; keys have Gaussian jitter 0.15. There are two
@@ -44,7 +45,7 @@ synthetic. Published rounded targets are SVDD 0.861, oracle mass 0.319, random
 
 ## Original held-out-SpO2 ICU probe
 
-The local credentialed `icu_vitals_n1500.npz` cache is read without alteration.
+The credentialed `icu_vitals_n1500.npz` cache is read without alteration.
 The first 1,465 sequences are attempted in their original order. Events are
 the cached, unstandardized SpO2 values below 90 after the original within-stay
 forward/backward filling and cohort-median imputation. SpO2 is removed before
@@ -121,9 +122,8 @@ It does not use wall time as an isolated comparison of selector cost.
 
 The standalone module independently implements the protocols and mathematical
 formulas in [VyLabs-AI/sv-attention](https://github.com/VyLabs-AI/sv-attention),
-whose release uses Apache-2.0. Source paths and SHA-256 values of the read-only
-local reference are recorded in the manifest. No reference repository is
-imported at runtime. `plain_jane` is never modified. See
+whose release uses Apache-2.0. The execution manifest records source provenance
+and SHA-256 hashes. See
 [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md).
 
 The cached NPZ uses object arrays and therefore requires `allow_pickle=True`;

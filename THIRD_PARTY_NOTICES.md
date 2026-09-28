@@ -1,8 +1,9 @@
 # Sources and third-party assets
 
-This standalone pilot does not import or modify `plain_jane`. Its algorithms
-were written for this workspace. The older project was read as a reference;
-the audit in `docs/prior_work_status.md` records the lineage and limitations.
+This project implements geometric cache-selection methods and evaluates them
+using the dependencies and datasets below. The relationship to earlier
+support-vector memory methods is documented in
+[docs/prior_work_status.md](docs/prior_work_status.md).
 
 - Inference: [MLX](https://github.com/ml-explore/mlx) and
   [MLX LM](https://github.com/ml-explore/mlx-lm), installed as dependencies.
@@ -17,7 +18,7 @@ the audit in `docs/prior_work_status.md` records the lineage and limitations.
   implementations here are adaptations; names do not claim full replication.
 - Optimization: scikit-learn's LIBSVM-backed OneClassSVM. RBF unit-diagonal
   equivalence to SVDD is explained in `docs/selector_method.md`.
-- The redundancy closure check independently reconstructs the original
+- The redundancy comparison independently reconstructs the original
   [SV Attention](https://github.com/VyLabs-AI/sv-attention) synthetic and
   held-out-vital ICU protocols, distributed by that project under Apache-2.0.
   Source provenance and exact solver settings are recorded in

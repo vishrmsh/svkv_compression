@@ -1,21 +1,20 @@
-# Decision: close the SVDD KV-compression direction
+# KV-compression results and analysis
 
-**Update after the fixed closure checks, September 27, 2026:** decision-score
+**Additional experiments, September 27, 2026:** decision-score
 ranking reaches 45.83% needle recall at 20% KV, versus 100% for KeyDiff and
 leverage. It only matches them at 50%. On the original selection probes,
 SVDD exceeds same-RBF kernel leverage by 2.50 points on synthetic rare-group
-recall, but has no advantage on ICU event retention. These results reinforce
-the stop decision. See [follow-up findings](followup_findings.md) for both
+recall, but has no advantage on ICU event retention. See [follow-up findings](followup_findings.md) for both
 experiments, uncertainty, and interpretation. The original pilot below is
 preserved as a separate experiment.
 
-Completed pilot, 2026-09-27. **The tested SVDD selector does not earn a full-paper investment.** It loses badly to inexpensive geometric selectors on needle retrieval, offers mixed results on the small natural-task sample, and adds solver cost. This is a negative result for the specified blockwise ranker, not a proof that every possible SVDD formulation must fail.
+The main experiment, completed September 27, 2026, finds that the tested SVDD selector underperforms inexpensive geometric selectors on needle retrieval, gives mixed results on the small natural-task sample, and adds solver cost. This is a negative result for the specified blockwise ranker, not a proof that every possible SVDD formulation must fail.
 
-The useful outcome is a standalone, reproducible experiment and a clearer decision. Leave SV Attention and GemmaSV as their current preprints, as intended. Do not carry their deletion certificate into a selection-only softmax paper.
+The repository provides pinned inputs, complete answers, physical cache measurements, and reproducible analyses. The coefficient-weighted deletion certificate from prior work does not apply to selection followed by ordinary softmax.
 
-## What was completed
+## Evaluation scope
 
-- Audited both current v4 preprints, their public repositories, and relevant local reference code without modifying `plain_jane`. See the [prior-work status](prior_work_status.md).
+- Examined SV Attention and GemmaSV v4 and their reference implementations. See the [prior-work analysis](prior_work_status.md).
 - Reviewed 30 primary-source bibliography entries, emphasizing close geometric selectors, query visibility, kernel coresets, standard cache baselines, and evaluation. See the [literature review](literature_review.md) and [bibliography](../references.bib).
 - Built a standalone Apple/MLX pilot around **Qwen2.5-7B-Instruct, four-bit weights and 16-bit KV**, with pinned model/data revisions and archived execution source.
 - Generated **1,350 answers: 54 contexts × 25 arms**. The arms are full cache plus eight selectors at 10%, 20%, and 50% retention. There are 36 custom single/two-needle contexts at nominal 8k, 16k, and 32k windows, plus six untruncated examples each from LongBench HotpotQA, Qasper, and passage retrieval.
@@ -23,7 +22,7 @@ The useful outcome is a standalone, reproducible experiment and a clearer decisi
 
 The detailed [protocol](pilot_protocol.md), [method definitions](selector_method.md), and [data audit](data_audit.md) specify the boundaries. Custom NIAH is not official RULER; these adapted LongBench subsets are not leaderboard results.
 
-## Retrieval result: the current SV ranker fails the proposed initial test
+## Needle retrieval
 
 Mean per-case numeric recall over all 36 custom needle contexts, percent. Full cache scores **100%**. A two-needle case can receive partial credit, so these are recall scores rather than exact-answer success rates.
 
@@ -38,9 +37,9 @@ Mean per-case numeric recall over all 36 custom needle contexts, percent. Full c
 | K-norm | 0.0 | 0.0 | 5.6 |
 | Random | 0.0 | 0.0 | 16.7 |
 
-At 20% retention, both geometric baselines recover every requested number on every case. Post-RoPE SVDD loses 68.1 percentage points of mean recall to them; the pre-RoPE variant loses 70.8 points. The gap is present across context lengths; it is not explained by a failing full-cache model. SVDD beating the restricted SnapKV comparator would be an incomplete and misleading basis for proceeding: the closest query-free rivals are much stronger here.
+At 20% retention, both geometric baselines recover every requested number on every case. Post-RoPE SVDD loses 68.1 percentage points of mean recall to them; the pre-RoPE variant loses 70.8 points. The gap is present across context lengths; it is not explained by a failing full-cache model. SVDD exceeds the restricted SnapKV comparator, but the closest query-free geometric baselines perform substantially better.
 
-The repeated scientific prose and conspicuous inserted numbers make this a favorable setting for some outlier selectors. That limits generalization of KeyDiff's near-perfect result, but it also makes the failure of the proposed SVDD ranker on its intended retrieval use case especially relevant to the investment decision.
+The repeated scientific prose and conspicuous inserted numbers make this a favorable setting for some outlier selectors. This limits generalization of KeyDiff's near-perfect result and of the observed gap to SVDD.
 
 ![Task quality by retained cache fraction](../results/pilot/summary/quality_by_task.png)
 
@@ -62,7 +61,7 @@ Mean score at **20% retained KV**, with six examples per task. QA columns are no
 | K-norm | 0.019 | 0.049 | 0.000 |
 | Random | 0.071 | 0.143 | 0.167 |
 
-Bold identifies the best compressed QA entry in this table. SVDD has some favorable QA numbers; those should not be hidden. However, six examples and low full-cache F1 provide weak evidence of a real advantage. F1 is affected by verbosity and answer wording as well as correctness. Four of the twelve full-cache QA generations reach the 128-token cap. For example, an otherwise correct number embedded in a long explanation can receive low F1. The unchanged prompts and raw outputs are available for inspection; these results were not repaired by answer-aware prompt tuning.
+Bold identifies the best compressed QA entry in this table. SVDD has some favorable QA numbers. However, six examples and low full-cache F1 provide weak evidence of a real advantage. F1 is affected by verbosity and answer wording as well as correctness. Four of the twelve full-cache QA generations reach the 128-token cap. For example, an otherwise correct number embedded in a long explanation can receive low F1. The unchanged prompts and raw outputs are available for inspection; these results were not repaired by answer-aware prompt tuning.
 
 Passage retrieval is easier to interpret because full cache gets all six cases right. Post-RoPE SVDD gets four right at 20%, while pre-RoPE SVDD, KeyDiff, leverage, and SnapKV-style each get five. At 50%, both SVDD variants and those three baselines reach six of six. This is insufficient evidence to choose SVDD over the cheaper alternatives.
 
@@ -86,7 +85,7 @@ Decode alone is about 43% faster for post-RoPE SVDD than full cache. However, se
 
 Peak active MLX memory **rises from 6.11 to about 6.43 GiB** because this prototype builds the full prefix and temporarily overlaps old and compacted storage. It therefore demonstrates reduced steady decode storage, not reduced peak prefill memory. Process RSS is recorded separately and must not be added to MLX active bytes or treated as a complete account of Metal allocations. Two repetitions on one context are a local systems check, not a broad latency benchmark. Fixed decode continues after EOS; model loading and warmup are excluded. The shared quality-harness timings are not used for these speed comparisons.
 
-## Why the result is scientifically credible, and what it does not settle
+## Validation and limitations
 
 The [artifact validation](../results/pilot/validation.json) passes all 54 cases and 1,350 expected answers, recomputes every score, verifies token/source hashes and exact cache byte counts, and checks support accounting. Across the final run, **399,840 block solves per SVDD variant converge, with zero reported convergence failures**. On a 40-key synthetic fixture, an independent constrained-QP check agrees with the deployed solver's objective to approximately `1.2e-10` at the pilot's `nu=0.05`. Runtime checks cover native/full-cache logit equality, per-head gathers, causal masks, absolute RoPE offsets, and an independent SnapKV score reference. See the [selector audit](selector_audit.md).
 
@@ -96,26 +95,22 @@ The mean raw support fractions are **16.0% post-RoPE and 14.9% pre-RoPE**, despi
 
 The final diagnostics sharpen this distinction: at 10% retention, 37.9%/33.4% of fitted supports are discarded and fewer than 2% of retained slots have zero scores. Zero filling therefore cannot explain the tight-budget failure by itself. At 50%, 68.4%/70.5% of retained slots have zero scores, overwhelmingly from the chronological fill rule; those results cannot be credited solely to support selection.
 
-The initial partial run had a missing separator before synthetic questions. It was stopped, preserved under `results/pre_separator_check`, and excluded. The corrected run restarts every case and arm; all tables in this memo use only `results/pilot`. No scores from the exploratory smoke run or excluded run enter this decision.
+The initial partial run had a missing separator before synthetic questions. It was stopped, preserved under `results/pre_separator_check`, and excluded. The corrected run restarts every case and arm; all tables in this report use only `results/pilot`. No scores from the exploratory smoke run or excluded run enter these results.
 
 This pilot uses one older, weight-quantized model; custom repetitive needles; small adapted LongBench subsets; one SVDD bandwidth/block/normalization configuration; and post-prefill compression. It does not test bounded-memory online prefill, official RULER, official CUDA baseline implementations, H2O, PyramidKV, TOVA, full Compactor, or KV quantization. The `streaming` baseline is sink/recent selection without StreamingLLM's positional remapping. SnapKV sees context-tail queries with the downstream question hidden. None of the negative baseline results should be presented as a general evaluation of those published systems.
 
-## Two corrections to the proposed paper story
+## Theoretical scope and related methods
 
 **The certificate does not transfer.** The earlier theorem concerns a readout whose numerator and denominator both multiply each contribution by its SV coefficient. Ordinary softmax assigns positive weight to every finite unmasked logit. A zero SV coefficient therefore does not imply zero softmax contribution. Executable counterexamples in this workspace show immediate output change after deleting a zero-coefficient key. “Exact at eviction” is unavailable for this selection-only proposal without additional assumptions and a different proof.
 
 **Query-free geometric selection is already occupied.** [KeyDiff](https://arxiv.org/abs/2504.15364v4) and [Compactor](https://arxiv.org/abs/2507.08143v2) are central prior work, with K-norm and several later methods nearby. The targeted review did not find another explicit SVDD-for-KV-eviction paper, but that is not a novelty certificate. A different optimization objective would need a quality, cost, or carefully scoped theoretical advantage over these rivals.
 
-## Recommended decision
+## Interpretation
 
-**Stop before a full paper campaign on the current method.** There is no reason to pay for a large benchmark sweep or write a compression manuscript around this implementation. Its central retrieval hypothesis fails against close, inexpensive baselines, and its initially proposed exactness claim is inapplicable.
-
-The fixed decision-score and original-protocol redundancy checks are now
-complete. Their [results](followup_findings.md) supersede the earlier suggestion
-to investigate more SVDD variants. Stop tuning and retain the public evidence.
-A future project would need an independent reason and a held-out advantage
-over KeyDiff and leverage; neither is supplied by these checks. Changing back
-to coefficient weighting would be a separate model modification requiring its
-own quality validation.
-
-The standalone code, pinned inputs, complete answers, source snapshots, diagnostics, figures, and reproduction instructions remain useful even if you stop. The earlier preprints need no edits for this decision.
+The tested SVDD rankers offer no demonstrated quality–cost advantage over
+KeyDiff and leverage in this setting. The [decision-score and redundancy
+comparisons](followup_findings.md) preserve this conclusion while identifying
+a small synthetic advantage over same-kernel leverage. These observations are
+specific to the documented models, protocols, and selectors. The original
+coefficient-weighted removal guarantee supplies no exactness claim for the
+ordinary-softmax readout used here.

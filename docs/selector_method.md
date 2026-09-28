@@ -165,4 +165,4 @@ theory test does not normalize the scalar keys and is not a pilot setting.
 - [scikit-learn OneClassSVM API and solver attributes](https://scikit-learn.org/stable/modules/generated/sklearn.svm.OneClassSVM.html)
 
 The baseline implementation above was independently written from the stated
-formulas. No code or files in `plain_jane` are modified.
+formulas.
