@@ -50,6 +50,42 @@ the kernel problem size but does not imply low end-to-end latency: every
 layer/head/block invokes a CPU solver and the pilot transfers keys to NumPy.
 The score arrays and normalized key arrays still scale linearly with context.
 
+## Fixed decision-score follow-up
+
+`svdd_decision` is a separately reported follow-up on the same 36 needle cases.
+It uses exactly the original post-RoPE keys, normalization, RBF bandwidth,
+256-token fits, `nu=0.05`, solver tolerance, and common cache reserves. The only
+algorithmic change is the ranking score. With raw OneClassSVM dual mass `s`,
+normalized coefficients `alpha`, and normalized offset `rho`, the score is
+
+```
+score(x) = -2 * decision_function(x) / s
+         = 2 * rho - 2 * sum_i alpha_i * K(x_i, x)
+         = squared_feature_distance_to_center(x) - squared_radius
+```
+
+Higher scores retain keys farther outside their fitted block's sphere. Dividing
+by the actual dual mass removes LIBSVM's `nu * block_length` scale, including
+the final partial block. The raw signed scores are ranked **globally across all
+positions in each head**. There are no per-block retention quotas, percentile
+transforms, or z-scores. Each block still has its own fitted center and radius;
+this does not become a global SVDD solve. The original alpha method also used
+global ranking across blocks.
+
+A free support vector lies on the fitted boundary, so decision scoring does
+not remove every tie. Solver-scale variation near zero can affect the ordering
+of these keys. The frozen follow-up neither snaps scores to zero nor tunes a
+tie threshold; it retains the existing stable exact-score tie rule. Diagnostics
+record free supports' boundary residuals. Positive decision scores do not mean
+positive dual coefficients, so support counts come from the fitted support set
+and never from the signs of decision scores.
+
+The setting was fixed before this follow-up's inference and is stored in
+[`configs/decision_followup.json`](../configs/decision_followup.json). These
+already examined cases can diagnose the original failure; they cannot establish
+a held-out improvement. The original pilot and its execution source remain
+unchanged under `results/pilot`.
+
 ## Baseline scores and shared budget rules
 
 | Method | Larger score means higher retention priority |

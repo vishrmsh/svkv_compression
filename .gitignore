@@ -1,4 +1,5 @@
 .venv/
+.venv-redundancy/
 .cache/
 models/
 data/longbench/
@@ -10,3 +11,5 @@ __pycache__/
 .DS_Store
 results/**/cache_*.safetensors
 results/**/solver_diagnostics.jsonl
+results/local_private/
+data/local_private/

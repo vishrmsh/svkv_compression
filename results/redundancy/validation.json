@@ -1,0 +1,114 @@
+{
+  "status": "passed",
+  "validated_utc": "2026-09-28T05:24:08.015617+00:00",
+  "checker": "scripts/validate_redundancy_results.py",
+  "checker_sha256": "ed285d95ce45e5df17615e997e6d2ff9950a28a0502a2cc065165430ae0f5f00",
+  "reproduce": "python scripts/validate_redundancy_results.py results/redundancy",
+  "checks": [
+    "Executed source, dependency lock, and frozen configuration hashes match archived bytes and metadata.",
+    "All 60 synthetic RNG sequences, stored selection budgets, readout scores, aggregate means, and bootstrap intervals independently recompute.",
+    "Original synthetic rounded targets and ICU cohort, budget, and all four original retention means exactly match references.",
+    "Aggregate status totals, all paired mean differences, metric ranges, and declared interval settings are consistent; all 778 solves report optimal.",
+    "Clinical JSON is restricted to aggregate scalar summaries/intervals; cache provenance is basename+hash only; output inventory has no patient-level file."
+  ],
+  "optimal_solves": 778,
+  "original_target_reproduction": {
+    "synthetic_rounded_recall": {
+      "svdd": 0.861,
+      "mass_oracle": 0.319,
+      "random": 0.472,
+      "recency": 0.0
+    },
+    "clinical_retention_exact": {
+      "svdd": 0.46437441152406944,
+      "density": 0.22537539510281843,
+      "random": 0.3326064163901312,
+      "recency": 0.4087777825522535
+    },
+    "clinical_completed_stays": 718,
+    "clinical_no_event_stays": 747
+  },
+  "archived_source_sha256": {
+    "src/svkv/redundancy.py": "1b4d41975c877529ddae77f453da446d3f3cb694f69d222d8b3238abdca89e5d",
+    "scripts/run_redundancy_check.py": "8c3eea942d4759690aeedcb1e6c4a580c83504b97a5e70fded96a86e4dd455ef",
+    "configs/redundancy_check.json": "e1843cf5eb53d30e23d4df27d3e95c6f615aebc5013071d9e60c31d0aaa918b6",
+    "requirements-redundancy-lock.txt": "768048af066a2c29112de8d1f12140ccbe80f42ef25c4de372d71e85a876eb1f"
+  },
+  "interpretation_notes": [
+    "SVDD and kernel leverage both retain every singleton group and every group in all 60 synthetic trials. Their 0.025 recall difference reflects retained-set readout/composition, not lost-group coverage.",
+    "Full-context synthetic recall is 0.722222, below SVDD 0.861111: the full method is an uncompressed reference, not an accuracy ceiling.",
+    "The ICU linear-leverage paired retention interval barely excludes zero and all intervals are descriptive, unadjusted, and assume independent stays."
+  ],
+  "validation_limits": [
+    "No clinical features, labels, identifiers, per-stay metrics, or private cache were loaded by this checker.",
+    "Clinical bootstrap draws, individual selections, and means cannot be independently reconstructed from public aggregates alone; the executable protocol and local input hash support credentialed reproduction.",
+    "Synthetic selector optima were not rerun; selected indices and their readout scores were validated. Solver status is the recorded status."
+  ],
+  "public_output_inventory": [
+    {
+      "path": "clinical_summary.json",
+      "bytes": 8135,
+      "sha256": "7b83613560469331d469013be05d7cebc1da837ca5e97c81bb48d75db59022a8"
+    },
+    {
+      "path": "execution_code/configs/redundancy_check.json",
+      "bytes": 2857,
+      "sha256": "e1843cf5eb53d30e23d4df27d3e95c6f615aebc5013071d9e60c31d0aaa918b6"
+    },
+    {
+      "path": "execution_code/requirements-redundancy-lock.txt",
+      "bytes": 363,
+      "sha256": "768048af066a2c29112de8d1f12140ccbe80f42ef25c4de372d71e85a876eb1f"
+    },
+    {
+      "path": "execution_code/scripts/run_redundancy_check.py",
+      "bytes": 7302,
+      "sha256": "8c3eea942d4759690aeedcb1e6c4a580c83504b97a5e70fded96a86e4dd455ef"
+    },
+    {
+      "path": "execution_code/src/svkv/redundancy.py",
+      "bytes": 13644,
+      "sha256": "1b4d41975c877529ddae77f453da446d3f3cb694f69d222d8b3238abdca89e5d"
+    },
+    {
+      "path": "metadata.json",
+      "bytes": 4031,
+      "sha256": "8ccc03ec3b6d650d99cff4f45ce70f2ced7b39e90470d0b283800ce4b7bcd5a8"
+    },
+    {
+      "path": "paired_contrasts.pdf",
+      "bytes": 26277,
+      "sha256": "c5bc1b4abe12e06a6588b5e0ce502dc4870ed962bfb4a1039f7f2bc87b1a8791"
+    },
+    {
+      "path": "paired_contrasts.png",
+      "bytes": 139694,
+      "sha256": "271ace64e212d88ca109826179c9e6764c8a49413c677fab83007b415ce4ac67"
+    },
+    {
+      "path": "plot_manifest.json",
+      "bytes": 481,
+      "sha256": "42534c2802ec4702792f0c81f18b8a786ef4ad34047960f673e6025cb1d683b5"
+    },
+    {
+      "path": "summary.csv",
+      "bytes": 7068,
+      "sha256": "842938cdfc5315225acae0be35d751ee7456b36741d4b1f0a808d8038d5d1a7e"
+    },
+    {
+      "path": "summary.md",
+      "bytes": 1561,
+      "sha256": "04712e55666750348e103bd10c484d1ed8e894c91ef672bbdaf51781a7acd6ca"
+    },
+    {
+      "path": "synthetic_rows.json",
+      "bytes": 400949,
+      "sha256": "1e643efe090ab61b22e6855ab18e07d1b40562e09eac4b8a8a3274edf1202704"
+    },
+    {
+      "path": "synthetic_summary.json",
+      "bytes": 16535,
+      "sha256": "96a0a8c2cb84476fc15c98c63a720f22f8424dc017fb7f1e20ec793a2f58c29d"
+    }
+  ]
+}

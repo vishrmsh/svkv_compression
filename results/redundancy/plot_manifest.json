@@ -1,0 +1,13 @@
+{
+  "input_sha256": {
+    "synthetic_summary.json": "96a0a8c2cb84476fc15c98c63a720f22f8424dc017fb7f1e20ec793a2f58c29d",
+    "clinical_summary.json": "7b83613560469331d469013be05d7cebc1da837ca5e97c81bb48d75db59022a8"
+  },
+  "script_sha256": "32100a01ba13bc7fa813f9eefe3f319f8a5f89aa075613656534f154ecf08715",
+  "matplotlib": "3.11.2",
+  "artifacts": [
+    "paired_contrasts.png",
+    "paired_contrasts.pdf"
+  ],
+  "data_scope": "aggregate summaries only; no patient-level inputs"
+}

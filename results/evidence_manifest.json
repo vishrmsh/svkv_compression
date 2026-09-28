@@ -1,5 +1,13 @@
 [
   {
+    "raw_path": "results/decision_followup/solver_diagnostics.jsonl",
+    "raw_bytes": 102706623,
+    "raw_sha256": "35d0ea02b4513bec753c5d6316e39104245533d138e62aa13933398d468579fd",
+    "compressed_path": "results/decision_followup/solver_diagnostics.jsonl.gz",
+    "compressed_bytes": 10672708,
+    "compressed_sha256": "fbaa587c75bb1b0184047902d6d5da6d809ed814180db152902b88566f87fd42"
+  },
+  {
     "raw_path": "results/pilot/solver_diagnostics.jsonl",
     "raw_bytes": 102327182,
     "raw_sha256": "e874b957ac800ec43043f3b81d50a8876bb039b98b329a62da95df8bca92b09c",

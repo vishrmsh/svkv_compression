@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "cases": 36,
+  "prediction_rows": 360,
+  "task_case_counts": {
+    "niah_single": 18,
+    "niah_multi": 18
+  },
+  "checked": [
+    "all expected 36-by-10 arms exactly once",
+    "case identities, prefix hashes and context limits",
+    "all answer scores recomputed",
+    "exact physical KV byte counts before and after generation",
+    "decision selection budgets; no alpha-support interpretation",
+    "archived source and original case-file hashes match run invocations"
+  ],
+  "solver_summary": {
+    "case_records": 36,
+    "blocks": 297024,
+    "unconverged_blocks": 0,
+    "mean_layer_raw_support_fraction": 0.15910364724722212,
+    "raw_support_coordinates": 11886220,
+    "token_coordinates": 76038144,
+    "token_weighted_raw_support_fraction": 0.15631917580734217,
+    "free_support_coordinates": 11354269,
+    "free_fraction_of_raw_support_coordinates": 0.9552464113906692,
+    "free_supports_within_boundary_tolerance": 11354269,
+    "free_boundary_tolerance_fraction": 1.0,
+    "max_abs_free_support_decision_score": 1.2093588985795334e-06,
+    "min_boundary_tie_tolerance": 3.1249999999999874e-06,
+    "max_boundary_tie_tolerance": 3.12499999999999e-06,
+    "support_note": "Raw fit supports are diagnostic only; positive decision scores are not supports."
+  },
+  "original_fit_metadata_comparison": {
+    "all_recorded_fit_metadata_agree": true,
+    "blocks_compared": 297024,
+    "field_values_compared": 1813392,
+    "differing_field_values": 0,
+    "first_differences": [],
+    "comparison": "Exact serialized values for per-layer settings, per-head bandwidths, and per-block fit metadata; excludes score-specific fields.",
+    "limitation": "Agreement checks recorded metadata, not an archived copy of every alpha coefficient or kernel matrix."
+  },
+  "baseline_agreement": {
+    "rows": 252,
+    "score_matches": 252,
+    "exact_text_matches": 252
+  }
+}

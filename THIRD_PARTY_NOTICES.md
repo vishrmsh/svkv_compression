@@ -17,6 +17,13 @@ the audit in `docs/prior_work_status.md` records the lineage and limitations.
   implementations here are adaptations; names do not claim full replication.
 - Optimization: scikit-learn's LIBSVM-backed OneClassSVM. RBF unit-diagonal
   equivalence to SVDD is explained in `docs/selector_method.md`.
+- The redundancy closure check independently reconstructs the original
+  [SV Attention](https://github.com/VyLabs-AI/sv-attention) synthetic and
+  held-out-vital ICU protocols, distributed by that project under Apache-2.0.
+  Source provenance and exact solver settings are recorded in
+  `docs/redundancy_protocol.md`. Its small reference QPs use CVXPY and CLARABEL.
+  Credentialed ICU inputs remain local; only aggregate ICU results are intended
+  for this repository.
 
 See `references.bib` and `docs/literature_review.md` for paper citations. No
 model weights, private clinical data, credentials, or copied private project

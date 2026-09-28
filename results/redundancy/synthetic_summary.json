@@ -1,0 +1,711 @@
+{
+  "attempts": 60,
+  "complete": 60,
+  "status_counts": {
+    "complete": 60
+  },
+  "resampling_unit": "synthetic context",
+  "independent_unit_assumption": true,
+  "interval_warning": "Descriptive protocol reuse; no multiplicity adjustment or fresh validation set.",
+  "mean_budget": 0.561868686868687,
+  "mean_tokens": 66.0,
+  "mean_retained_tokens": 37.083333333333336,
+  "solver_status_counts": {
+    "optimal": 60
+  },
+  "maximum_qp_sum_residual": 3.993472219576688e-13,
+  "methods": {
+    "svdd": {
+      "recall_rare": {
+        "mean": 0.8611111111111112,
+        "bootstrap_95_ci": [
+          0.825,
+          0.8944444444444445
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "recall_all": {
+        "mean": 0.9291666666666666,
+        "bootstrap_95_ci": [
+          0.9111111111111111,
+          0.9458333333333333
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "rare_group_coverage": {
+        "mean": 1.0,
+        "bootstrap_95_ci": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "all_group_coverage": {
+        "mean": 1.0,
+        "bootstrap_95_ci": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "mass_oracle": {
+      "recall_rare": {
+        "mean": 0.3194444444444445,
+        "bootstrap_95_ci": [
+          0.2638888888888889,
+          0.375
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "recall_all": {
+        "mean": 0.5708333333333333,
+        "bootstrap_95_ci": [
+          0.5319444444444444,
+          0.611111111111111
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "rare_group_coverage": {
+        "mean": 0.5611111111111111,
+        "bootstrap_95_ci": [
+          0.5027777777777778,
+          0.6194444444444444
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "all_group_coverage": {
+        "mean": 0.6916666666666665,
+        "bootstrap_95_ci": [
+          0.6541666666666667,
+          0.7291666666666667
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "mass_warm": {
+      "recall_rare": {
+        "mean": 0.31666666666666665,
+        "bootstrap_95_ci": [
+          0.25833333333333336,
+          0.37499999999999994
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "recall_all": {
+        "mean": 0.5708333333333333,
+        "bootstrap_95_ci": [
+          0.5319444444444444,
+          0.6097222222222223
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "rare_group_coverage": {
+        "mean": 0.5638888888888889,
+        "bootstrap_95_ci": [
+          0.5083333333333333,
+          0.6194444444444444
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "all_group_coverage": {
+        "mean": 0.6944444444444444,
+        "bootstrap_95_ci": [
+          0.6569444444444446,
+          0.7305555555555556
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "recency": {
+      "recall_rare": {
+        "mean": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "recall_all": {
+        "mean": 0.336111111111111,
+        "bootstrap_95_ci": [
+          0.3333333333333332,
+          0.34027777777777773
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "rare_group_coverage": {
+        "mean": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "all_group_coverage": {
+        "mean": 0.336111111111111,
+        "bootstrap_95_ci": [
+          0.3333333333333332,
+          0.34027777777777773
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "random": {
+      "recall_rare": {
+        "mean": 0.4722222222222222,
+        "bootstrap_95_ci": [
+          0.43055555555555547,
+          0.5166666666666666
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "recall_all": {
+        "mean": 0.7333333333333333,
+        "bootstrap_95_ci": [
+          0.7111111111111111,
+          0.7555555555555556
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "rare_group_coverage": {
+        "mean": 0.5777777777777777,
+        "bootstrap_95_ci": [
+          0.5305555555555556,
+          0.6222222222222221
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "all_group_coverage": {
+        "mean": 0.788888888888889,
+        "bootstrap_95_ci": [
+          0.7652777777777778,
+          0.8111111111111111
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "full": {
+      "recall_rare": {
+        "mean": 0.7222222222222222,
+        "bootstrap_95_ci": [
+          0.6805555555555557,
+          0.7611111111111112
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "recall_all": {
+        "mean": 0.861111111111111,
+        "bootstrap_95_ci": [
+          0.840277777777778,
+          0.8805555555555556
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "rare_group_coverage": {
+        "mean": 1.0,
+        "bootstrap_95_ci": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "all_group_coverage": {
+        "mean": 1.0,
+        "bootstrap_95_ci": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "keydiff": {
+      "recall_rare": {
+        "mean": 0.6638888888888889,
+        "bootstrap_95_ci": [
+          0.611111111111111,
+          0.7166666666666666
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "recall_all": {
+        "mean": 0.6666666666666666,
+        "bootstrap_95_ci": [
+          0.6375,
+          0.6958333333333334
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "rare_group_coverage": {
+        "mean": 0.7833333333333333,
+        "bootstrap_95_ci": [
+          0.7388888888888889,
+          0.8250000000000001
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "all_group_coverage": {
+        "mean": 0.7305555555555556,
+        "bootstrap_95_ci": [
+          0.7069444444444444,
+          0.7555555555555554
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "linear_leverage": {
+      "recall_rare": {
+        "mean": 0.6944444444444444,
+        "bootstrap_95_ci": [
+          0.6416666666666667,
+          0.7472222222222222
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "recall_all": {
+        "mean": 0.7319444444444444,
+        "bootstrap_95_ci": [
+          0.7055555555555556,
+          0.7583333333333332
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "rare_group_coverage": {
+        "mean": 0.7861111111111111,
+        "bootstrap_95_ci": [
+          0.7333333333333336,
+          0.8333333333333335
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "all_group_coverage": {
+        "mean": 0.7791666666666667,
+        "bootstrap_95_ci": [
+          0.7513888888888889,
+          0.8041666666666667
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "kernel_leverage": {
+      "recall_rare": {
+        "mean": 0.8361111111111114,
+        "bootstrap_95_ci": [
+          0.8027777777777778,
+          0.8694444444444446
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "recall_all": {
+        "mean": 0.9152777777777777,
+        "bootstrap_95_ci": [
+          0.898611111111111,
+          0.9319444444444444
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "rare_group_coverage": {
+        "mean": 1.0,
+        "bootstrap_95_ci": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "all_group_coverage": {
+        "mean": 1.0,
+        "bootstrap_95_ci": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    }
+  },
+  "svdd_minus_comparator": {
+    "svdd": {
+      "recall_rare": {
+        "mean": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "recall_all": {
+        "mean": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "rare_group_coverage": {
+        "mean": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "all_group_coverage": {
+        "mean": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "mass_oracle": {
+      "recall_rare": {
+        "mean": 0.5416666666666666,
+        "bootstrap_95_ci": [
+          0.4861111111111112,
+          0.5972222222222222
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "recall_all": {
+        "mean": 0.35833333333333334,
+        "bootstrap_95_ci": [
+          0.32083333333333325,
+          0.3958680555555551
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "rare_group_coverage": {
+        "mean": 0.43888888888888894,
+        "bootstrap_95_ci": [
+          0.3805555555555556,
+          0.4972222222222223
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "all_group_coverage": {
+        "mean": 0.3083333333333333,
+        "bootstrap_95_ci": [
+          0.27083333333333326,
+          0.3458333333333333
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "mass_warm": {
+      "recall_rare": {
+        "mean": 0.5444444444444444,
+        "bootstrap_95_ci": [
+          0.48888888888888893,
+          0.6000000000000001
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "recall_all": {
+        "mean": 0.35833333333333334,
+        "bootstrap_95_ci": [
+          0.32218749999999996,
+          0.3958333333333333
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "rare_group_coverage": {
+        "mean": 0.43611111111111106,
+        "bootstrap_95_ci": [
+          0.38055555555555565,
+          0.49166666666666675
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "all_group_coverage": {
+        "mean": 0.3055555555555555,
+        "bootstrap_95_ci": [
+          0.26944444444444443,
+          0.3430555555555555
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "recency": {
+      "recall_rare": {
+        "mean": 0.8611111111111112,
+        "bootstrap_95_ci": [
+          0.825,
+          0.8944444444444445
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "recall_all": {
+        "mean": 0.5930555555555554,
+        "bootstrap_95_ci": [
+          0.5736111111111111,
+          0.611111111111111
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "rare_group_coverage": {
+        "mean": 1.0,
+        "bootstrap_95_ci": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "all_group_coverage": {
+        "mean": 0.6638888888888889,
+        "bootstrap_95_ci": [
+          0.6597222222222221,
+          0.6666666666666666
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "random": {
+      "recall_rare": {
+        "mean": 0.388888888888889,
+        "bootstrap_95_ci": [
+          0.34444444444444444,
+          0.4333333333333334
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "recall_all": {
+        "mean": 0.19583333333333333,
+        "bootstrap_95_ci": [
+          0.17499999999999996,
+          0.21805555555555553
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "rare_group_coverage": {
+        "mean": 0.4222222222222222,
+        "bootstrap_95_ci": [
+          0.3777777777777778,
+          0.46944444444444444
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "all_group_coverage": {
+        "mean": 0.2111111111111111,
+        "bootstrap_95_ci": [
+          0.18888888888888886,
+          0.2347222222222222
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "full": {
+      "recall_rare": {
+        "mean": 0.13888888888888887,
+        "bootstrap_95_ci": [
+          0.10000000000000002,
+          0.18055555555555555
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "recall_all": {
+        "mean": 0.06805555555555554,
+        "bootstrap_95_ci": [
+          0.0486111111111111,
+          0.08888888888888886
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "rare_group_coverage": {
+        "mean": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "all_group_coverage": {
+        "mean": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "keydiff": {
+      "recall_rare": {
+        "mean": 0.19722222222222227,
+        "bootstrap_95_ci": [
+          0.15555555555555553,
+          0.24166666666666667
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "recall_all": {
+        "mean": 0.26249999999999996,
+        "bootstrap_95_ci": [
+          0.23749999999999996,
+          0.2875
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "rare_group_coverage": {
+        "mean": 0.21666666666666667,
+        "bootstrap_95_ci": [
+          0.17499999999999996,
+          0.2611111111111111
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "all_group_coverage": {
+        "mean": 0.2694444444444445,
+        "bootstrap_95_ci": [
+          0.24444444444444446,
+          0.29305555555555557
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "linear_leverage": {
+      "recall_rare": {
+        "mean": 0.16666666666666669,
+        "bootstrap_95_ci": [
+          0.11388888888888889,
+          0.2222222222222222
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "recall_all": {
+        "mean": 0.19722222222222222,
+        "bootstrap_95_ci": [
+          0.17083333333333334,
+          0.2236111111111111
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "rare_group_coverage": {
+        "mean": 0.2138888888888889,
+        "bootstrap_95_ci": [
+          0.16666666666666663,
+          0.2666666666666666
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "all_group_coverage": {
+        "mean": 0.22083333333333333,
+        "bootstrap_95_ci": [
+          0.19583333333333333,
+          0.2486111111111111
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "kernel_leverage": {
+      "recall_rare": {
+        "mean": 0.025,
+        "bootstrap_95_ci": [
+          0.00555555555555556,
+          0.04444444444444444
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "recall_all": {
+        "mean": 0.013888888888888888,
+        "bootstrap_95_ci": [
+          0.004166666666666668,
+          0.023611111111111107
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "rare_group_coverage": {
+        "mean": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "all_group_coverage": {
+        "mean": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    }
+  },
+  "original_reference": {
+    "svdd_recall_rare_rounded": 0.861,
+    "mass_oracle_recall_rare_rounded": 0.319,
+    "random_recall_rare_rounded": 0.472,
+    "recency_recall_rare_rounded": 0.0
+  }
+}

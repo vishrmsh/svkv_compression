@@ -1,0 +1,578 @@
+Frozen decision-score follow-up: 36 cases, 360 answers; no parameter sweep.
+Loading model
+CASE 1/36 niah_single_8192_s17_d0.1 prefix=7936
+  prefill=5.26s KV=434.0MiB
+  score svdd_decision=5.44s
+  score keydiff=0.22s
+  score leverage=0.34s
+  leverage   10% score=1.000 gen=0.11s '7587050'
+  svdd_decision 50% score=1.000 gen=0.12s '7587050'
+  full       100% score=1.000 gen=0.15s '7587050'
+  keydiff    20% score=1.000 gen=0.10s '7587050'
+  svdd_decision 10% score=0.000 gen=0.06s '750'
+  leverage   50% score=1.000 gen=0.12s '7587050'
+  svdd_decision 20% score=1.000 gen=0.10s '7587050'
+  keydiff    10% score=1.000 gen=0.10s '7587050'
+  keydiff    50% score=1.000 gen=0.12s '7587050'
+  leverage   20% score=1.000 gen=0.10s '7587050'
+  case_total=13.0s
+CASE 2/36 niah_single_8192_s17_d0.5 prefix=7936
+  prefill=5.25s KV=434.0MiB
+  score svdd_decision=4.88s
+  score keydiff=0.22s
+  score leverage=0.34s
+  full       100% score=1.000 gen=0.16s '3905301'
+  keydiff    10% score=1.000 gen=0.10s '3905301'
+  keydiff    50% score=1.000 gen=0.12s '3905301'
+  svdd_decision 50% score=1.000 gen=0.12s '3905301'
+  keydiff    20% score=1.000 gen=0.10s '3905301'
+  leverage   20% score=1.000 gen=0.10s '3905301'
+  leverage   50% score=1.000 gen=0.12s '3905301'
+  leverage   10% score=1.000 gen=0.10s '3905301'
+  svdd_decision 10% score=0.000 gen=0.32s '-1\n250\n251\n252\n253\n254\n255\n256\n2'
+  svdd_decision 20% score=0.000 gen=0.33s '-1\n256\n512\n500\n750\n15\n188\n35\n100'
+  case_total=12.9s
+CASE 3/36 niah_single_8192_s17_d0.9 prefix=7936
+  prefill=5.33s KV=434.0MiB
+  score svdd_decision=4.95s
+  score keydiff=0.22s
+  score leverage=0.34s
+  leverage   50% score=1.000 gen=0.13s '4728478'
+  keydiff    20% score=1.000 gen=0.10s '4728478'
+  keydiff    50% score=1.000 gen=0.12s '4728478'
+  svdd_decision 20% score=0.000 gen=0.13s '4784728478'
+  svdd_decision 50% score=1.000 gen=0.12s '4728478'
+  leverage   10% score=1.000 gen=0.10s '4728478'
+  keydiff    10% score=1.000 gen=0.10s '4728478'
+  svdd_decision 10% score=0.000 gen=0.14s '478239478239'
+  leverage   20% score=1.000 gen=0.10s '4728478'
+  full       100% score=1.000 gen=0.15s '4728478'
+  case_total=12.6s
+CASE 4/36 niah_single_8192_s29_d0.1 prefix=7936
+  prefill=5.28s KV=434.0MiB
+  score svdd_decision=4.87s
+  score keydiff=0.22s
+  score leverage=0.35s
+  keydiff    10% score=1.000 gen=0.11s '4197743'
+  keydiff    50% score=1.000 gen=0.12s '4197743'
+  full       100% score=1.000 gen=0.15s '4197743'
+  leverage   20% score=1.000 gen=0.10s '4197743'
+  leverage   50% score=1.000 gen=0.12s '4197743'
+  keydiff    20% score=1.000 gen=0.10s '4197743'
+  leverage   10% score=1.000 gen=0.10s '4197743'
+  svdd_decision 20% score=0.000 gen=0.08s '41773'
+  svdd_decision 50% score=1.000 gen=0.12s '4197743'
+  svdd_decision 10% score=0.000 gen=0.05s '47'
+  case_total=12.4s
+CASE 5/36 niah_single_8192_s29_d0.5 prefix=7936
+  prefill=5.25s KV=434.0MiB
+  score svdd_decision=5.08s
+  score keydiff=0.22s
+  score leverage=0.34s
+  full       100% score=1.000 gen=0.16s '8747290'
+  keydiff    10% score=1.000 gen=0.10s '8747290'
+  keydiff    20% score=1.000 gen=0.10s '8747290'
+  svdd_decision 10% score=0.000 gen=0.10s '8745621'
+  leverage   10% score=1.000 gen=0.10s '8747290'
+  leverage   20% score=1.000 gen=0.10s '8747290'
+  keydiff    50% score=1.000 gen=0.12s '8747290'
+  svdd_decision 50% score=1.000 gen=0.12s '8747290'
+  svdd_decision 20% score=1.000 gen=0.10s '8747290'
+  leverage   50% score=1.000 gen=0.12s '8747290'
+  case_total=12.6s
+CASE 6/36 niah_single_8192_s29_d0.9 prefix=7936
+  prefill=5.26s KV=434.0MiB
+  score svdd_decision=5.07s
+  score keydiff=0.22s
+  score leverage=0.34s
+  svdd_decision 20% score=0.000 gen=0.11s '160563'
+  keydiff    10% score=1.000 gen=0.10s '1600563'
+  leverage   50% score=1.000 gen=0.12s '1600563'
+  svdd_decision 50% score=1.000 gen=0.12s '1600563'
+  leverage   10% score=1.000 gen=0.10s '1600563'
+  svdd_decision 10% score=0.000 gen=0.32s '16352467890563217890563217890563'
+  keydiff    50% score=1.000 gen=0.12s '1600563'
+  full       100% score=1.000 gen=0.15s '1600563'
+  keydiff    20% score=1.000 gen=0.10s '1600563'
+  leverage   20% score=1.000 gen=0.10s '1600563'
+  case_total=12.9s
+CASE 7/36 niah_multi_8192_s17_d0.1 prefix=7936
+  prefill=5.27s KV=434.0MiB
+  score svdd_decision=5.11s
+  score keydiff=0.22s
+  score leverage=0.34s
+  leverage   10% score=1.000 gen=0.18s '6517512\n3307403'
+  leverage   20% score=1.000 gen=0.18s '6517512\n3307403'
+  keydiff    20% score=1.000 gen=0.18s '6517512\n3307403'
+  keydiff    50% score=1.000 gen=0.20s '6517512\n3307403'
+  svdd_decision 50% score=1.000 gen=0.20s '6517512\n3307403'
+  svdd_decision 20% score=0.500 gen=0.18s '6517512\n3307430'
+  leverage   50% score=1.000 gen=0.20s '6517512\n3307403'
+  full       100% score=1.000 gen=0.25s '6517512\n3307403'
+  svdd_decision 10% score=0.000 gen=0.17s '6735429\n3307651'
+  keydiff    10% score=1.000 gen=0.17s '6517512\n3307403'
+  case_total=13.5s
+CASE 8/36 niah_multi_8192_s17_d0.5 prefix=7936
+  prefill=5.26s KV=434.0MiB
+  score svdd_decision=5.15s
+  score keydiff=0.23s
+  score leverage=0.34s
+  keydiff    10% score=1.000 gen=0.18s '2143361\n2141491'
+  leverage   10% score=1.000 gen=0.17s '2143361\n2141491'
+  leverage   20% score=1.000 gen=0.18s '2143361\n2141491'
+  full       100% score=1.000 gen=0.25s '2143361\n2141491'
+  keydiff    20% score=1.000 gen=0.18s '2143361\n2141491'
+  leverage   50% score=1.000 gen=0.20s '2143361\n2141491'
+  svdd_decision 10% score=0.000 gen=0.17s '2143257\n2143258'
+  svdd_decision 50% score=1.000 gen=0.20s '2143361\n2141491'
+  svdd_decision 20% score=1.000 gen=0.18s '2143361\n2141491'
+  keydiff    50% score=1.000 gen=0.20s '2143361\n2141491'
+  case_total=13.5s
+CASE 9/36 niah_multi_8192_s17_d0.9 prefix=7936
+  prefill=5.24s KV=434.0MiB
+  score svdd_decision=5.24s
+  score keydiff=0.24s
+  score leverage=0.36s
+  keydiff    20% score=1.000 gen=0.19s '6044269\n3892613'
+  keydiff    10% score=1.000 gen=0.17s '6044269\n3892613'
+  svdd_decision 10% score=0.000 gen=0.17s '6044297\n3892713'
+  leverage   20% score=1.000 gen=0.18s '6044269\n3892613'
+  leverage   10% score=1.000 gen=0.17s '6044269\n3892613'
+  svdd_decision 20% score=0.500 gen=0.18s '6044293\n3892613'
+  leverage   50% score=1.000 gen=0.21s '6044269\n3892613'
+  svdd_decision 50% score=1.000 gen=0.20s '6044269\n3892613'
+  full       100% score=1.000 gen=0.25s '6044269\n3892613'
+  keydiff    50% score=1.000 gen=0.20s '6044269\n3892613'
+  case_total=13.6s
+CASE 10/36 niah_multi_8192_s29_d0.1 prefix=7936
+  prefill=5.26s KV=434.0MiB
+  score svdd_decision=5.16s
+  score keydiff=0.23s
+  score leverage=0.34s
+  leverage   10% score=0.500 gen=0.17s '433722\n8168467'
+  keydiff    10% score=1.000 gen=0.17s '1433722\n8168467'
+  leverage   20% score=1.000 gen=0.18s '1433722\n8168467'
+  keydiff    20% score=1.000 gen=0.18s '1433722\n8168467'
+  svdd_decision 50% score=1.000 gen=0.21s '1433722\n8168467'
+  svdd_decision 20% score=0.000 gen=0.18s '1437722\n8168477'
+  full       100% score=1.000 gen=0.25s '1433722\n8168467'
+  svdd_decision 10% score=0.000 gen=0.17s '1437289\n8142735'
+  leverage   50% score=1.000 gen=0.20s '1433722\n8168467'
+  keydiff    50% score=1.000 gen=0.20s '1433722\n8168467'
+  case_total=13.6s
+CASE 11/36 niah_multi_8192_s29_d0.5 prefix=7936
+  prefill=5.25s KV=434.0MiB
+  score svdd_decision=5.27s
+  score keydiff=0.23s
+  score leverage=0.35s
+  leverage   20% score=1.000 gen=0.19s '4360765\n8884000'
+  leverage   10% score=0.500 gen=0.16s '4360765\n884000'
+  svdd_decision 20% score=1.000 gen=0.18s '4360765\n8884000'
+  leverage   50% score=1.000 gen=0.21s '4360765\n8884000'
+  keydiff    20% score=1.000 gen=0.18s '4360765\n8884000'
+  svdd_decision 10% score=0.000 gen=0.23s '5678901234\n8888888888'
+  full       100% score=1.000 gen=0.26s '4360765\n8884000'
+  keydiff    50% score=1.000 gen=0.21s '4360765\n8884000'
+  keydiff    10% score=1.000 gen=0.17s '4360765\n8884000'
+  svdd_decision 50% score=1.000 gen=0.21s '4360765\n8884000'
+  case_total=13.7s
+CASE 12/36 niah_multi_8192_s29_d0.9 prefix=7936
+  prefill=5.31s KV=434.0MiB
+  score svdd_decision=5.18s
+  score keydiff=0.24s
+  score leverage=0.35s
+  leverage   50% score=1.000 gen=0.23s '6007669\n2794734'
+  keydiff    20% score=1.000 gen=0.19s '6007669\n2794734'
+  svdd_decision 50% score=1.000 gen=0.21s '6007669\n2794734'
+  keydiff    10% score=1.000 gen=0.18s '6007669\n2794734'
+  keydiff    50% score=1.000 gen=0.21s '6007669\n2794734'
+  svdd_decision 20% score=0.500 gen=0.18s '6007669\n2734765'
+  svdd_decision 10% score=0.000 gen=0.15s '607234\n274658'
+  full       100% score=1.000 gen=0.25s '6007669\n2794734'
+  leverage   20% score=1.000 gen=0.18s '6007669\n2794734'
+  leverage   10% score=1.000 gen=0.17s '6007669\n2794734'
+  case_total=13.7s
+CASE 13/36 niah_single_16384_s17_d0.1 prefix=16128
+  prefill=12.18s KV=882.0MiB
+  score svdd_decision=10.08s
+  score keydiff=0.48s
+  score leverage=0.72s
+  svdd_decision 50% score=1.000 gen=0.16s '6220744'
+  leverage   50% score=1.000 gen=0.15s '6220744'
+  leverage   10% score=1.000 gen=0.11s '6220744'
+  full       100% score=1.000 gen=0.21s '6220744'
+  svdd_decision 20% score=0.000 gen=0.12s '6220777'
+  keydiff    50% score=1.000 gen=0.15s '6220744'
+  keydiff    10% score=1.000 gen=0.10s '6220744'
+  keydiff    20% score=1.000 gen=0.12s '6220744'
+  svdd_decision 10% score=0.000 gen=0.05s '6'
+  leverage   20% score=1.000 gen=0.12s '6220744'
+  case_total=26.1s
+CASE 14/36 niah_single_16384_s17_d0.5 prefix=16128
+  prefill=12.15s KV=882.0MiB
+  score svdd_decision=10.22s
+  score keydiff=0.47s
+  score leverage=0.71s
+  svdd_decision 50% score=1.000 gen=0.16s '7017506'
+  keydiff    50% score=1.000 gen=0.15s '7017506'
+  leverage   10% score=1.000 gen=0.10s '7017506'
+  svdd_decision 20% score=0.000 gen=0.12s '7175065'
+  svdd_decision 10% score=0.000 gen=0.10s '757102'
+  keydiff    20% score=1.000 gen=0.11s '7017506'
+  leverage   50% score=1.000 gen=0.15s '7017506'
+  full       100% score=1.000 gen=0.22s '7017506'
+  keydiff    10% score=1.000 gen=0.11s '7017506'
+  leverage   20% score=1.000 gen=0.12s '7017506'
+  case_total=26.2s
+CASE 15/36 niah_single_16384_s17_d0.9 prefix=16128
+  prefill=12.19s KV=882.0MiB
+  score svdd_decision=10.32s
+  score keydiff=0.49s
+  score leverage=0.72s
+  keydiff    10% score=1.000 gen=0.20s '6024168\n6024169'
+  svdd_decision 20% score=1.000 gen=0.37s '6024168\n6024169\n6024170\n6024171\n'
+  keydiff    20% score=1.000 gen=0.12s '6024168'
+  leverage   50% score=1.000 gen=0.15s '6024168'
+  leverage   20% score=1.000 gen=0.12s '6024168'
+  svdd_decision 50% score=1.000 gen=0.15s '6024168'
+  keydiff    50% score=1.000 gen=0.15s '6024168'
+  svdd_decision 10% score=0.000 gen=0.12s '602214199'
+  leverage   10% score=1.000 gen=0.10s '6024168'
+  full       100% score=1.000 gen=0.22s '6024168'
+  case_total=26.8s
+CASE 16/36 niah_single_16384_s29_d0.1 prefix=16128
+  prefill=12.22s KV=882.0MiB
+  score svdd_decision=10.16s
+  score keydiff=0.48s
+  score leverage=0.72s
+  keydiff    10% score=1.000 gen=0.12s '9396933'
+  keydiff    20% score=1.000 gen=0.12s '9396933'
+  full       100% score=1.000 gen=0.21s '9396933'
+  svdd_decision 20% score=0.000 gen=0.17s '933993969339'
+  leverage   50% score=1.000 gen=0.15s '9396933'
+  svdd_decision 50% score=1.000 gen=0.15s '9396933'
+  leverage   10% score=1.000 gen=0.10s '9396933'
+  svdd_decision 10% score=0.000 gen=0.09s '939393'
+  leverage   20% score=1.000 gen=0.12s '9396933'
+  keydiff    50% score=1.000 gen=0.15s '9396933'
+  case_total=26.3s
+CASE 17/36 niah_single_16384_s29_d0.5 prefix=16128
+  prefill=12.18s KV=882.0MiB
+  score svdd_decision=10.33s
+  score keydiff=0.48s
+  score leverage=0.72s
+  svdd_decision 10% score=0.000 gen=0.35s '31415926535897932384626433832795'
+  svdd_decision 50% score=1.000 gen=0.15s '3140977'
+  keydiff    20% score=1.000 gen=0.12s '3140977'
+  leverage   50% score=1.000 gen=0.15s '3140977'
+  leverage   20% score=1.000 gen=0.12s '3140977'
+  full       100% score=1.000 gen=0.21s '3140977'
+  svdd_decision 20% score=0.000 gen=0.13s '31409777'
+  leverage   10% score=1.000 gen=0.11s '3140977'
+  keydiff    50% score=1.000 gen=0.15s '3140977'
+  keydiff    10% score=1.000 gen=0.11s '3140977'
+  case_total=26.6s
+CASE 18/36 niah_single_16384_s29_d0.9 prefix=16128
+  prefill=12.25s KV=882.0MiB
+  score svdd_decision=10.19s
+  score keydiff=0.48s
+  score leverage=0.72s
+  svdd_decision 50% score=1.000 gen=0.16s '1004273'
+  leverage   10% score=1.000 gen=0.11s '1004273'
+  svdd_decision 20% score=0.000 gen=0.11s '104273'
+  keydiff    20% score=1.000 gen=0.12s '1004273'
+  leverage   50% score=1.000 gen=0.15s '1004273'
+  leverage   20% score=1.000 gen=0.12s '1004273'
+  keydiff    10% score=1.000 gen=0.10s '1004273'
+  full       100% score=1.000 gen=0.21s '1004273'
+  keydiff    50% score=1.000 gen=0.15s '1004273'
+  svdd_decision 10% score=0.000 gen=0.34s '1024\n1893\n2735\n3678\n4592\n5813\n63'
+  case_total=26.6s
+CASE 19/36 niah_multi_16384_s17_d0.1 prefix=16128
+  prefill=12.17s KV=882.0MiB
+  score svdd_decision=10.09s
+  score keydiff=0.48s
+  score leverage=0.72s
+  full       100% score=1.000 gen=0.36s '8049566\n4560766'
+  svdd_decision 50% score=1.000 gen=0.25s '8049566\n4560766'
+  keydiff    10% score=1.000 gen=0.19s '8049566\n4560766'
+  keydiff    50% score=1.000 gen=0.25s '8049566\n4560766'
+  svdd_decision 10% score=0.000 gen=0.18s '4598712\n4587692'
+  leverage   10% score=1.000 gen=0.18s '8049566\n4560766'
+  leverage   50% score=1.000 gen=0.25s '8049566\n4560766'
+  svdd_decision 20% score=0.500 gen=0.20s '8049566\n4567890'
+  keydiff    20% score=1.000 gen=0.20s '8049566\n4560766'
+  leverage   20% score=1.000 gen=0.20s '8049566\n4560766'
+  case_total=27.1s
+CASE 20/36 niah_multi_16384_s17_d0.5 prefix=16128
+  prefill=12.18s KV=882.0MiB
+  score svdd_decision=10.13s
+  score keydiff=0.48s
+  score leverage=0.72s
+  svdd_decision 10% score=0.000 gen=0.13s '2143\n7658'
+  svdd_decision 50% score=1.000 gen=0.25s '2123474\n7964880'
+  leverage   50% score=1.000 gen=0.25s '2123474\n7964880'
+  keydiff    10% score=1.000 gen=0.18s '7964880\n2123474'
+  leverage   10% score=1.000 gen=0.18s '2123474\n7964880'
+  svdd_decision 20% score=0.500 gen=0.20s '2143474\n7964880'
+  keydiff    50% score=1.000 gen=0.25s '2123474\n7964880'
+  leverage   20% score=1.000 gen=0.20s '2123474\n7964880'
+  full       100% score=1.000 gen=0.35s '2123474\n7964880'
+  keydiff    20% score=1.000 gen=0.20s '2123474\n7964880'
+  case_total=27.1s
+CASE 21/36 niah_multi_16384_s17_d0.9 prefix=16128
+  prefill=12.20s KV=882.0MiB
+  score svdd_decision=10.23s
+  score keydiff=0.48s
+  score leverage=0.73s
+  keydiff    10% score=1.000 gen=0.20s '6982604\n8249966'
+  leverage   20% score=1.000 gen=0.20s '6982604\n8249966'
+  keydiff    50% score=1.000 gen=0.25s '6982604\n8249966'
+  leverage   10% score=1.000 gen=0.18s '6982604\n8249966'
+  svdd_decision 50% score=1.000 gen=0.25s '6982604\n8249966'
+  svdd_decision 20% score=0.500 gen=0.20s '6982604\n8299999'
+  keydiff    20% score=1.000 gen=0.20s '6982604\n8249966'
+  full       100% score=1.000 gen=0.35s '6982604\n8249966'
+  svdd_decision 10% score=0.000 gen=0.16s '698264\n897253'
+  leverage   50% score=1.000 gen=0.25s '6982604\n8249966'
+  case_total=27.2s
+CASE 22/36 niah_multi_16384_s29_d0.1 prefix=16128
+  prefill=12.17s KV=882.0MiB
+  score svdd_decision=10.18s
+  score keydiff=0.48s
+  score leverage=0.72s
+  leverage   20% score=1.000 gen=0.21s '7363293\n8507452'
+  keydiff    50% score=1.000 gen=0.25s '7363293\n8507452'
+  full       100% score=1.000 gen=0.35s '7363293\n8507452'
+  svdd_decision 20% score=0.500 gen=0.20s '7363923\n8507452'
+  svdd_decision 50% score=1.000 gen=0.25s '7363293\n8507452'
+  svdd_decision 10% score=0.000 gen=0.18s '7352914\n8504723'
+  leverage   50% score=1.000 gen=0.25s '7363293\n8507452'
+  keydiff    20% score=1.000 gen=0.20s '7363293\n8507452'
+  keydiff    10% score=1.000 gen=0.18s '7363293\n8507452'
+  leverage   10% score=1.000 gen=0.18s '7363293\n8507452'
+  case_total=27.1s
+CASE 23/36 niah_multi_16384_s29_d0.5 prefix=16128
+  prefill=12.20s KV=882.0MiB
+  score svdd_decision=10.11s
+  score keydiff=0.48s
+  score leverage=0.72s
+  full       100% score=1.000 gen=0.37s '3604181\n4622514'
+  leverage   50% score=1.000 gen=0.25s '3604181\n4622514'
+  keydiff    20% score=1.000 gen=0.20s '3604181\n4622514'
+  leverage   10% score=1.000 gen=0.18s '3604181\n4622514'
+  keydiff    10% score=1.000 gen=0.18s '3604181\n4622514'
+  keydiff    50% score=1.000 gen=0.25s '3604181\n4622514'
+  svdd_decision 10% score=0.000 gen=0.18s '3604582\n4622517'
+  svdd_decision 20% score=0.500 gen=0.20s '3604121\n4622514'
+  leverage   20% score=1.000 gen=0.20s '3604181\n4622514'
+  svdd_decision 50% score=1.000 gen=0.25s '3604181\n4622514'
+  case_total=27.1s
+CASE 24/36 niah_multi_16384_s29_d0.9 prefix=16128
+  prefill=12.17s KV=882.0MiB
+  score svdd_decision=10.33s
+  score keydiff=0.48s
+  score leverage=0.72s
+  svdd_decision 10% score=0.000 gen=0.19s '6049360\n1061598'
+  keydiff    20% score=1.000 gen=0.20s '6049369\n1062159'
+  leverage   50% score=1.000 gen=0.25s '6049369\n1062159'
+  leverage   20% score=1.000 gen=0.20s '6049369\n1062159'
+  svdd_decision 50% score=1.000 gen=0.25s '6049369\n1062159'
+  svdd_decision 20% score=0.500 gen=0.22s '6049369\n106159959'
+  keydiff    50% score=1.000 gen=0.25s '6049369\n1062159'
+  leverage   10% score=1.000 gen=0.18s '6049369\n1062159'
+  full       100% score=1.000 gen=0.36s '6049369\n1062159'
+  keydiff    10% score=1.000 gen=0.18s '6049369\n1062159'
+  case_total=27.3s
+CASE 25/36 niah_single_32768_s17_d0.1 prefix=32512
+  prefill=30.16s KV=1778.0MiB
+  score svdd_decision=19.84s
+  score keydiff=0.97s
+  score leverage=1.47s
+  full       100% score=1.000 gen=0.37s '2859053'
+  leverage   50% score=1.000 gen=0.22s '2859053'
+  leverage   20% score=1.000 gen=0.14s '2859053'
+  svdd_decision 20% score=0.000 gen=0.14s '2850905'
+  keydiff    10% score=1.000 gen=0.12s '2859053'
+  leverage   10% score=1.000 gen=0.12s '2859053'
+  svdd_decision 10% score=0.000 gen=0.14s '10pt\n1.10pt'
+  svdd_decision 50% score=1.000 gen=0.21s '2859053'
+  keydiff    20% score=1.000 gen=0.14s '2859053'
+  keydiff    50% score=1.000 gen=0.21s '2859053'
+  case_total=57.3s
+CASE 26/36 niah_single_32768_s17_d0.5 prefix=32512
+  prefill=30.18s KV=1778.0MiB
+  score svdd_decision=19.81s
+  score keydiff=0.96s
+  score leverage=1.45s
+  leverage   10% score=1.000 gen=0.13s '7592280'
+  svdd_decision 50% score=1.000 gen=0.21s '7592280'
+  svdd_decision 20% score=0.000 gen=0.14s '7592220'
+  leverage   20% score=1.000 gen=0.14s '7592280'
+  keydiff    20% score=1.000 gen=0.14s '7592280'
+  keydiff    50% score=1.000 gen=0.21s '7592280'
+  leverage   50% score=1.000 gen=0.21s '7592280'
+  keydiff    10% score=1.000 gen=0.12s '7592280'
+  full       100% score=1.000 gen=0.35s '7592280'
+  svdd_decision 10% score=0.000 gen=0.08s '7215'
+  case_total=57.0s
+CASE 27/36 niah_single_32768_s17_d0.9 prefix=32512
+  prefill=30.23s KV=1778.0MiB
+  score svdd_decision=19.80s
+  score keydiff=0.95s
+  score leverage=1.45s
+  leverage   20% score=1.000 gen=0.15s '4173359'
+  svdd_decision 10% score=0.000 gen=0.24s '4332567890123456789'
+  keydiff    20% score=1.000 gen=0.14s '4173359'
+  keydiff    50% score=1.000 gen=0.21s '4173359'
+  leverage   50% score=1.000 gen=0.21s '4173359'
+  leverage   10% score=1.000 gen=0.11s '4173359'
+  svdd_decision 50% score=1.000 gen=0.21s '4173359'
+  svdd_decision 20% score=0.000 gen=0.14s '4133597'
+  keydiff    10% score=1.000 gen=0.12s '4173359'
+  full       100% score=1.000 gen=0.34s '4173359'
+  case_total=57.2s
+CASE 28/36 niah_single_32768_s29_d0.1 prefix=32512
+  prefill=29.87s KV=1778.0MiB
+  score svdd_decision=19.77s
+  score keydiff=0.96s
+  score leverage=1.45s
+  svdd_decision 10% score=0.000 gen=0.09s '5538'
+  leverage   50% score=1.000 gen=0.21s '5538348'
+  keydiff    50% score=1.000 gen=0.21s '5538348'
+  svdd_decision 50% score=1.000 gen=0.21s '5538348'
+  svdd_decision 20% score=1.000 gen=0.14s '5538348'
+  keydiff    10% score=1.000 gen=0.11s '5538348'
+  keydiff    20% score=1.000 gen=0.14s '5538348'
+  leverage   10% score=1.000 gen=0.11s '5538348'
+  full       100% score=1.000 gen=0.34s '5538348'
+  leverage   20% score=1.000 gen=0.14s '5538348'
+  case_total=56.6s
+CASE 29/36 niah_single_32768_s29_d0.5 prefix=32512
+  prefill=30.81s KV=1778.0MiB
+  score svdd_decision=19.76s
+  score keydiff=0.95s
+  score leverage=1.44s
+  leverage   10% score=1.000 gen=0.12s '3369266'
+  leverage   20% score=1.000 gen=0.14s '3369266'
+  keydiff    50% score=1.000 gen=0.22s '3369266'
+  svdd_decision 50% score=1.000 gen=0.21s '3369266'
+  svdd_decision 20% score=1.000 gen=0.14s '3369266'
+  keydiff    10% score=1.000 gen=0.12s '3369266'
+  svdd_decision 10% score=1.000 gen=0.11s '3369266'
+  leverage   50% score=1.000 gen=0.21s '3369266'
+  keydiff    20% score=1.000 gen=0.14s '3369266'
+  full       100% score=1.000 gen=0.36s '3369266'
+  case_total=57.6s
+CASE 30/36 niah_single_32768_s29_d0.9 prefix=32512
+  prefill=29.93s KV=1778.0MiB
+  score svdd_decision=19.76s
+  score keydiff=0.96s
+  score leverage=1.43s
+  svdd_decision 20% score=1.000 gen=0.15s '2138879'
+  keydiff    10% score=1.000 gen=0.12s '2138879'
+  leverage   10% score=1.000 gen=0.12s '2138879'
+  full       100% score=1.000 gen=0.36s '2138879'
+  svdd_decision 10% score=1.000 gen=0.11s '2138879'
+  keydiff    50% score=1.000 gen=0.21s '2138879'
+  keydiff    20% score=1.000 gen=0.14s '2138879'
+  leverage   20% score=1.000 gen=0.14s '2138879'
+  svdd_decision 50% score=1.000 gen=0.21s '2138879'
+  leverage   50% score=1.000 gen=0.21s '2138879'
+  case_total=56.7s
+CASE 31/36 niah_multi_32768_s17_d0.1 prefix=32512
+  prefill=29.82s KV=1778.0MiB
+  score svdd_decision=19.91s
+  score keydiff=0.95s
+  score leverage=1.44s
+  full       100% score=1.000 gen=0.56s '8715250\n6940765'
+  leverage   50% score=1.000 gen=0.34s '8715250\n6940765'
+  leverage   20% score=1.000 gen=0.23s '8715250\n6940765'
+  svdd_decision 20% score=0.500 gen=0.23s '8715250\n6900755'
+  leverage   10% score=1.000 gen=0.20s '8715250\n6940765'
+  svdd_decision 50% score=1.000 gen=0.34s '8715250\n6940765'
+  keydiff    10% score=1.000 gen=0.19s '8715250\n6940765'
+  keydiff    50% score=1.000 gen=0.33s '8715250\n6940765'
+  svdd_decision 10% score=0.000 gen=0.20s '8712345\n6912345'
+  keydiff    20% score=1.000 gen=0.23s '8715250\n6940765'
+  case_total=57.8s
+CASE 32/36 niah_multi_32768_s17_d0.5 prefix=32512
+  prefill=29.87s KV=1778.0MiB
+  score svdd_decision=19.75s
+  score keydiff=0.95s
+  score leverage=1.44s
+  svdd_decision 10% score=0.000 gen=0.15s '7471\n5712'
+  full       100% score=1.000 gen=0.56s '7549073\n5717075'
+  svdd_decision 50% score=1.000 gen=0.34s '7549073\n5717075'
+  leverage   10% score=1.000 gen=0.19s '7549073\n5717075'
+  keydiff    50% score=1.000 gen=0.33s '7549073\n5717075'
+  leverage   50% score=1.000 gen=0.33s '7549073\n5717075'
+  keydiff    10% score=0.500 gen=0.19s '7549075\n5717075'
+  svdd_decision 20% score=1.000 gen=0.23s '7549073\n5717075'
+  keydiff    20% score=1.000 gen=0.23s '7549073\n5717075'
+  leverage   20% score=1.000 gen=0.23s '7549073\n5717075'
+  case_total=57.6s
+CASE 33/36 niah_multi_32768_s17_d0.9 prefix=32512
+  prefill=29.90s KV=1778.0MiB
+  score svdd_decision=19.63s
+  score keydiff=0.96s
+  score leverage=1.45s
+  leverage   50% score=1.000 gen=0.36s '4376207\n2727020'
+  svdd_decision 50% score=1.000 gen=0.33s '4376207\n2727020'
+  leverage   20% score=1.000 gen=0.23s '4376207\n2727020'
+  leverage   10% score=1.000 gen=0.20s '4376207\n2727020'
+  keydiff    10% score=1.000 gen=0.19s '4376207\n2727020'
+  svdd_decision 20% score=0.500 gen=0.24s '4376207\n27270202'
+  full       100% score=1.000 gen=0.56s '4376207\n2727020'
+  keydiff    50% score=1.000 gen=0.33s '4376207\n2727020'
+  keydiff    20% score=1.000 gen=0.23s '4376207\n2727020'
+  svdd_decision 10% score=0.000 gen=0.14s '4367\n9825'
+  case_total=57.6s
+CASE 34/36 niah_multi_32768_s29_d0.1 prefix=32512
+  prefill=29.86s KV=1778.0MiB
+  score svdd_decision=19.65s
+  score keydiff=0.95s
+  score leverage=1.45s
+  full       100% score=1.000 gen=0.57s '8047555\n2229614'
+  keydiff    20% score=1.000 gen=0.23s '8047555\n2229614'
+  keydiff    10% score=1.000 gen=0.20s '8047555\n2229614'
+  leverage   20% score=1.000 gen=0.23s '8047555\n2229614'
+  svdd_decision 50% score=1.000 gen=0.34s '8047555\n2229614'
+  leverage   10% score=1.000 gen=0.19s '8047555\n2229614'
+  keydiff    50% score=1.000 gen=0.34s '8047555\n2229614'
+  svdd_decision 10% score=0.000 gen=0.20s '8234567\n2229814'
+  svdd_decision 20% score=1.000 gen=0.23s '8047555\n2229614'
+  leverage   50% score=1.000 gen=0.34s '8047555\n2229614'
+  case_total=57.6s
+CASE 35/36 niah_multi_32768_s29_d0.5 prefix=32512
+  prefill=29.90s KV=1778.0MiB
+  score svdd_decision=19.58s
+  score keydiff=0.95s
+  score leverage=1.43s
+  svdd_decision 10% score=0.000 gen=0.21s '5508247\n1586259'
+  leverage   20% score=1.000 gen=0.23s '5507308\n1582610'
+  keydiff    50% score=1.000 gen=0.34s '5507308\n1582610'
+  keydiff    20% score=1.000 gen=0.23s '5507308\n1582610'
+  full       100% score=1.000 gen=0.54s '5507308\n1582610'
+  svdd_decision 50% score=1.000 gen=0.33s '5507308\n1582610'
+  svdd_decision 20% score=0.500 gen=0.24s '5507382\n1582610'
+  keydiff    10% score=1.000 gen=0.19s '5507308\n1582610'
+  leverage   50% score=1.000 gen=0.33s '5507308\n1582610'
+  leverage   10% score=1.000 gen=0.19s '5507308\n1582610'
+  case_total=57.5s
+CASE 36/36 niah_multi_32768_s29_d0.9 prefix=32512
+  prefill=29.83s KV=1778.0MiB
+  score svdd_decision=19.66s
+  score keydiff=0.95s
+  score leverage=1.46s
+  svdd_decision 20% score=0.500 gen=0.26s '1575750\n47183828'
+  leverage   50% score=1.000 gen=0.34s '1575750\n4718328'
+  svdd_decision 50% score=1.000 gen=0.33s '1575750\n4718328'
+  leverage   20% score=1.000 gen=0.23s '1575750\n4718328'
+  full       100% score=1.000 gen=0.55s '1575750\n4718328'
+  keydiff    20% score=1.000 gen=0.23s '1575750\n4718328'
+  keydiff    10% score=1.000 gen=0.20s '1575750\n4718328'
+  keydiff    50% score=1.000 gen=0.34s '1575750\n4718328'
+  svdd_decision 10% score=0.000 gen=0.15s '1572\n471828'
+  leverage   10% score=1.000 gen=0.19s '1575750\n4718328'
+  case_total=57.6s

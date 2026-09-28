@@ -1,0 +1,45 @@
+{
+  "predictions_sha256": "25452a67766eda0bf2851e3b076b70ab896f5123aa99b739912266140f8b8887",
+  "original_predictions_sha256": "d8127ad80e5d55489bd984f739aca79c3de2f06be36e8cc83974e726a05f415b",
+  "followup_manifest_sha256": "f2e4c91ec49a2da5b2dd67d5620ec8b21690d7151e4a4e6b831d8e88fd633845",
+  "case_file_sha256": "bbf5d6cae25ebd44a8bd99b6ae93dc7c92ffac76f2c4ee8194e97fcb9d32af40",
+  "solver_diagnostics_sha256": "35d0ea02b4513bec753c5d6316e39104245533d138e62aa13933398d468579fd",
+  "solver_diagnostics_file": "solver_diagnostics.jsonl",
+  "original_solver_diagnostics_sha256": "bea1eed6542588261a11def83b18382cdfbb6b55d71c9ecce2c63deeabbacbf6",
+  "original_solver_diagnostics_file": "solver_diagnostics.jsonl.gz",
+  "script_sha256": "e5b573b7fcd29f74a7dc60c1fb00f577c492b4cd6aa250a311754021d0b2c107",
+  "helper_script_sha256": "b062476e62f08c3d9d9e84e03eeaebb47d68e7ebd64bb684a63ace54805c6f1f",
+  "invocation_sha256": {
+    "invocation_1790571568476285000.json": "8633e2fd0f97584d5083cd8e47647978502d191db993130791f214b3abef068f"
+  },
+  "n_cases": 36,
+  "new_prediction_rows": 360,
+  "separate_original_alpha_rows": 108,
+  "expected_methods": [
+    "full",
+    "svdd_decision",
+    "keydiff",
+    "leverage"
+  ],
+  "budgets": [
+    0.1,
+    0.2,
+    0.5
+  ],
+  "bootstrap_reps": 2000,
+  "bootstrap_seed": 20260927,
+  "python": "3.11.14",
+  "numpy": "2.4.6",
+  "held_out": false,
+  "outputs": [
+    "aggregate_recall.csv",
+    "baseline_agreement.csv",
+    "decision_comparison.pdf",
+    "decision_comparison.png",
+    "decision_followup_summary.md",
+    "paired_deltas.csv",
+    "summary_manifest.json",
+    "validation.json"
+  ],
+  "matplotlib": "3.11.2"
+}

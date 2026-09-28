@@ -11,6 +11,7 @@ dependencies = ["numpy", "scipy", "scikit-learn", "mlx-lm; sys_platform == 'darw
 
 [project.optional-dependencies]
 analysis = ["matplotlib>=3.8"]
+closure = ["cvxpy", "clarabel"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

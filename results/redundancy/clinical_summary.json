@@ -1,0 +1,351 @@
+{
+  "attempts": 1465,
+  "complete": 718,
+  "status_counts": {
+    "complete": 718,
+    "no_event": 747
+  },
+  "resampling_unit": "stay",
+  "independent_unit_assumption": true,
+  "interval_warning": "Descriptive protocol reuse; no multiplicity adjustment or fresh validation set.",
+  "mean_budget": 0.32260247984516066,
+  "mean_tokens": 194.91643454039,
+  "mean_retained_tokens": 61.410863509749305,
+  "solver_status_counts": {
+    "optimal": 718
+  },
+  "maximum_qp_sum_residual": 1.0076184331353488e-10,
+  "methods": {
+    "svdd": {
+      "retain": {
+        "mean": 0.46437441152406944,
+        "bootstrap_95_ci": [
+          0.4368048911824816,
+          0.49236197692992
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "retrieval": {
+        "mean": 0.4983044825559501,
+        "bootstrap_95_ci": [
+          0.4702718184618723,
+          0.5267606513827919
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "density": {
+      "retain": {
+        "mean": 0.22537539510281843,
+        "bootstrap_95_ci": [
+          0.20168168090356006,
+          0.24878934166914488
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "retrieval": {
+        "mean": 0.2504442344681811,
+        "bootstrap_95_ci": [
+          0.2256863645222897,
+          0.275031386695915
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "recency": {
+      "retain": {
+        "mean": 0.4087777825522535,
+        "bootstrap_95_ci": [
+          0.37949063067372035,
+          0.4388382022870684
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "retrieval": {
+        "mean": 0.42325248680050453,
+        "bootstrap_95_ci": [
+          0.39320999683616586,
+          0.4536661952836364
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "random": {
+      "retain": {
+        "mean": 0.3326064163901312,
+        "bootstrap_95_ci": [
+          0.3076035756229759,
+          0.3579938148622706
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "retrieval": {
+        "mean": 0.39793588120244056,
+        "bootstrap_95_ci": [
+          0.3703443074902825,
+          0.4258007794757956
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "full": {
+      "retain": {
+        "mean": 1.0,
+        "bootstrap_95_ci": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "retrieval": {
+        "mean": 0.9981387830759485,
+        "bootstrap_95_ci": [
+          0.9958453973517017,
+          0.9997671557990581
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "keydiff": {
+      "retain": {
+        "mean": 0.4075573809994899,
+        "bootstrap_95_ci": [
+          0.37981835283473586,
+          0.43526978731196186
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "retrieval": {
+        "mean": 0.4397328413803095,
+        "bootstrap_95_ci": [
+          0.41116882276510264,
+          0.4682815086153279
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "linear_leverage": {
+      "retain": {
+        "mean": 0.4848967500980375,
+        "bootstrap_95_ci": [
+          0.45737127237811104,
+          0.5137199967910222
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "retrieval": {
+        "mean": 0.519183425327099,
+        "bootstrap_95_ci": [
+          0.49104685697226874,
+          0.5480043328089694
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "kernel_leverage": {
+      "retain": {
+        "mean": 0.47954681922604553,
+        "bootstrap_95_ci": [
+          0.45207593651988537,
+          0.506904036098879
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "retrieval": {
+        "mean": 0.5238775968193018,
+        "bootstrap_95_ci": [
+          0.4956930798967186,
+          0.5518087656311643
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    }
+  },
+  "svdd_minus_comparator": {
+    "svdd": {
+      "retain": {
+        "mean": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "retrieval": {
+        "mean": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "density": {
+      "retain": {
+        "mean": 0.238999016421251,
+        "bootstrap_95_ci": [
+          0.19438842837172288,
+          0.2835287712453111
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "retrieval": {
+        "mean": 0.24786024808776908,
+        "bootstrap_95_ci": [
+          0.20221704825619755,
+          0.293372124878012
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "recency": {
+      "retain": {
+        "mean": 0.05559662897181594,
+        "bootstrap_95_ci": [
+          0.015771752904278596,
+          0.09641821537115058
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "retrieval": {
+        "mean": 0.07505199575544567,
+        "bootstrap_95_ci": [
+          0.03518996606833958,
+          0.11625460154368042
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "random": {
+      "retain": {
+        "mean": 0.13176799513393822,
+        "bootstrap_95_ci": [
+          0.09424252960792417,
+          0.17000140844816355
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "retrieval": {
+        "mean": 0.10036860135350953,
+        "bootstrap_95_ci": [
+          0.061849206666608446,
+          0.139361285957806
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "full": {
+      "retain": {
+        "mean": -0.5356255884759306,
+        "bootstrap_95_ci": [
+          -0.5631951088175184,
+          -0.5076380230700801
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "retrieval": {
+        "mean": -0.4998343005199984,
+        "bootstrap_95_ci": [
+          -0.5281124829097235,
+          -0.47111063684425863
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "keydiff": {
+      "retain": {
+        "mean": 0.0568170305245796,
+        "bootstrap_95_ci": [
+          0.0276384841861512,
+          0.08719642309933093
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "retrieval": {
+        "mean": 0.058571641175640614,
+        "bootstrap_95_ci": [
+          0.02849248157049184,
+          0.08969029828887227
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "linear_leverage": {
+      "retain": {
+        "mean": -0.020522338573967944,
+        "bootstrap_95_ci": [
+          -0.041661787442093735,
+          -8.221182088267287e-05
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "retrieval": {
+        "mean": -0.020878942771148847,
+        "bootstrap_95_ci": [
+          -0.04251017362394066,
+          -4.370309942591578e-05
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    },
+    "kernel_leverage": {
+      "retain": {
+        "mean": -0.015172407701976165,
+        "bootstrap_95_ci": [
+          -0.037696331218898003,
+          0.007088294813267106
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      },
+      "retrieval": {
+        "mean": -0.02557311426335166,
+        "bootstrap_95_ci": [
+          -0.04858920028979127,
+          -0.002946509018895389
+        ],
+        "bootstrap_samples": 10000,
+        "seed": 0
+      }
+    }
+  },
+  "event_positive_attempts": 718,
+  "original_reference": {
+    "completed_stays": 718,
+    "mean_budget": 0.32260247984516066,
+    "svdd_retain": 0.46437441152406944,
+    "density_retain": 0.22537539510281843,
+    "random_retain": 0.3326064163901312,
+    "recency_retain": 0.4087777825522535
+  }
+}

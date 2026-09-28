@@ -1,4 +1,13 @@
-# Decision: do not commit to a full SVDD KV-compression paper yet
+# Decision: close the SVDD KV-compression direction
+
+**Update after the fixed closure checks, September 27, 2026:** decision-score
+ranking reaches 45.83% needle recall at 20% KV, versus 100% for KeyDiff and
+leverage. It only matches them at 50%. On the original selection probes,
+SVDD exceeds same-RBF kernel leverage by 2.50 points on synthetic rare-group
+recall, but has no advantage on ICU event retention. These results reinforce
+the stop decision. See [follow-up findings](followup_findings.md) for both
+experiments, uncertainty, and interpretation. The original pilot below is
+preserved as a separate experiment.
 
 Completed pilot, 2026-09-27. **The tested SVDD selector does not earn a full-paper investment.** It loses badly to inexpensive geometric selectors on needle retrieval, offers mixed results on the small natural-task sample, and adds solver cost. This is a negative result for the specified blockwise ranker, not a proof that every possible SVDD formulation must fail.
 
@@ -101,6 +110,12 @@ This pilot uses one older, weight-quantized model; custom repetitive needles; sm
 
 **Stop before a full paper campaign on the current method.** There is no reason to pay for a large benchmark sweep or write a compression manuscript around this implementation. Its central retrieval hypothesis fails against close, inexpensive baselines, and its initially proposed exactness claim is inapplicable.
 
-If the unresolved scientific question still matters to you, the sensible next investment is a bounded mechanism study: compare a full SVDD solve against the block approximation on short real-key contexts, examine support and zero-score fill behavior around answer spans, and test whether normalization or local block objectives discard the relevant directions. Require an improvement over KeyDiff and leverage on a held-out set before scaling up. This is a proposed follow-up, not an experiment claimed as completed here. Changing back to coefficient weighting would be a separate model modification and would need its own quality validation.
+The fixed decision-score and original-protocol redundancy checks are now
+complete. Their [results](followup_findings.md) supersede the earlier suggestion
+to investigate more SVDD variants. Stop tuning and retain the public evidence.
+A future project would need an independent reason and a held-out advantage
+over KeyDiff and leverage; neither is supplied by these checks. Changing back
+to coefficient weighting would be a separate model modification requiring its
+own quality validation.
 
 The standalone code, pinned inputs, complete answers, source snapshots, diagnostics, figures, and reproduction instructions remain useful even if you stop. The earlier preprints need no edits for this decision.

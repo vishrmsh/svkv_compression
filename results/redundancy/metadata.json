@@ -1,0 +1,93 @@
+{
+  "started_utc": "2026-09-28T05:18:59.761674+00:00",
+  "task": "all",
+  "python": "3.11.14",
+  "packages": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "cvxpy": "1.9.3",
+    "clarabel": "0.11.1"
+  },
+  "code_sha256": {
+    "src/svkv/redundancy.py": "1b4d41975c877529ddae77f453da446d3f3cb694f69d222d8b3238abdca89e5d",
+    "scripts/run_redundancy_check.py": "8c3eea942d4759690aeedcb1e6c4a580c83504b97a5e70fded96a86e4dd455ef",
+    "configs/redundancy_check.json": "e1843cf5eb53d30e23d4df27d3e95c6f615aebc5013071d9e60c31d0aaa918b6",
+    "requirements-redundancy-lock.txt": "768048af066a2c29112de8d1f12140ccbe80f42ef25c4de372d71e85a876eb1f"
+  },
+  "protocol": {
+    "version": 1,
+    "frozen_before_followup_results": true,
+    "purpose": "Close the original redundancy-selection claim, not reopen the KV-compression pilot",
+    "synthetic": {
+      "trials": 60,
+      "seed": 0,
+      "rng": "numpy.random.RandomState",
+      "dimensions": 4,
+      "singleton_groups": 6,
+      "dense_groups": 6,
+      "dense_copies": 10,
+      "center_scale": 1.5,
+      "key_jitter": 0.15,
+      "query_jitter": 0.05,
+      "queries_per_group": 2,
+      "held_out_query": "second of each pair",
+      "nu": 0.45,
+      "rbf_width": 1.2,
+      "solver_tolerance": 1e-11,
+      "partition_tolerance": 1e-06,
+      "readout": "uniform RBF over retained keys into group one-hot values",
+      "primary_metric": "mean held-out singleton-group recall"
+    },
+    "clinical": {
+      "cache_basename": "icu_vitals_n1500.npz",
+      "maximum_stays": 1465,
+      "event": "unstandardized, previously imputed hourly SpO2 below 90",
+      "excluded_selector_channel": "spo2",
+      "dimensions": 5,
+      "nu": 0.3,
+      "rbf_width": 3.0,
+      "solver_tolerance": 1e-10,
+      "partition_tolerance": 1e-07,
+      "original_eligibility": "event-positive stay with 0 < support count < token count and successful solve",
+      "random_baseline_seed": "token count per stay",
+      "primary_metric": "unweighted mean of within-stay event-hour retention",
+      "privacy": "only aggregate clinical results may be written; no features, IDs, per-stay rows, or per-stay scores"
+    },
+    "new_baselines": {
+      "keydiff": "negative cosine to the mean of L2-normalized keys",
+      "linear_leverage": "exact centered raw-feature ridge leverage, no random projection",
+      "kernel_leverage": "exact uncentered RBF kernel ridge leverage using the original SVDD Gram",
+      "ridge": 0.01,
+      "ridge_scaling": "absolute, added to the unnormalized Gram; no sample-count scaling",
+      "ties": "stable original-position order"
+    },
+    "budget": "each trial/stay retains exactly the original SVDD support count, except full-context ceiling",
+    "bootstrap": {
+      "samples": 10000,
+      "seed": 0,
+      "paired": true,
+      "confidence": 0.95,
+      "method": "percentile"
+    },
+    "parameter_search": false,
+    "source_reference": {
+      "repository": "https://github.com/VyLabs-AI/sv-attention",
+      "license": "Apache-2.0",
+      "local_source_sha256": {
+        "svattn/eviction_benchmark.py": "4c5c7a96bdbf0a1763dec6b914351d5e8e9f4bd94225bc68acff35a76401eddf",
+        "svattn/diff_svdd.py": "32d2f9e0e613380da533a31f9b9caef433a796b668b179e319a27ffe07d7223c",
+        "clinical_seq/e2_selection.py": "238203b3b454491baa49e4698396a69984872eb569180c5bcec4015e1672d6a2",
+        "cp_svm/oneclass_qp.py": "d87e833ffa2e6a6038be47200b4c8765cef5ed4b3ab074b470f0010bda5ac7ea",
+        "cp_svm/oneclass_fast.py": "5e4659c1c81c4232c246c24d1b8867bce9654a0f041b3855976ef2cb97384fb7",
+        "cp_svm/kernels.py": "bb5b4312ad010db8e8695b70df7c44c7945b769fb623dd897037e2530381e7a7"
+      }
+    }
+  },
+  "clinical_privacy": "Only aggregate summaries written. No features, IDs, or per-stay rows serialized.",
+  "clinical_cache": {
+    "basename": "icu_vitals_n1500.npz",
+    "sha256": "55346b0e573260bb3124662000c1cbe50dd72ac0a76d51c5776ab336b09b90b3"
+  },
+  "completed_utc": "2026-09-28T05:19:31.086722+00:00",
+  "wall_seconds": 31.320075625000754
+}

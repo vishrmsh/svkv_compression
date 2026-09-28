@@ -13,7 +13,11 @@ p.add_argument("--wait-pid", type=int)
 p.add_argument("--repeats", type=int, default=2)
 p.add_argument("--methods", nargs="+", default=["full", "svdd", "svdd_prerope", "keydiff", "leverage", "snapkv", "streaming"])
 p.add_argument("--fraction", type=float, default=.2)
+p.add_argument("--output-directory", default="results/systems")
 a = p.parse_args()
+out = Path(a.output_directory)
+if out.exists() and any(out.iterdir()):
+    p.error("Output directory is nonempty; use a new --output-directory to preserve prior evidence")
 if a.wait_pid:
     print(f"Waiting for quality process {a.wait_pid}; no GPU work starts until it exits.", flush=True)
     while True:
@@ -24,7 +28,7 @@ if a.wait_pid:
         time.sleep(3)
     rows = [json.loads(s) for s in Path("results/pilot/predictions.jsonl").read_text().splitlines()]
     assert len(rows) == 1350, "Quality run did not complete; systems suite not launched"
-out = Path("results/systems"); out.mkdir(parents=True, exist_ok=True)
+out.mkdir(parents=True, exist_ok=True)
 order = [(method, repeat) for repeat in range(a.repeats) for method in a.methods]
 random.Random(20260927).shuffle(order)
 (out / "suite.json").write_text(json.dumps({"arguments":vars(a), "order":order,
@@ -33,6 +37,7 @@ random.Random(20260927).shuffle(order)
 for number, (method, repeat) in enumerate(order, 1):
     print(f"SYSTEMS {number}/{len(order)} {method} repeat={repeat}", flush=True)
     subprocess.run([sys.executable, "scripts/benchmark_systems.py", "--method", method,
-                    "--fraction", str(a.fraction), "--skip-weight-hash", "--output",
+                    "--fraction", str(a.fraction), "--skip-weight-hash",
+                    "--output-directory", str(out), "--output",
                     str(out / f"{method}_r{repeat}.json")], check=True)
 print("Systems suite complete", flush=True)
