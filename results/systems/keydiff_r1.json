@@ -1,0 +1,800 @@
+{
+  "arguments": {
+    "method": "keydiff",
+    "fraction": 0.2,
+    "model": "models/Qwen2.5-7B-Instruct-4bit",
+    "cases": "data/pilot_cases.jsonl",
+    "case_id": null,
+    "output_directory": "results/systems",
+    "output": "results/systems/keydiff_r1.json",
+    "chunk_size": 512,
+    "decode_steps": 32,
+    "skip_weight_hash": true
+  },
+  "method": "keydiff",
+  "budget_fraction": 0.2,
+  "pid": 47055,
+  "started_local": "2026-09-27T21:29:06-0700",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.11.14",
+  "system_memory_bytes": 549755813888,
+  "packages": {
+    "mlx": "0.32.2",
+    "mlx-lm": "0.31.3",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1",
+    "psutil": "7.2.2"
+  },
+  "case_id": "niah_single_32768_s17_d0.1",
+  "prefix_sha256": "036003e1f2d1c9bdd27b0052a1282a4934888012d1d57644649afb059a7480cc",
+  "case_file_sha256": "bbf5d6cae25ebd44a8bd99b6ae93dc7c92ffac76f2c4ee8194e97fcb9d32af40",
+  "model_files": {
+    ".gitattributes": {
+      "bytes": 1519,
+      "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361"
+    },
+    "README.md": {
+      "bytes": 732,
+      "sha256": "bcc928c815d856439e238f1977b50c93580ec5e79118e588b20f03aba1a215f5"
+    },
+    "added_tokens.json": {
+      "bytes": 605,
+      "sha256": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b"
+    },
+    "config.json": {
+      "bytes": 787,
+      "sha256": "1661a349986919d13820d3981623776138d50783d13e247cdc5b075a22b62698"
+    },
+    "merges.txt": {
+      "bytes": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    "model.safetensors": {
+      "bytes": 4284346255
+    },
+    "model.safetensors.index.json": {
+      "bytes": 51711,
+      "sha256": "23cd562592dd96686d2e799eb02e4b578a4038b6045eaefe860d270cc060e24f"
+    },
+    "special_tokens_map.json": {
+      "bytes": 613,
+      "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+    },
+    "tokenizer.json": {
+      "bytes": 7031673,
+      "sha256": "a8506e7111b80c6d8635951a02eab0f4e1a8e4e5772da83846579e97b16f61bf"
+    },
+    "tokenizer_config.json": {
+      "bytes": 7280,
+      "sha256": "4921d4cbae33349a9cb3b2ad3a7622efdea10a5d208c9f333c77b154aa714888"
+    },
+    "vocab.json": {
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  },
+  "source_snapshot": "results/systems/source_snapshots/3f0219aa8361220c",
+  "source_sha256": {
+    "scripts/benchmark_systems.py": "70205beea083187dbd07b4149f221244d1aefdf191e314012e7b99391860415c",
+    "src/svkv/__init__.py": "53e833c396cfa69f302b8a43898c3fb7565ff60699a60f7b0b9b5b6ece73c935",
+    "src/svkv/geometry.py": "ee374da6dd64be326cdf1c442b283b5ebbe653986059e575577db1c705f87e01",
+    "src/svkv/runtime.py": "bc4069d5d26c5430d06a50719dfb4feec76bd7dc0833b5328976660c9a843611",
+    "src/svkv/selectors.py": "44092bb8489e133a6460ff5c874b0bff9c3e1c9375e4b8e1ddcab46151858210",
+    "src/svkv/systems_cache.py": "2f512b7e1dfdd051ba17214ad23979bcdb9f761d027aaf1e4d408978218b2d4c",
+    "src/svkv/tasks.py": "eb0ee0e1e46a3467eb8fface4bad6c005b4968234dad947b2bc88be34372bad7"
+  },
+  "protocol": "one fresh process, post-prefill selection, original cache released before decode",
+  "cache_backend": "reserved_append_prefill_and_decode",
+  "cache_capacity_policy": "physical prefix rows + suffix token count + fixed decode forwards",
+  "weight_quantization_bits": 4,
+  "kv_quantization": false,
+  "warmup": "short prefill, one suffix forward and two one-token forwards",
+  "notes": [
+    "Peak allocator memory includes full prefill and overlapping old/new caches.",
+    "RSS includes allocator and library retention; active MLX bytes are separate.",
+    "Allocated KV tensor bytes describe backing-array capacity; Metal allocation alignment is included in active MLX memory, not tensor nbytes.",
+    "Timing is one measurement per fresh process; repeat invocations for uncertainty.",
+    "Fixed decode continues after EOS and is not an answer-quality evaluation.",
+    "All systems arms reserve fixed append capacity; no full-cache concatenation during decode.",
+    "Quality-harness concatenate timings are separate and are not systems speedup evidence."
+  ],
+  "model_load_s": 0.3656828750099521,
+  "prefix_tokens": 32512,
+  "suffix_tokens": 24,
+  "nominal_length": 32768,
+  "tokens_per_head_before": 32512,
+  "tokens_per_head_after_compression": 6502,
+  "actual_retained_fraction": 0.1999876968503937,
+  "full_kv_tensor_bytes": 1864368128,
+  "compressed_kv_tensor_bytes": 372850688,
+  "full_allocated_kv_tensor_bytes_including_reserve": 1867579392,
+  "allocated_kv_tensor_bytes_including_reserve": 376061952,
+  "allocated_kv_tensor_bytes_after_decode": 376061952,
+  "append_reserve_tokens_per_head": 56,
+  "allocated_capacity_tokens_per_head": 6558,
+  "unused_reserve_bytes_at_decode_start": 3211264,
+  "kv_tensor_bytes_after_decode": 376061952,
+  "prefill_s": 29.500590584008023,
+  "compression_total_s": 1.3242109159764368,
+  "selection_and_compaction_s": 1.3044287079828791,
+  "selected_cache_reserve_allocation_s": 0.019782207993557677,
+  "compression": {
+    "transfer_s": 0.05844679396250285,
+    "score_s": 0.9604278339829762,
+    "select_and_gather_s": 0.2854610400390811,
+    "layers": [
+      {
+        "layer": 0,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 17,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.05251320902607404
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 17,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.008486999984597787
+        }
+      },
+      {
+        "layer": 1,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 1026,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.03377258402178995
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 1026,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.008157167001627386
+        }
+      },
+      {
+        "layer": 2,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 2035,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.033419249986764044
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 2035,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.009239500010153279
+        }
+      },
+      {
+        "layer": 3,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 3044,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.0336621250025928
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 3044,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.009161791997030377
+        }
+      },
+      {
+        "layer": 4,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 4053,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.0336639579909388
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 4053,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.009311667003203183
+        }
+      },
+      {
+        "layer": 5,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 5062,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.03358133300207555
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 5062,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.009165291994577274
+        }
+      },
+      {
+        "layer": 6,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 6071,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.033751708979252726
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 6071,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.008956208010204136
+        }
+      },
+      {
+        "layer": 7,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 7080,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.03381108300527558
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 7080,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.009331915993243456
+        }
+      },
+      {
+        "layer": 8,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 8089,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.0337017500132788
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 8089,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.00911458401242271
+        }
+      },
+      {
+        "layer": 9,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 9098,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.03366995902615599
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 9098,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.008974625001428649
+        }
+      },
+      {
+        "layer": 10,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 10107,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.033670750010060146
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 10107,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.008834834006847814
+        }
+      },
+      {
+        "layer": 11,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 11116,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.03365591701003723
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 11116,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.009170416014967486
+        }
+      },
+      {
+        "layer": 12,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 12125,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.0336792919842992
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 12125,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.009094334003748372
+        }
+      },
+      {
+        "layer": 13,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 13134,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.03362724999897182
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 13134,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.009164250019239262
+        }
+      },
+      {
+        "layer": 14,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 14143,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.033576916001038626
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 14143,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.009021582984132692
+        }
+      },
+      {
+        "layer": 15,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 15152,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.03376070800004527
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 15152,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.009055834001628682
+        }
+      },
+      {
+        "layer": 16,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 16161,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.03353533399058506
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 16161,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.008977874997071922
+        }
+      },
+      {
+        "layer": 17,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 17170,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.033777000004192814
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 17170,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.009055583010194823
+        }
+      },
+      {
+        "layer": 18,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 18179,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.033643624978139997
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 18179,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.008926292008254677
+        }
+      },
+      {
+        "layer": 19,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 19188,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.03367720902315341
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 19188,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.008940208004787564
+        }
+      },
+      {
+        "layer": 20,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 20197,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.033647083007963374
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 20197,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.008921833010390401
+        }
+      },
+      {
+        "layer": 21,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 21206,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.033368959004292265
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 21206,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.008967417001258582
+        }
+      },
+      {
+        "layer": 22,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 22215,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.03355170800932683
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 22215,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.008913416997529566
+        }
+      },
+      {
+        "layer": 23,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 23224,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.033550624997587875
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 23224,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.009000624995678663
+        }
+      },
+      {
+        "layer": 24,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 24233,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.03359254100359976
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 24233,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.009052042005350813
+        }
+      },
+      {
+        "layer": 25,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 25242,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.03339112500543706
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 25242,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.008987665991298854
+        }
+      },
+      {
+        "layer": 26,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 26251,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.033548417006386444
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 26251,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.009072417014976963
+        }
+      },
+      {
+        "layer": 27,
+        "scoring": {
+          "method": "keydiff",
+          "seed": 27260,
+          "method_description": "negative cosine to mean normalized key",
+          "score_seconds": 0.03349962498759851
+        },
+        "selection": {
+          "method": "keydiff",
+          "seed": 27260,
+          "scores_source": "provided",
+          "tokens_before": 32512,
+          "tokens_after_per_head": 6502,
+          "retained_fraction": 0.1999876968503937,
+          "reserved_per_head": 36,
+          "sinks_requested": 4,
+          "recent_requested": 32,
+          "selection_seconds_including_score_if_computed": 0.008621000015409663
+        }
+      }
+    ],
+    "tokens_per_head": 6502
+  },
+  "timing": {
+    "suffix_ttft_s": 0.07107645898940973,
+    "decode_forward_steps": 32,
+    "decode_s": 0.31199120901874267,
+    "decode_forwards_per_s": 102.56699251445133,
+    "generated_token_count_including_suffix_prediction": 33,
+    "generated_token_ids": [
+      17,
+      23,
+      20,
+      24,
+      15,
+      20,
+      18,
+      151645,
+      198,
+      151643,
+      33975,
+      83439,
+      448,
+      198,
+      6713,
+      498,
+      3410,
+      803,
+      3565,
+      389,
+      279,
+      1465,
+      6358,
+      369,
+      279,
+      8806,
+      19772,
+      17843,
+      1614,
+      304,
+      279,
+      358,
+      2716
+    ],
+    "eos_stopping": false,
+    "suffix_plus_decode_s": 0.3830676680081524
+  },
+  "memory": {
+    "model_and_runtime_after_warmup": {
+      "mlx_active_bytes": 4287507464,
+      "mlx_allocator_cache_bytes": 0,
+      "mlx_peak_active_bytes_since_reset": 0,
+      "process_rss_bytes": 4583309312,
+      "process_peak_rss_bytes_lifetime": 4615667712
+    },
+    "after_full_prefill": {
+      "mlx_active_bytes": 6155545608,
+      "mlx_allocator_cache_bytes": 608701776,
+      "mlx_peak_active_bytes_since_reset": 6556626140,
+      "process_rss_bytes": 4583899136,
+      "process_peak_rss_bytes_lifetime": 4615667712
+    },
+    "after_compaction_and_reserve_before_release": {
+      "mlx_active_bytes": 6905146376,
+      "mlx_allocator_cache_bytes": 708791632,
+      "mlx_peak_active_bytes_since_reset": 6905146380,
+      "process_rss_bytes": 5202853888,
+      "process_peak_rss_bytes_lifetime": 5202853888
+    },
+    "after_original_cache_and_temporaries_released": {
+      "mlx_active_bytes": 4663684104,
+      "mlx_allocator_cache_bytes": 0,
+      "mlx_peak_active_bytes_since_reset": 6905146380,
+      "process_rss_bytes": 5202640896,
+      "process_peak_rss_bytes_lifetime": 5202853888
+    },
+    "after_fixed_decode": {
+      "mlx_active_bytes": 4663684104,
+      "mlx_allocator_cache_bytes": 101249828,
+      "mlx_peak_active_bytes_since_reset": 6905146380,
+      "process_rss_bytes": 5136318464,
+      "process_peak_rss_bytes_lifetime": 5202853888
+    }
+  },
+  "prefill_selection_suffix_and_decode_s": 31.207869167992612
+}

@@ -1,0 +1,1105 @@
+[
+  {
+    "id": "niah_single_8192_s17_d0.1",
+    "task": "niah_single",
+    "nominal_length": 8192,
+    "seed": 17,
+    "depth": 0.1,
+    "answers": [
+      "7587050"
+    ],
+    "needle_spans": [
+      [
+        821,
+        844
+      ]
+    ],
+    "prefix_sha256": "7e863341588bc85a2e0603b5e8022a89cfc50fd16df78f1a39123bc9439ccca6",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 7936,
+    "suffix_tokens": 24
+  },
+  {
+    "id": "niah_single_8192_s17_d0.5",
+    "task": "niah_single",
+    "nominal_length": 8192,
+    "seed": 17,
+    "depth": 0.5,
+    "answers": [
+      "3905301"
+    ],
+    "needle_spans": [
+      [
+        3973,
+        3996
+      ]
+    ],
+    "prefix_sha256": "1d99521c6acd57316d8d0fea009ea8d5fb4b8099e54af556aa5b60c022d55f1b",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 7936,
+    "suffix_tokens": 24
+  },
+  {
+    "id": "niah_single_8192_s17_d0.9",
+    "task": "niah_single",
+    "nominal_length": 8192,
+    "seed": 17,
+    "depth": 0.9,
+    "answers": [
+      "4728478"
+    ],
+    "needle_spans": [
+      [
+        7125,
+        7148
+      ]
+    ],
+    "prefix_sha256": "4dea8248a5b383ab0ff1dbb664ee4aeaebb9a245643229b86c054a95294537ff",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 7936,
+    "suffix_tokens": 24
+  },
+  {
+    "id": "niah_single_8192_s29_d0.1",
+    "task": "niah_single",
+    "nominal_length": 8192,
+    "seed": 29,
+    "depth": 0.1,
+    "answers": [
+      "4197743"
+    ],
+    "needle_spans": [
+      [
+        821,
+        844
+      ]
+    ],
+    "prefix_sha256": "aa1480fb18892fdcc7bded8e87da241271c2352ba8d6d115ca3d5887da5b3e7e",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 7936,
+    "suffix_tokens": 24
+  },
+  {
+    "id": "niah_single_8192_s29_d0.5",
+    "task": "niah_single",
+    "nominal_length": 8192,
+    "seed": 29,
+    "depth": 0.5,
+    "answers": [
+      "8747290"
+    ],
+    "needle_spans": [
+      [
+        3973,
+        3996
+      ]
+    ],
+    "prefix_sha256": "6868201e960a7976192bef5ed6ea25129a0ae59469a084667ecf99400695c0e9",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 7936,
+    "suffix_tokens": 24
+  },
+  {
+    "id": "niah_single_8192_s29_d0.9",
+    "task": "niah_single",
+    "nominal_length": 8192,
+    "seed": 29,
+    "depth": 0.9,
+    "answers": [
+      "1600563"
+    ],
+    "needle_spans": [
+      [
+        7125,
+        7148
+      ]
+    ],
+    "prefix_sha256": "ffd84f7e3cb51ba3de867415fd605562055b792afdf9a067dc965b3859cfddb5",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 7936,
+    "suffix_tokens": 24
+  },
+  {
+    "id": "niah_multi_8192_s17_d0.1",
+    "task": "niah_multi",
+    "nominal_length": 8192,
+    "seed": 17,
+    "depth": 0.1,
+    "answers": [
+      "6517512",
+      "3307403"
+    ],
+    "needle_spans": [
+      [
+        818,
+        841
+      ],
+      [
+        6734,
+        6757
+      ]
+    ],
+    "prefix_sha256": "08312cb7d4898a5580e53669898eeb8c8d6f115ef5cb656cfb830f76881bc840",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 7936,
+    "suffix_tokens": 29
+  },
+  {
+    "id": "niah_multi_8192_s17_d0.5",
+    "task": "niah_multi",
+    "nominal_length": 8192,
+    "seed": 17,
+    "depth": 0.5,
+    "answers": [
+      "2143361",
+      "2141491"
+    ],
+    "needle_spans": [
+      [
+        1211,
+        1234
+      ],
+      [
+        3984,
+        4007
+      ]
+    ],
+    "prefix_sha256": "d83147c9afeae918f0bc450eb765d8aec01eef4652d396dae89d28e4f10a280d",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 7936,
+    "suffix_tokens": 29
+  },
+  {
+    "id": "niah_multi_8192_s17_d0.9",
+    "task": "niah_multi",
+    "nominal_length": 8192,
+    "seed": 17,
+    "depth": 0.9,
+    "answers": [
+      "6044269",
+      "3892613"
+    ],
+    "needle_spans": [
+      [
+        1211,
+        1234
+      ],
+      [
+        7127,
+        7150
+      ]
+    ],
+    "prefix_sha256": "a5ff8e9e88972dc70ca05a956cd2e9871189b03e35a38f5f2a971f54517180e2",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 7936,
+    "suffix_tokens": 29
+  },
+  {
+    "id": "niah_multi_8192_s29_d0.1",
+    "task": "niah_multi",
+    "nominal_length": 8192,
+    "seed": 29,
+    "depth": 0.1,
+    "answers": [
+      "1433722",
+      "8168467"
+    ],
+    "needle_spans": [
+      [
+        818,
+        841
+      ],
+      [
+        6734,
+        6757
+      ]
+    ],
+    "prefix_sha256": "1e8a88cc5dac75e1a1ece6ba541bd2079a2b22fedf6d2330daa7ee1716b75662",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 7936,
+    "suffix_tokens": 29
+  },
+  {
+    "id": "niah_multi_8192_s29_d0.5",
+    "task": "niah_multi",
+    "nominal_length": 8192,
+    "seed": 29,
+    "depth": 0.5,
+    "answers": [
+      "4360765",
+      "8884000"
+    ],
+    "needle_spans": [
+      [
+        1211,
+        1234
+      ],
+      [
+        3984,
+        4007
+      ]
+    ],
+    "prefix_sha256": "a36cbbe6b70ad1d2bc180e368068fd64e6186297ef6325ddc0f446322a11cec6",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 7936,
+    "suffix_tokens": 29
+  },
+  {
+    "id": "niah_multi_8192_s29_d0.9",
+    "task": "niah_multi",
+    "nominal_length": 8192,
+    "seed": 29,
+    "depth": 0.9,
+    "answers": [
+      "6007669",
+      "2794734"
+    ],
+    "needle_spans": [
+      [
+        1211,
+        1234
+      ],
+      [
+        7127,
+        7150
+      ]
+    ],
+    "prefix_sha256": "bde866c7e9438b7f9ddcacc24e29f81e04647a0feb9575b5c501dc3f1e393023",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 7936,
+    "suffix_tokens": 29
+  },
+  {
+    "id": "niah_single_16384_s17_d0.1",
+    "task": "niah_single",
+    "nominal_length": 16384,
+    "seed": 17,
+    "depth": 0.1,
+    "answers": [
+      "6220744"
+    ],
+    "needle_spans": [
+      [
+        1640,
+        1663
+      ]
+    ],
+    "prefix_sha256": "fe8f5c1e2478a25a1d5f492f82295e6d0ba85f4a40f6314ef60395130c1dd4aa",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 16128,
+    "suffix_tokens": 24
+  },
+  {
+    "id": "niah_single_16384_s17_d0.5",
+    "task": "niah_single",
+    "nominal_length": 16384,
+    "seed": 17,
+    "depth": 0.5,
+    "answers": [
+      "7017506"
+    ],
+    "needle_spans": [
+      [
+        8069,
+        8092
+      ]
+    ],
+    "prefix_sha256": "1e9ae4e9944a54e9094f21d57bb32c7057c6e028ac88dfcf36a6f0ae32d008cd",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 16128,
+    "suffix_tokens": 24
+  },
+  {
+    "id": "niah_single_16384_s17_d0.9",
+    "task": "niah_single",
+    "nominal_length": 16384,
+    "seed": 17,
+    "depth": 0.9,
+    "answers": [
+      "6024168"
+    ],
+    "needle_spans": [
+      [
+        14497,
+        14520
+      ]
+    ],
+    "prefix_sha256": "1bccb8a41780e923843bd44076322acba2231f7470e38edd3dce8f1eae1922e1",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 16128,
+    "suffix_tokens": 24
+  },
+  {
+    "id": "niah_single_16384_s29_d0.1",
+    "task": "niah_single",
+    "nominal_length": 16384,
+    "seed": 29,
+    "depth": 0.1,
+    "answers": [
+      "9396933"
+    ],
+    "needle_spans": [
+      [
+        1640,
+        1663
+      ]
+    ],
+    "prefix_sha256": "0282cee985df9540ac0cbed365fe7320c374dd4b9325cf5c4daa82b0930abd72",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 16128,
+    "suffix_tokens": 24
+  },
+  {
+    "id": "niah_single_16384_s29_d0.5",
+    "task": "niah_single",
+    "nominal_length": 16384,
+    "seed": 29,
+    "depth": 0.5,
+    "answers": [
+      "3140977"
+    ],
+    "needle_spans": [
+      [
+        8069,
+        8092
+      ]
+    ],
+    "prefix_sha256": "3afcfb6e5777ff9d3e510568d414b2aae69aa928f6214094f2e4be7d555b998b",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 16128,
+    "suffix_tokens": 24
+  },
+  {
+    "id": "niah_single_16384_s29_d0.9",
+    "task": "niah_single",
+    "nominal_length": 16384,
+    "seed": 29,
+    "depth": 0.9,
+    "answers": [
+      "1004273"
+    ],
+    "needle_spans": [
+      [
+        14497,
+        14520
+      ]
+    ],
+    "prefix_sha256": "adbcd44bdeac8eb542e14b82d402bf003158f9e4a164c734e58cf20e26186dc5",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 16128,
+    "suffix_tokens": 24
+  },
+  {
+    "id": "niah_multi_16384_s17_d0.1",
+    "task": "niah_multi",
+    "nominal_length": 16384,
+    "seed": 17,
+    "depth": 0.1,
+    "answers": [
+      "8049566",
+      "4560766"
+    ],
+    "needle_spans": [
+      [
+        1637,
+        1660
+      ],
+      [
+        13697,
+        13720
+      ]
+    ],
+    "prefix_sha256": "c6dded8b616255526ef74fad57315c1f57327f7c50680722177424ae3380ded1",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 16128,
+    "suffix_tokens": 29
+  },
+  {
+    "id": "niah_multi_16384_s17_d0.5",
+    "task": "niah_multi",
+    "nominal_length": 16384,
+    "seed": 17,
+    "depth": 0.5,
+    "answers": [
+      "2123474",
+      "7964880"
+    ],
+    "needle_spans": [
+      [
+        2440,
+        2463
+      ],
+      [
+        8080,
+        8103
+      ]
+    ],
+    "prefix_sha256": "1736cad8528ac624fa6bfe235068c00763b1c24546a5f9738577063fb10cb00a",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 16128,
+    "suffix_tokens": 29
+  },
+  {
+    "id": "niah_multi_16384_s17_d0.9",
+    "task": "niah_multi",
+    "nominal_length": 16384,
+    "seed": 17,
+    "depth": 0.9,
+    "answers": [
+      "6982604",
+      "8249966"
+    ],
+    "needle_spans": [
+      [
+        2440,
+        2463
+      ],
+      [
+        14500,
+        14523
+      ]
+    ],
+    "prefix_sha256": "c8711374f9d4f3288ba0dd7607e5be399a6304e737e2b0c0bbadc8b50903298c",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 16128,
+    "suffix_tokens": 29
+  },
+  {
+    "id": "niah_multi_16384_s29_d0.1",
+    "task": "niah_multi",
+    "nominal_length": 16384,
+    "seed": 29,
+    "depth": 0.1,
+    "answers": [
+      "7363293",
+      "8507452"
+    ],
+    "needle_spans": [
+      [
+        1637,
+        1660
+      ],
+      [
+        13697,
+        13720
+      ]
+    ],
+    "prefix_sha256": "011657303b24c9dad0fc39065aab5f372e7f8a315b7bafe4a1a7580e9401a337",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 16128,
+    "suffix_tokens": 29
+  },
+  {
+    "id": "niah_multi_16384_s29_d0.5",
+    "task": "niah_multi",
+    "nominal_length": 16384,
+    "seed": 29,
+    "depth": 0.5,
+    "answers": [
+      "3604181",
+      "4622514"
+    ],
+    "needle_spans": [
+      [
+        2440,
+        2463
+      ],
+      [
+        8080,
+        8103
+      ]
+    ],
+    "prefix_sha256": "99ea3b105511d6cac64850e8fd8de1ce50632f255e9ea4bbe3143f928840f48e",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 16128,
+    "suffix_tokens": 29
+  },
+  {
+    "id": "niah_multi_16384_s29_d0.9",
+    "task": "niah_multi",
+    "nominal_length": 16384,
+    "seed": 29,
+    "depth": 0.9,
+    "answers": [
+      "6049369",
+      "1062159"
+    ],
+    "needle_spans": [
+      [
+        2440,
+        2463
+      ],
+      [
+        14500,
+        14523
+      ]
+    ],
+    "prefix_sha256": "fd98446fb800c2c4ba9ff618307c0831395bf5bc3e7262898cedbc4bdcffbd02",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 16128,
+    "suffix_tokens": 29
+  },
+  {
+    "id": "niah_single_32768_s17_d0.1",
+    "task": "niah_single",
+    "nominal_length": 32768,
+    "seed": 17,
+    "depth": 0.1,
+    "answers": [
+      "2859053"
+    ],
+    "needle_spans": [
+      [
+        3278,
+        3301
+      ]
+    ],
+    "prefix_sha256": "036003e1f2d1c9bdd27b0052a1282a4934888012d1d57644649afb059a7480cc",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 32512,
+    "suffix_tokens": 24
+  },
+  {
+    "id": "niah_single_32768_s17_d0.5",
+    "task": "niah_single",
+    "nominal_length": 32768,
+    "seed": 17,
+    "depth": 0.5,
+    "answers": [
+      "7592280"
+    ],
+    "needle_spans": [
+      [
+        16261,
+        16284
+      ]
+    ],
+    "prefix_sha256": "e6fa68b482cdc19e7365f052ab3426ba084f95a4f4a87647ccd7e41aa8224802",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 32512,
+    "suffix_tokens": 24
+  },
+  {
+    "id": "niah_single_32768_s17_d0.9",
+    "task": "niah_single",
+    "nominal_length": 32768,
+    "seed": 17,
+    "depth": 0.9,
+    "answers": [
+      "4173359"
+    ],
+    "needle_spans": [
+      [
+        29243,
+        29266
+      ]
+    ],
+    "prefix_sha256": "689c0e005843e0ffb78c0160369a3d14e5083b1945f648886f5ca9313b3643c9",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 32512,
+    "suffix_tokens": 24
+  },
+  {
+    "id": "niah_single_32768_s29_d0.1",
+    "task": "niah_single",
+    "nominal_length": 32768,
+    "seed": 29,
+    "depth": 0.1,
+    "answers": [
+      "5538348"
+    ],
+    "needle_spans": [
+      [
+        3278,
+        3301
+      ]
+    ],
+    "prefix_sha256": "0c8a03f286fd41d80066bc005a888c0fe3998376736914c3304cf8e9b75f1795",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 32512,
+    "suffix_tokens": 24
+  },
+  {
+    "id": "niah_single_32768_s29_d0.5",
+    "task": "niah_single",
+    "nominal_length": 32768,
+    "seed": 29,
+    "depth": 0.5,
+    "answers": [
+      "3369266"
+    ],
+    "needle_spans": [
+      [
+        16261,
+        16284
+      ]
+    ],
+    "prefix_sha256": "fac2b04fc9e7a4080aa394dce4849c7b95bffaf0510e9948dd02551aeb49b66c",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 32512,
+    "suffix_tokens": 24
+  },
+  {
+    "id": "niah_single_32768_s29_d0.9",
+    "task": "niah_single",
+    "nominal_length": 32768,
+    "seed": 29,
+    "depth": 0.9,
+    "answers": [
+      "2138879"
+    ],
+    "needle_spans": [
+      [
+        29243,
+        29266
+      ]
+    ],
+    "prefix_sha256": "835e05b491b51d889228847553c98eb0e0fdf015c839009d4659d2320cafdc13",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 32512,
+    "suffix_tokens": 24
+  },
+  {
+    "id": "niah_multi_32768_s17_d0.1",
+    "task": "niah_multi",
+    "nominal_length": 32768,
+    "seed": 17,
+    "depth": 0.1,
+    "answers": [
+      "8715250",
+      "6940765"
+    ],
+    "needle_spans": [
+      [
+        3276,
+        3299
+      ],
+      [
+        27624,
+        27647
+      ]
+    ],
+    "prefix_sha256": "549b403a1e693e5b807d914d91461d584a492eb82090a8420b0b861fac3107dc",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 32512,
+    "suffix_tokens": 29
+  },
+  {
+    "id": "niah_multi_32768_s17_d0.5",
+    "task": "niah_multi",
+    "nominal_length": 32768,
+    "seed": 17,
+    "depth": 0.5,
+    "answers": [
+      "7549073",
+      "5717075"
+    ],
+    "needle_spans": [
+      [
+        4897,
+        4920
+      ],
+      [
+        16272,
+        16295
+      ]
+    ],
+    "prefix_sha256": "c6214325f78321c5b1480bbe9d7c116752b1062ac0bcf9e4b4ddcabc8ec55e75",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 32512,
+    "suffix_tokens": 29
+  },
+  {
+    "id": "niah_multi_32768_s17_d0.9",
+    "task": "niah_multi",
+    "nominal_length": 32768,
+    "seed": 17,
+    "depth": 0.9,
+    "answers": [
+      "4376207",
+      "2727020"
+    ],
+    "needle_spans": [
+      [
+        4897,
+        4920
+      ],
+      [
+        29245,
+        29268
+      ]
+    ],
+    "prefix_sha256": "c4c8d3df785bbfe6d98e54b7f0724f93426d9b4bdd69c29d83ef498d8e68ace1",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 32512,
+    "suffix_tokens": 29
+  },
+  {
+    "id": "niah_multi_32768_s29_d0.1",
+    "task": "niah_multi",
+    "nominal_length": 32768,
+    "seed": 29,
+    "depth": 0.1,
+    "answers": [
+      "8047555",
+      "2229614"
+    ],
+    "needle_spans": [
+      [
+        3276,
+        3299
+      ],
+      [
+        27624,
+        27647
+      ]
+    ],
+    "prefix_sha256": "97a091c6336d8b4c844cc0865bc4bcc6b06f8f88947fba9d6a447599f17023cc",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 32512,
+    "suffix_tokens": 29
+  },
+  {
+    "id": "niah_multi_32768_s29_d0.5",
+    "task": "niah_multi",
+    "nominal_length": 32768,
+    "seed": 29,
+    "depth": 0.5,
+    "answers": [
+      "5507308",
+      "1582610"
+    ],
+    "needle_spans": [
+      [
+        4897,
+        4920
+      ],
+      [
+        16272,
+        16295
+      ]
+    ],
+    "prefix_sha256": "d8545d2af1d872aad925f7d9493a57ecba0d99e0f0c56ade1118384c46f08f66",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 32512,
+    "suffix_tokens": 29
+  },
+  {
+    "id": "niah_multi_32768_s29_d0.9",
+    "task": "niah_multi",
+    "nominal_length": 32768,
+    "seed": 29,
+    "depth": 0.9,
+    "answers": [
+      "1575750",
+      "4718328"
+    ],
+    "needle_spans": [
+      [
+        4897,
+        4920
+      ],
+      [
+        29245,
+        29268
+      ]
+    ],
+    "prefix_sha256": "ccfc48d1dbc8b6539a090a15b200bbe201b2e682424ed92610b5d623108e19d0",
+    "source": "custom_niah_natural_prose",
+    "prefix_tokens": 32512,
+    "suffix_tokens": 29
+  },
+  {
+    "id": "longbench_hotpotqa_62",
+    "task": "hotpotqa",
+    "nominal_length": 15821,
+    "seed": 20260927,
+    "answers": [
+      "November"
+    ],
+    "needle_spans": [],
+    "prefix_sha256": "27335a46dc72ff079d0ab5690304bcd4b9922b8b93f0dbf4ca4b307c34996771",
+    "source": "THUDM/LongBench",
+    "source_row": 62,
+    "source_id": "232c2ba7b8bb5f22b77e5c55961d0cd0fe673d26870e157b",
+    "prefix_tokens": 15821,
+    "suffix_tokens": 35
+  },
+  {
+    "id": "longbench_hotpotqa_182",
+    "task": "hotpotqa",
+    "nominal_length": 12458,
+    "seed": 20260927,
+    "answers": [
+      "Arizona State University"
+    ],
+    "needle_spans": [],
+    "prefix_sha256": "84fa169f3a4af59554b88cc5122fa1123f43b7aaba7262626bb54d7d5f89dc52",
+    "source": "THUDM/LongBench",
+    "source_row": 182,
+    "source_id": "de89026c970fbb6dff04176107b9cf20407d155bc1ae2eec",
+    "prefix_tokens": 12458,
+    "suffix_tokens": 30
+  },
+  {
+    "id": "longbench_hotpotqa_186",
+    "task": "hotpotqa",
+    "nominal_length": 15918,
+    "seed": 20260927,
+    "answers": [
+      "Brothers Quay"
+    ],
+    "needle_spans": [],
+    "prefix_sha256": "2de21b47e213b086463a458baf36b962f32716e7ce8af5bae6ae3a9615946724",
+    "source": "THUDM/LongBench",
+    "source_row": 186,
+    "source_id": "d3b2acfdec13f925424cd7d96b689557edfd08e6dd6177b7",
+    "prefix_tokens": 15918,
+    "suffix_tokens": 22
+  },
+  {
+    "id": "longbench_hotpotqa_117",
+    "task": "hotpotqa",
+    "nominal_length": 16630,
+    "seed": 20260927,
+    "answers": [
+      "Burny Mattinson, David Michener, and the team of John Musker and Ron Clements"
+    ],
+    "needle_spans": [],
+    "prefix_sha256": "49409264100e9aaaa52bc082a84a1b9a00033f82b01b8e183817d5421afc5d3b",
+    "source": "THUDM/LongBench",
+    "source_row": 117,
+    "source_id": "e54d1e07a1fc2ce2afdf7e75f79561d8fe0abd22f4d8bd53",
+    "prefix_tokens": 16630,
+    "suffix_tokens": 26
+  },
+  {
+    "id": "longbench_hotpotqa_71",
+    "task": "hotpotqa",
+    "nominal_length": 15867,
+    "seed": 20260927,
+    "answers": [
+      "Philip K. Dick"
+    ],
+    "needle_spans": [],
+    "prefix_sha256": "7c19846bfbc8edab47f8939720a2dd234f6cf3c8a95be02e5f774bfd763cd88b",
+    "source": "THUDM/LongBench",
+    "source_row": 71,
+    "source_id": "98bf7e9946e86278d6d2b938d751861981c5fe14c356ea68",
+    "prefix_tokens": 15867,
+    "suffix_tokens": 32
+  },
+  {
+    "id": "longbench_hotpotqa_142",
+    "task": "hotpotqa",
+    "nominal_length": 17151,
+    "seed": 20260927,
+    "answers": [
+      "West Lafayette, Indiana"
+    ],
+    "needle_spans": [],
+    "prefix_sha256": "2a66afb3e6e2ac82680fa7edd6af367a9492342195edec2f084e5f5969c798e8",
+    "source": "THUDM/LongBench",
+    "source_row": 142,
+    "source_id": "228572a285ddcbb4947f362c07531238d1eec58e0fe0cfc6",
+    "prefix_tokens": 17151,
+    "suffix_tokens": 21
+  },
+  {
+    "id": "longbench_qasper_67",
+    "task": "qasper",
+    "nominal_length": 10205,
+    "seed": 20260927,
+    "answers": [
+      "Logistic Regression, neural networks"
+    ],
+    "needle_spans": [],
+    "prefix_sha256": "971a71324cfd48bc96f3b641bbb5985a77fb349c40d7faaa267dc1e3d1bbd0e7",
+    "source": "THUDM/LongBench",
+    "source_row": 67,
+    "source_id": "89a4fd3fce6114c3401790c6f9b5243fda094597657f348a",
+    "prefix_tokens": 10205,
+    "suffix_tokens": 22
+  },
+  {
+    "id": "longbench_qasper_178",
+    "task": "qasper",
+    "nominal_length": 8598,
+    "seed": 20260927,
+    "answers": [
+      "Coverage, Avg. MCC and avg. +ve F1 score",
+      "strategy formulation ability, we introduce a measure called Coverage( INLINEFORM0 ), To evaluate the predictive performance, we use Avg. MCC and avg. +ve F1 score"
+    ],
+    "needle_spans": [],
+    "prefix_sha256": "3f6530115b9056077b7b1d00144085636b93e8aaa7b0f47fbfed81072418d72f",
+    "source": "THUDM/LongBench",
+    "source_row": 178,
+    "source_id": "ede810c7fa069014dc1b6fe66c54079ce1fe81903c684600",
+    "prefix_tokens": 8598,
+    "suffix_tokens": 30
+  },
+  {
+    "id": "longbench_qasper_15",
+    "task": "qasper",
+    "nominal_length": 17811,
+    "seed": 20260927,
+    "answers": [
+      "Custom dataset with user questions; set of documents, twitter posts and news articles, all related to finance.",
+      "a self-collected financial intents dataset in Portuguese"
+    ],
+    "needle_spans": [],
+    "prefix_sha256": "c11741e741a1f9cf9dbcb666ce6198585d1397ca39e8da7e8293026c86f48efb",
+    "source": "THUDM/LongBench",
+    "source_row": 15,
+    "source_id": "f27a64d129091a6c8973c001ff789b8f68955b8ff0ae70af",
+    "prefix_tokens": 17811,
+    "suffix_tokens": 14
+  },
+  {
+    "id": "longbench_qasper_127",
+    "task": "qasper",
+    "nominal_length": 8153,
+    "seed": 20260927,
+    "answers": [
+      "Various tree structured neural networks including variants of Tree-LSTM, Tree-based CNN, RNTN, and non-tree models including variants of LSTMs, CNNs, residual, and self-attention based networks",
+      "Sentence classification baselines: RNTN (Socher et al. 2013), AdaMC-RNTN (Dong et al. 2014), TE-RNTN (Qian et al. 2015), TBCNN (Mou et al. 2015), Tree-LSTM (Tai, Socher, and Manning 2015), AdaHT-LSTM-CM (Liu, Qiu, and Huang 2017), DC-TreeLSTM (Liu, Qiu, and Huang 2017), TE-LSTM (Huang, Qian, and Zhu 2017), BiConTree (Teng and Zhang 2017), Gumbel Tree-LSTM (Choi, Yoo, and Lee 2018), TreeNet (Cheng et al. 2018), CNN (Kim 2014), AdaSent (Zhao, Lu, and Poupart 2015), LSTM-CNN (Zhou et al. 2016), byte-mLSTM (Radford, Jozefowicz, and Sutskever 2017), BCN + Char + CoVe (McCann et al. 2017), BCN + Char + ELMo (Peters et al. 2018). \nStanford Natural Language Inference baselines: Latent Syntax Tree-LSTM (Yogatama et al. 2017), Tree-based CNN (Mou et al. 2016), Gumbel Tree-LSTM (Choi, Yoo, and Lee 2018), NSE (Munkhdalai and Yu 2017), Reinforced Self- Attention Network (Shen et al. 2018), Residual stacked encoders: (Nie and Bansal 2017), BiLSTM with generalized pooling (Chen, Ling, and Zhu 2018)."
+    ],
+    "needle_spans": [],
+    "prefix_sha256": "845a24bd7c031ddcbdd3ed68a83ff8008cbd4660e1df48dd88de44c8c3042dbb",
+    "source": "THUDM/LongBench",
+    "source_row": 127,
+    "source_id": "debdd11c3c5802df0fbef5055ef8d57888c833e2a230e0b9",
+    "prefix_tokens": 8153,
+    "suffix_tokens": 17
+  },
+  {
+    "id": "longbench_qasper_13",
+    "task": "qasper",
+    "nominal_length": 8658,
+    "seed": 20260927,
+    "answers": [
+      "F1 scores of 85.99 on the DL-PS data,  75.15 on the EC-MT data and 71.53 on the EC-UQ data ",
+      "F1 of 85.99 on the DL-PS dataset (dialog domain); 75.15 on EC-MT and 71.53 on EC-UQ (e-commerce domain)"
+    ],
+    "needle_spans": [],
+    "prefix_sha256": "78770b663166341343ee2a013e753ebbc0f4cdbe9eb7430805ef888431e1a26b",
+    "source": "THUDM/LongBench",
+    "source_row": 13,
+    "source_id": "d022dfe02fb2a55b4baa40fe436f616aecd3f3ced1a58d7c",
+    "prefix_tokens": 8658,
+    "suffix_tokens": 17
+  },
+  {
+    "id": "longbench_qasper_73",
+    "task": "qasper",
+    "nominal_length": 9737,
+    "seed": 20260927,
+    "answers": [
+      "0.7033",
+      "0.7033"
+    ],
+    "needle_spans": [],
+    "prefix_sha256": "9c86f899ef6120261e878658dc0ffbd25c4b4e4c09a1cf2f412315937cb55382",
+    "source": "THUDM/LongBench",
+    "source_row": 73,
+    "source_id": "6ceab4edd1d0e37d217958e7e962697124ccb6a4f449f4af",
+    "prefix_tokens": 9737,
+    "suffix_tokens": 16
+  },
+  {
+    "id": "longbench_passage_retrieval_en_62",
+    "task": "passage_retrieval_en",
+    "nominal_length": 13302,
+    "seed": 20260927,
+    "answers": [
+      "Paragraph 1"
+    ],
+    "needle_spans": [],
+    "prefix_sha256": "21580cae302b38c8b9e3688c8892adb494eafb822a99bd46af2b72c3d3b3603e",
+    "source": "THUDM/LongBench",
+    "source_row": 62,
+    "source_id": "5f95e26ccd46458401164d5798ff1bcf0f8f64caaf6c0543",
+    "prefix_tokens": 13302,
+    "suffix_tokens": 151
+  },
+  {
+    "id": "longbench_passage_retrieval_en_182",
+    "task": "passage_retrieval_en",
+    "nominal_length": 14912,
+    "seed": 20260927,
+    "answers": [
+      "Paragraph 10"
+    ],
+    "needle_spans": [],
+    "prefix_sha256": "b172276425e841692ca94e21e2120677298f55e50f17f11c0403ef6bf1e2f377",
+    "source": "THUDM/LongBench",
+    "source_row": 182,
+    "source_id": "935e107e7d9805db8f0faeb52d959c2199ba87c874774360",
+    "prefix_tokens": 14912,
+    "suffix_tokens": 216
+  },
+  {
+    "id": "longbench_passage_retrieval_en_186",
+    "task": "passage_retrieval_en",
+    "nominal_length": 10789,
+    "seed": 20260927,
+    "answers": [
+      "Paragraph 8"
+    ],
+    "needle_spans": [],
+    "prefix_sha256": "b7ef22dcb3da64b73cccbbcc1efdc13813ed0af2051f4506361526ae57e6773d",
+    "source": "THUDM/LongBench",
+    "source_row": 186,
+    "source_id": "d7fbd12606d7a9621c1b13eec68fca66fb00d9fd1910c355",
+    "prefix_tokens": 10789,
+    "suffix_tokens": 186
+  },
+  {
+    "id": "longbench_passage_retrieval_en_22",
+    "task": "passage_retrieval_en",
+    "nominal_length": 12473,
+    "seed": 20260927,
+    "answers": [
+      "Paragraph 6"
+    ],
+    "needle_spans": [],
+    "prefix_sha256": "1868a726d09e405275b07ba3636d326eb31bf3d483717d2a388e1a79809d1b01",
+    "source": "THUDM/LongBench",
+    "source_row": 22,
+    "source_id": "bd9d3468c50000f39e476ba33358347ef358d49f2424458c",
+    "prefix_tokens": 12473,
+    "suffix_tokens": 239
+  },
+  {
+    "id": "longbench_passage_retrieval_en_117",
+    "task": "passage_retrieval_en",
+    "nominal_length": 12405,
+    "seed": 20260927,
+    "answers": [
+      "Paragraph 9"
+    ],
+    "needle_spans": [],
+    "prefix_sha256": "4f1b1510c65496fe9c7dfe3d7e4adfb89237b83fce37bd70ea3f223b86fed7d2",
+    "source": "THUDM/LongBench",
+    "source_row": 117,
+    "source_id": "2a470259b0a4c8ac30c31b56e9838a204c16e4548403b45d",
+    "prefix_tokens": 12405,
+    "suffix_tokens": 166
+  },
+  {
+    "id": "longbench_passage_retrieval_en_71",
+    "task": "passage_retrieval_en",
+    "nominal_length": 12289,
+    "seed": 20260927,
+    "answers": [
+      "Paragraph 9"
+    ],
+    "needle_spans": [],
+    "prefix_sha256": "b6835b4182ee416e69684bf87c054e8150ab4fb3fe3035497c968ed6c03d01d7",
+    "source": "THUDM/LongBench",
+    "source_row": 71,
+    "source_id": "8c3fe76b4ee279090bfe86483753a8f2fc21e5e0cb376667",
+    "prefix_tokens": 12289,
+    "suffix_tokens": 147
+  }
+]

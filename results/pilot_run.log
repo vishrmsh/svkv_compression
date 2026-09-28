@@ -1,0 +1,1945 @@
+Loading model
+CASE 1/54 niah_single_8192_s17_d0.1 prefix=7936
+  prefill=5.22s KV=434.0MiB
+  score svdd=2.95s
+  score svdd_prerope=2.41s
+  score snapkv=0.04s
+  score streaming=0.00s
+  score keydiff=0.23s
+  score knorm=0.06s
+  score leverage=0.34s
+  score random=0.01s
+  keydiff    20% score=1.000 gen=0.12s '7587050'
+  svdd       20% score=1.000 gen=0.10s '7587050'
+  leverage   20% score=1.000 gen=0.10s '7587050'
+  snapkv     10% score=0.000 gen=0.08s '42069'
+  keydiff    50% score=1.000 gen=0.12s '7587050'
+  streaming  10% score=0.000 gen=0.08s '42069'
+  svdd       10% score=0.000 gen=0.10s '7856324'
+  streaming  50% score=0.000 gen=0.10s '42069'
+  leverage   10% score=1.000 gen=0.10s '7587050'
+  knorm      50% score=0.000 gen=0.37s '758234\n758235\n758236\n758237\n7582'
+  svdd_prerope 10% score=0.000 gen=0.12s '7894561230'
+  random     20% score=0.000 gen=0.08s '77777'
+  leverage   50% score=1.000 gen=0.12s '7587050'
+  svdd_prerope 50% score=1.000 gen=0.12s '7587050'
+  random     50% score=0.000 gen=0.37s '75724389105628974562897562897562'
+  full       100% score=1.000 gen=0.15s '7587050'
+  svdd       50% score=1.000 gen=0.12s '7587050'
+  snapkv     20% score=0.000 gen=0.08s '42069'
+  knorm      20% score=0.000 gen=0.10s '7523914'
+  svdd_prerope 20% score=0.000 gen=0.13s '7057050777'
+  random     10% score=0.000 gen=0.08s '42069'
+  streaming  20% score=0.000 gen=0.08s '42069'
+  snapkv     50% score=0.000 gen=0.37s '7\n512\n512\n256\n256\n256\n256\n256\n25'
+  keydiff    10% score=1.000 gen=0.10s '7587050'
+  knorm      10% score=0.000 gen=0.19s '75\n102\n153\n204\n255'
+  case_total=15.9s
+CASE 2/54 niah_single_8192_s17_d0.5 prefix=7936
+  prefill=5.23s KV=434.0MiB
+  score svdd=2.35s
+  score svdd_prerope=2.40s
+  score snapkv=0.05s
+  score streaming=0.00s
+  score keydiff=0.23s
+  score knorm=0.06s
+  score leverage=0.34s
+  score random=0.01s
+  leverage   20% score=1.000 gen=0.12s '3905301'
+  svdd       20% score=0.000 gen=0.33s '256\n512\n257\n500\n32\n512\n7500\n15\n0'
+  full       100% score=1.000 gen=0.15s '3905301'
+  knorm      50% score=0.000 gen=0.37s '3957\n3098\n3056\n3042\n3037\n3032\n30'
+  snapkv     20% score=0.000 gen=0.10s '1052379'
+  streaming  50% score=1.000 gen=0.12s '3905301'
+  snapkv     50% score=1.000 gen=0.37s '3905301\n3905302\n3905303\n3905304\n'
+  knorm      10% score=0.000 gen=0.31s '300\n256\n3000\n10000\n100\n5000\n2000'
+  svdd       10% score=0.000 gen=0.10s '3532571'
+  streaming  20% score=0.000 gen=0.06s '420'
+  random     20% score=0.000 gen=0.33s '39352735273527352735273527352735'
+  keydiff    10% score=1.000 gen=0.10s '3905301'
+  random     10% score=0.000 gen=0.31s '25502550255025502550255025502550'
+  svdd_prerope 10% score=0.000 gen=0.11s '32\n10\n750'
+  leverage   10% score=1.000 gen=0.10s '3905301'
+  random     50% score=0.000 gen=0.37s '39053013257894325789432578943257'
+  knorm      20% score=0.000 gen=0.33s '308257\n258479\n102456\n398742\n2478'
+  keydiff    50% score=1.000 gen=0.12s '3905301'
+  svdd_prerope 50% score=0.000 gen=0.37s '256\n512\n257\n2500\n32\n512\n98.43\n5\n'
+  snapkv     10% score=0.000 gen=0.31s '42069875937592045853575754597575'
+  streaming  10% score=0.000 gen=0.06s '420'
+  keydiff    20% score=1.000 gen=0.10s '3905301'
+  leverage   50% score=1.000 gen=0.12s '3905301'
+  svdd       50% score=0.000 gen=0.37s '256\n512\n257\n2500\n32\n512\n98.43\n5\n'
+  svdd_prerope 20% score=0.000 gen=0.32s '35\n32\n512\n257\n500\n750\n1000\n256\n2'
+  case_total=17.3s
+CASE 3/54 niah_single_8192_s17_d0.9 prefix=7936
+  prefill=5.22s KV=434.0MiB
+  score svdd=2.34s
+  score svdd_prerope=2.41s
+  score snapkv=0.04s
+  score streaming=0.00s
+  score keydiff=0.23s
+  score knorm=0.06s
+  score leverage=0.34s
+  score random=0.01s
+  streaming  10% score=0.000 gen=0.09s '42069'
+  random     50% score=0.000 gen=0.37s '478239\n478241\n478243\n478247\n4782'
+  snapkv     10% score=0.000 gen=0.31s '42739137827391378273913782739137'
+  knorm      50% score=0.000 gen=0.09s '4728'
+  snapkv     20% score=0.000 gen=0.07s '4728'
+  full       100% score=1.000 gen=0.15s '4728478'
+  keydiff    10% score=1.000 gen=0.10s '4728478'
+  svdd_prerope 20% score=1.000 gen=0.10s '4728478'
+  leverage   10% score=1.000 gen=0.09s '4728478'
+  knorm      20% score=0.000 gen=0.13s '4729381279'
+  random     20% score=0.000 gen=0.09s '472139'
+  svdd_prerope 10% score=0.000 gen=0.09s '478478'
+  keydiff    20% score=1.000 gen=0.10s '4728478'
+  svdd       20% score=0.000 gen=0.09s '478472'
+  keydiff    50% score=1.000 gen=0.12s '4728478'
+  snapkv     50% score=1.000 gen=0.12s '4728478'
+  leverage   20% score=1.000 gen=0.10s '4728478'
+  streaming  20% score=1.000 gen=0.10s '4728478'
+  streaming  50% score=1.000 gen=0.12s '4728478'
+  svdd_prerope 50% score=0.000 gen=0.11s '478478'
+  random     10% score=0.000 gen=0.08s '42069'
+  svdd       50% score=0.000 gen=0.11s '478472'
+  knorm      10% score=0.000 gen=0.05s '42'
+  svdd       10% score=0.000 gen=0.10s '4784727'
+  leverage   50% score=1.000 gen=0.12s '4728478'
+  case_total=14.8s
+CASE 4/54 niah_single_8192_s29_d0.1 prefix=7936
+  prefill=5.22s KV=434.0MiB
+  score svdd=2.34s
+  score svdd_prerope=2.41s
+  score snapkv=0.04s
+  score streaming=0.00s
+  score keydiff=0.23s
+  score knorm=0.06s
+  score leverage=0.35s
+  score random=0.01s
+  leverage   10% score=1.000 gen=0.11s '4197743'
+  leverage   50% score=1.000 gen=0.12s '4197743'
+  random     20% score=0.000 gen=0.05s '42'
+  knorm      20% score=0.000 gen=0.09s '412357'
+  knorm      10% score=0.000 gen=0.05s '42'
+  streaming  20% score=0.000 gen=0.06s '427'
+  random     10% score=0.000 gen=0.05s '42'
+  random     50% score=0.000 gen=0.12s '4197777'
+  streaming  50% score=0.000 gen=0.37s '42789521647852164785216478521647'
+  keydiff    10% score=1.000 gen=0.10s '4197743'
+  leverage   20% score=1.000 gen=0.10s '4197743'
+  keydiff    20% score=1.000 gen=0.10s '4197743'
+  knorm      50% score=0.000 gen=0.12s '4197503'
+  svdd_prerope 20% score=0.000 gen=0.33s '41774341774341774341774341774341'
+  snapkv     20% score=0.000 gen=0.33s '42738927347293847293847293847293'
+  streaming  10% score=0.000 gen=0.06s '420'
+  svdd       50% score=1.000 gen=0.12s '4197743'
+  svdd       10% score=0.000 gen=0.19s '41567890234567890'
+  full       100% score=1.000 gen=0.15s '4197743'
+  keydiff    50% score=1.000 gen=0.12s '4197743'
+  snapkv     10% score=0.000 gen=0.05s '42'
+  snapkv     50% score=0.000 gen=0.37s '4172\n4173\n4174\n4175\n4176\n4177\n41'
+  svdd_prerope 10% score=0.000 gen=0.10s '4325789'
+  svdd_prerope 50% score=1.000 gen=0.12s '4197743'
+  svdd       20% score=0.000 gen=0.08s '41735'
+  case_total=15.3s
+CASE 5/54 niah_single_8192_s29_d0.5 prefix=7936
+  prefill=5.22s KV=434.0MiB
+  score svdd=2.31s
+  score svdd_prerope=2.39s
+  score snapkv=0.04s
+  score streaming=0.00s
+  score keydiff=0.23s
+  score knorm=0.06s
+  score leverage=0.34s
+  score random=0.01s
+  random     50% score=0.000 gen=0.13s '8749290'
+  snapkv     50% score=0.000 gen=0.37s '87029345729847529874572987547892'
+  streaming  20% score=0.000 gen=0.05s '42'
+  full       100% score=1.000 gen=0.15s '8747290'
+  svdd       50% score=0.000 gen=0.12s '8747270'
+  keydiff    10% score=1.000 gen=0.10s '8747290'
+  svdd       20% score=0.000 gen=0.10s '8747270'
+  svdd_prerope 50% score=1.000 gen=0.28s '8747270\n8747280\n8747290'
+  keydiff    20% score=1.000 gen=0.10s '8747290'
+  svdd       10% score=0.000 gen=0.09s '8747270'
+  svdd_prerope 10% score=0.000 gen=0.10s '87472000'
+  streaming  50% score=1.000 gen=0.12s '8747290'
+  leverage   50% score=1.000 gen=0.12s '8747290'
+  random     10% score=0.000 gen=0.08s '42069'
+  leverage   10% score=1.000 gen=0.10s '8747290'
+  streaming  10% score=0.000 gen=0.05s '42'
+  random     20% score=0.000 gen=0.10s '4201987'
+  knorm      10% score=0.000 gen=0.19s '876543210987654321'
+  knorm      20% score=0.000 gen=0.09s '873291'
+  keydiff    50% score=1.000 gen=0.12s '8747290'
+  snapkv     20% score=0.000 gen=0.33s '85 101 97 116 101 114 111 114 32'
+  snapkv     10% score=0.000 gen=0.05s '42'
+  leverage   20% score=1.000 gen=0.10s '8747290'
+  svdd_prerope 20% score=0.000 gen=0.08s '87472'
+  knorm      50% score=0.000 gen=0.37s '87452917458274958724958724958724'
+  case_total=15.3s
+CASE 6/54 niah_single_8192_s29_d0.9 prefix=7936
+  prefill=5.25s KV=434.0MiB
+  score svdd=2.34s
+  score svdd_prerope=2.40s
+  score snapkv=0.05s
+  score streaming=0.00s
+  score keydiff=0.23s
+  score knorm=0.06s
+  score leverage=0.35s
+  score random=0.01s
+  svdd       50% score=0.000 gen=0.12s '160563'
+  keydiff    50% score=1.000 gen=0.12s '1600563'
+  svdd_prerope 50% score=0.000 gen=0.11s '160563'
+  streaming  10% score=0.000 gen=0.08s '42069'
+  leverage   10% score=1.000 gen=0.10s '1600563'
+  leverage   20% score=1.000 gen=0.10s '1600563'
+  knorm      20% score=0.000 gen=0.33s '16258374716547894756894756894756'
+  keydiff    20% score=1.000 gen=0.10s '1600563'
+  random     10% score=0.000 gen=0.06s '129'
+  random     50% score=0.000 gen=0.12s '1635789'
+  snapkv     20% score=0.000 gen=0.10s '1600633'
+  snapkv     50% score=1.000 gen=0.12s '1600563'
+  svdd       10% score=0.000 gen=0.09s '160563'
+  svdd_prerope 20% score=0.000 gen=0.09s '160563'
+  svdd_prerope 10% score=0.000 gen=0.09s '160563'
+  keydiff    10% score=1.000 gen=0.10s '1600563'
+  svdd       20% score=0.000 gen=0.09s '160563'
+  random     20% score=0.000 gen=0.08s '42069'
+  streaming  50% score=1.000 gen=0.12s '1600563'
+  leverage   50% score=1.000 gen=0.12s '1600563'
+  snapkv     10% score=0.000 gen=0.10s '4273912'
+  full       100% score=1.000 gen=0.15s '1600563'
+  knorm      50% score=0.000 gen=0.12s '1605601'
+  streaming  20% score=1.000 gen=0.10s '1600563'
+  knorm      10% score=0.000 gen=0.06s '168'
+  case_total=14.6s
+CASE 7/54 niah_multi_8192_s17_d0.1 prefix=7936
+  prefill=5.22s KV=434.0MiB
+  score svdd=2.34s
+  score svdd_prerope=2.43s
+  score snapkv=0.05s
+  score streaming=0.00s
+  score keydiff=0.23s
+  score knorm=0.06s
+  score leverage=0.34s
+  score random=0.01s
+  keydiff    20% score=1.000 gen=0.18s '6517512\n3307403'
+  leverage   20% score=1.000 gen=0.17s '6517512\n3307403'
+  svdd       10% score=0.500 gen=0.17s '6517512\n7007501'
+  snapkv     20% score=0.000 gen=0.14s '65342\n32178'
+  svdd_prerope 20% score=0.500 gen=0.18s '6517512\n3307434'
+  svdd_prerope 50% score=0.500 gen=0.20s '6517512\n3307434'
+  leverage   10% score=1.000 gen=0.17s '6517512\n3307403'
+  streaming  10% score=0.000 gen=0.13s '42069 78543'
+  knorm      20% score=0.000 gen=0.16s '654321\n321654'
+  leverage   50% score=1.000 gen=0.20s '6517512\n3307403'
+  snapkv     10% score=0.000 gen=0.11s '4273\n8192'
+  svdd_prerope 10% score=0.500 gen=0.17s '6517512\n3007512'
+  svdd       50% score=0.500 gen=0.20s '6517512\n3307434'
+  keydiff    50% score=1.000 gen=0.20s '6517512\n3307403'
+  random     10% score=0.000 gen=0.11s '4273\n8192'
+  streaming  20% score=0.500 gen=0.18s '3307403\n3307403'
+  knorm      10% score=0.000 gen=0.13s '61234\n75321'
+  streaming  50% score=0.500 gen=0.20s '3307403\n3307403'
+  keydiff    10% score=1.000 gen=0.17s '6517512\n3307403'
+  random     20% score=0.000 gen=0.14s '65168\n34279'
+  knorm      50% score=0.000 gen=0.18s '651234\n345678'
+  full       100% score=1.000 gen=0.25s '6517512\n3307403'
+  svdd       20% score=1.000 gen=0.18s '6517512\n3307403'
+  snapkv     50% score=0.000 gen=0.20s '6512012\n3037037'
+  random     50% score=0.000 gen=0.21s '6517521\n3377543'
+  case_total=16.2s
+CASE 8/54 niah_multi_8192_s17_d0.5 prefix=7936
+  prefill=5.24s KV=434.0MiB
+  score svdd=2.31s
+  score svdd_prerope=2.39s
+  score snapkv=0.04s
+  score streaming=0.00s
+  score keydiff=0.23s
+  score knorm=0.06s
+  score leverage=0.35s
+  score random=0.01s
+  random     50% score=0.500 gen=0.22s '2143361\n2141499'
+  knorm      20% score=0.000 gen=0.24s '2147483647\n2147483648'
+  knorm      10% score=0.000 gen=0.31s '23456789012345678901234567890123'
+  svdd       50% score=0.500 gen=0.20s '2143310\n2141491'
+  snapkv     20% score=0.000 gen=0.12s '4273\n8241'
+  keydiff    20% score=1.000 gen=0.18s '2143361\n2141491'
+  streaming  10% score=0.000 gen=0.10s '427, 685'
+  svdd       10% score=0.000 gen=0.19s '21432109\n21414147'
+  snapkv     50% score=0.000 gen=0.20s '2281479\n1847265'
+  snapkv     10% score=0.000 gen=0.10s '427, 815'
+  full       100% score=1.000 gen=0.24s '2143361\n2141491'
+  keydiff    10% score=1.000 gen=0.17s '2143361\n2141491'
+  keydiff    50% score=1.000 gen=0.20s '2143361\n2141491'
+  streaming  20% score=0.000 gen=0.11s '42, 1337'
+  random     20% score=0.000 gen=0.23s '2147483647\n1234567890'
+  svdd_prerope 10% score=0.000 gen=0.17s '2143315\n2149147'
+  svdd       20% score=0.500 gen=0.18s '2143315\n2141491'
+  leverage   10% score=1.000 gen=0.17s '2143361\n2141491'
+  leverage   20% score=1.000 gen=0.18s '2143361\n2141491'
+  leverage   50% score=1.000 gen=0.20s '2143361\n2141491'
+  svdd_prerope 50% score=0.500 gen=0.20s '2143311\n2141491'
+  svdd_prerope 20% score=0.500 gen=0.18s '2143311\n2141491'
+  knorm      50% score=0.000 gen=0.20s '2143257\n2143258'
+  streaming  50% score=0.500 gen=0.20s '2143361\n2145465'
+  random     10% score=0.000 gen=0.22s '2147483647\n2147483647'
+  case_total=16.6s
+CASE 9/54 niah_multi_8192_s17_d0.9 prefix=7936
+  prefill=5.23s KV=434.0MiB
+  score svdd=2.31s
+  score svdd_prerope=2.40s
+  score snapkv=0.04s
+  score streaming=0.00s
+  score keydiff=0.23s
+  score knorm=0.06s
+  score leverage=0.35s
+  score random=0.01s
+  random     20% score=0.000 gen=0.13s '3452\n7891'
+  snapkv     10% score=0.000 gen=0.14s '60469\n456789'
+  knorm      20% score=0.000 gen=0.16s '654321\n876543'
+  svdd       20% score=0.500 gen=0.18s '6044299\n3892613'
+  svdd_prerope 10% score=0.500 gen=0.17s '6044269\n3893613'
+  streaming  10% score=0.000 gen=0.13s '42069\n73561'
+  keydiff    10% score=1.000 gen=0.17s '6044269\n3892613'
+  svdd_prerope 20% score=0.000 gen=0.18s '6044299\n3893613'
+  svdd       50% score=0.500 gen=0.20s '6044291\n3892613'
+  streaming  20% score=0.500 gen=0.18s '6044269\n7895432'
+  random     50% score=0.500 gen=0.19s '604264\n3892613'
+  keydiff    20% score=1.000 gen=0.18s '6044269\n3892613'
+  knorm      10% score=0.000 gen=0.15s '654321\n987654'
+  random     10% score=0.000 gen=0.11s '42\n73\n82'
+  leverage   10% score=1.000 gen=0.17s '6044269\n3892613'
+  leverage   50% score=1.000 gen=0.20s '6044269\n3892613'
+  knorm      50% score=0.000 gen=0.18s '604239\n389745'
+  snapkv     20% score=0.500 gen=0.19s '6044269\n23456789'
+  svdd       10% score=0.000 gen=0.17s '6044299\n3893713'
+  keydiff    50% score=1.000 gen=0.20s '6044269\n3892613'
+  leverage   20% score=1.000 gen=0.18s '6044269\n3892613'
+  snapkv     50% score=0.500 gen=0.20s '6044269\n3893371'
+  svdd_prerope 50% score=0.500 gen=0.20s '6044291\n3892613'
+  full       100% score=1.000 gen=0.25s '6044269\n3892613'
+  streaming  50% score=0.500 gen=0.20s '6044269\n7895432'
+  case_total=16.2s
+CASE 10/54 niah_multi_8192_s29_d0.1 prefix=7936
+  prefill=5.23s KV=434.0MiB
+  score svdd=2.31s
+  score svdd_prerope=2.40s
+  score snapkv=0.05s
+  score streaming=0.00s
+  score keydiff=0.23s
+  score knorm=0.06s
+  score leverage=0.35s
+  score random=0.01s
+  streaming  10% score=0.000 gen=0.10s '42 and 24'
+  full       100% score=1.000 gen=0.25s '1433722\n8168467'
+  random     50% score=0.000 gen=0.20s '1437722\n8168477'
+  knorm      10% score=0.000 gen=0.13s '14723\n82654'
+  leverage   50% score=1.000 gen=0.20s '1433722\n8168467'
+  snapkv     20% score=0.000 gen=0.10s '42\n1337'
+  svdd_prerope 50% score=0.500 gen=0.20s '1433722\n8148645'
+  snapkv     10% score=0.000 gen=0.08s '42\n73'
+  knorm      20% score=0.000 gen=0.15s '147239\n86452'
+  knorm      50% score=0.000 gen=0.14s '1437\n8165'
+  streaming  50% score=0.500 gen=0.20s '8168467\n8168467'
+  svdd_prerope 10% score=0.000 gen=0.17s '1437722\n8177223'
+  random     10% score=0.000 gen=0.11s '3456\n8765'
+  keydiff    50% score=1.000 gen=0.20s '1433722\n8168467'
+  snapkv     50% score=0.000 gen=0.25s '1. 816722\n2. 8167227'
+  svdd_prerope 20% score=0.000 gen=0.18s '1437722\n8148477'
+  svdd       10% score=0.000 gen=0.17s '1437722 8176533'
+  leverage   10% score=0.500 gen=0.16s '433722\n8168467'
+  keydiff    20% score=1.000 gen=0.18s '1433722\n8168467'
+  streaming  20% score=0.500 gen=0.18s '8168467\n8168467'
+  svdd       20% score=0.000 gen=0.18s '1437722\n8148147'
+  svdd       50% score=0.500 gen=0.20s '1433722\n8148567'
+  random     20% score=0.000 gen=0.16s '142857\n867530'
+  keydiff    10% score=1.000 gen=0.17s '1433722\n8168467'
+  leverage   20% score=1.000 gen=0.18s '1433722\n8168467'
+  case_total=16.1s
+CASE 11/54 niah_multi_8192_s29_d0.5 prefix=7936
+  prefill=5.23s KV=434.0MiB
+  score svdd=2.32s
+  score svdd_prerope=2.40s
+  score snapkv=0.04s
+  score streaming=0.00s
+  score keydiff=0.23s
+  score knorm=0.06s
+  score leverage=0.35s
+  score random=0.01s
+  keydiff    20% score=1.000 gen=0.19s '4360765\n8884000'
+  snapkv     50% score=0.000 gen=0.14s '8472\n8473'
+  leverage   20% score=1.000 gen=0.18s '4360765\n8884000'
+  knorm      10% score=0.000 gen=0.09s '82\n125'
+  keydiff    10% score=1.000 gen=0.17s '4360765\n8884000'
+  svdd       50% score=1.000 gen=0.20s '4360765\n8884000'
+  leverage   10% score=0.500 gen=0.16s '4360765\n884000'
+  knorm      50% score=0.000 gen=0.14s '4321\n8888'
+  svdd_prerope 20% score=1.000 gen=0.18s '4360765\n8884000'
+  svdd       10% score=0.000 gen=0.17s '4360579\n8800666'
+  streaming  10% score=0.000 gen=0.10s '420\n735'
+  svdd_prerope 10% score=0.000 gen=0.17s '4360759\n8840667'
+  knorm      20% score=0.000 gen=0.09s '42\n876'
+  svdd       20% score=0.500 gen=0.18s '4360756\n8884000'
+  keydiff    50% score=1.000 gen=0.20s '4360765\n8884000'
+  streaming  20% score=0.000 gen=0.10s '420\n735'
+  random     20% score=0.000 gen=0.12s '4321\n8765'
+  leverage   50% score=1.000 gen=0.20s '4360765\n8884000'
+  random     10% score=0.000 gen=0.08s '42\n84'
+  snapkv     10% score=0.000 gen=0.08s '42 73'
+  random     50% score=0.500 gen=0.20s '4360765\n8877991'
+  full       100% score=1.000 gen=0.24s '4360765\n8884000'
+  streaming  50% score=0.500 gen=0.20s '4360765\n2839472'
+  snapkv     20% score=0.000 gen=0.08s '42 73'
+  svdd_prerope 50% score=1.000 gen=0.20s '4360765\n8884000'
+  case_total=15.7s
+CASE 12/54 niah_multi_8192_s29_d0.9 prefix=7936
+  prefill=5.23s KV=434.0MiB
+  score svdd=2.31s
+  score svdd_prerope=2.39s
+  score snapkv=0.05s
+  score streaming=0.00s
+  score keydiff=0.23s
+  score knorm=0.06s
+  score leverage=0.35s
+  score random=0.01s
+  leverage   10% score=1.000 gen=0.18s '6007669\n2794734'
+  leverage   50% score=1.000 gen=0.20s '6007669\n2794734'
+  random     20% score=0.000 gen=0.14s '23456\n78901'
+  streaming  10% score=0.000 gen=0.10s '456\n789'
+  streaming  50% score=0.500 gen=0.20s '6007669\n8792456'
+  svdd_prerope 20% score=0.000 gen=0.18s '6076967\n2737456'
+  knorm      20% score=0.000 gen=0.08s '60\n27'
+  svdd       50% score=0.500 gen=0.20s '6007676\n2794734'
+  keydiff    10% score=1.000 gen=0.17s '6007669\n2794734'
+  svdd       20% score=0.000 gen=0.18s '6007676\n2734567'
+  keydiff    50% score=1.000 gen=0.20s '6007669\n2794734'
+  full       100% score=1.000 gen=0.25s '6007669\n2794734'
+  leverage   20% score=1.000 gen=0.18s '6007669\n2794734'
+  random     10% score=0.000 gen=0.08s '42\n73'
+  random     50% score=0.000 gen=0.19s '600600\n2798754'
+  snapkv     20% score=0.000 gen=0.18s '6699999\n4444444'
+  streaming  20% score=0.500 gen=0.18s '6007669\n8794521'
+  svdd_prerope 10% score=0.000 gen=0.17s '6007607\n2747603'
+  svdd_prerope 50% score=0.500 gen=0.20s '6076697\n2794734'
+  snapkv     50% score=0.000 gen=0.20s '6000769\n2345678'
+  snapkv     10% score=0.000 gen=0.08s '42\n73'
+  svdd       10% score=0.000 gen=0.07s '6007'
+  knorm      10% score=0.000 gen=0.15s '654321\n987654'
+  knorm      50% score=0.000 gen=0.13s '607\n2735'
+  keydiff    20% score=1.000 gen=0.18s '6007669\n2794734'
+  case_total=15.9s
+CASE 13/54 niah_single_16384_s17_d0.1 prefix=16128
+  prefill=11.99s KV=882.0MiB
+  score svdd=4.52s
+  score svdd_prerope=4.72s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.48s
+  score knorm=0.12s
+  score leverage=0.70s
+  score random=0.02s
+  streaming  10% score=0.000 gen=0.08s '420'
+  keydiff    50% score=1.000 gen=0.15s '6220744'
+  snapkv     20% score=0.000 gen=0.06s '62'
+  keydiff    20% score=1.000 gen=0.11s '6220744'
+  svdd_prerope 10% score=0.000 gen=0.08s '62207'
+  knorm      50% score=0.000 gen=0.24s '6220222\n6220223'
+  leverage   20% score=1.000 gen=0.11s '6220744'
+  random     50% score=1.000 gen=0.15s '6220744'
+  svdd_prerope 20% score=0.000 gen=0.11s '6220774'
+  svdd       50% score=1.000 gen=0.14s '6220744'
+  snapkv     10% score=0.000 gen=0.12s '420170913'
+  svdd       10% score=0.000 gen=0.10s '6220726'
+  keydiff    10% score=1.000 gen=0.10s '6220744'
+  full       100% score=1.000 gen=0.21s '6220744'
+  svdd_prerope 50% score=1.000 gen=0.15s '6220744'
+  streaming  50% score=0.000 gen=0.43s '42759999999999999999999999999999'
+  random     10% score=0.000 gen=0.07s '2023'
+  knorm      10% score=0.000 gen=0.33s '69872345789023457890234578902345'
+  random     20% score=0.000 gen=0.09s '62207'
+  snapkv     50% score=1.000 gen=0.15s '6220744'
+  leverage   50% score=1.000 gen=0.14s '6220744'
+  leverage   10% score=1.000 gen=0.10s '6220744'
+  streaming  20% score=0.000 gen=0.07s '427'
+  svdd       20% score=0.000 gen=0.11s '6220774'
+  knorm      20% score=0.000 gen=0.23s '6234578901234567890'
+  case_total=28.8s
+CASE 14/54 niah_single_16384_s17_d0.5 prefix=16128
+  prefill=11.98s KV=882.0MiB
+  score svdd=4.53s
+  score svdd_prerope=4.73s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.47s
+  score knorm=0.12s
+  score leverage=0.70s
+  score random=0.02s
+  leverage   20% score=1.000 gen=0.12s '7017506'
+  svdd_prerope 20% score=1.000 gen=0.11s '7017506'
+  keydiff    10% score=1.000 gen=0.10s '7017506'
+  random     20% score=0.000 gen=0.06s '71'
+  svdd_prerope 10% score=0.000 gen=0.10s '7571757'
+  keydiff    50% score=1.000 gen=0.15s '7017506'
+  streaming  20% score=0.000 gen=0.35s '42789321654872165487216548721654'
+  keydiff    20% score=1.000 gen=0.11s '7017506'
+  svdd       50% score=0.000 gen=0.27s '7\n5\n175\n675\n75675'
+  knorm      50% score=0.000 gen=0.15s '7017501'
+  leverage   50% score=1.000 gen=0.15s '7017506'
+  snapkv     10% score=0.000 gen=0.05s '42'
+  random     50% score=1.000 gen=0.15s '7017506'
+  svdd       20% score=0.000 gen=0.35s '75067507506750750675075067507506'
+  streaming  10% score=0.000 gen=0.14s '42775551234'
+  knorm      10% score=0.000 gen=0.33s '7\n14\n21\n28\n35\n42\n49\n56\n63\n70\n77\n'
+  streaming  50% score=1.000 gen=0.14s '7017506'
+  svdd       10% score=0.000 gen=0.10s '7175071'
+  snapkv     20% score=0.000 gen=0.06s '42'
+  svdd_prerope 50% score=0.000 gen=0.14s '7017565'
+  random     10% score=0.000 gen=0.05s '42'
+  full       100% score=1.000 gen=0.21s '7017506'
+  leverage   10% score=1.000 gen=0.10s '7017506'
+  snapkv     50% score=0.000 gen=0.43s '701\n702\n703\n704\n705\n706\n707\n708\n'
+  knorm      20% score=0.000 gen=0.36s '70219\n70219\n70219\n70219\n70219\n70'
+  case_total=29.4s
+CASE 15/54 niah_single_16384_s17_d0.9 prefix=16128
+  prefill=11.97s KV=882.0MiB
+  score svdd=4.52s
+  score svdd_prerope=4.74s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.47s
+  score knorm=0.12s
+  score leverage=0.71s
+  score random=0.02s
+  svdd_prerope 50% score=0.000 gen=0.16s '6024166'
+  snapkv     50% score=1.000 gen=0.14s '6024168'
+  svdd_prerope 20% score=0.000 gen=0.11s '6024166'
+  keydiff    10% score=1.000 gen=0.18s '6024168\n6024169'
+  leverage   10% score=1.000 gen=0.10s '6024168'
+  snapkv     20% score=0.000 gen=0.09s '60207'
+  random     20% score=0.000 gen=0.09s '42069'
+  knorm      10% score=0.000 gen=0.13s '60\n6\n60\n60'
+  knorm      20% score=0.000 gen=0.35s '602\n6022\n60222\n602222\n6022222\n60'
+  keydiff    20% score=1.000 gen=0.11s '6024168'
+  leverage   50% score=1.000 gen=0.15s '6024168'
+  streaming  10% score=0.000 gen=0.12s '427.12358'
+  random     50% score=0.000 gen=0.16s '60241378'
+  streaming  20% score=1.000 gen=0.11s '6024168'
+  svdd       20% score=1.000 gen=0.11s '6024168'
+  knorm      50% score=1.000 gen=0.15s '6024168'
+  snapkv     10% score=0.000 gen=0.10s '6062584'
+  random     10% score=0.000 gen=0.08s '42069'
+  leverage   20% score=1.000 gen=0.11s '6024168'
+  svdd       10% score=0.000 gen=0.25s '6\n1\n6\n4\n1\n6\n6\n2\n4\n1\n6\n8'
+  svdd_prerope 10% score=0.000 gen=0.16s '6\n1\n6\n2\n4\n1\n6'
+  streaming  50% score=1.000 gen=0.14s '6024168'
+  svdd       50% score=1.000 gen=0.24s '6024168\n6024169'
+  keydiff    50% score=1.000 gen=0.15s '6024168'
+  full       100% score=1.000 gen=0.21s '6024168'
+  case_total=28.8s
+CASE 16/54 niah_single_16384_s29_d0.1 prefix=16128
+  prefill=11.96s KV=882.0MiB
+  score svdd=4.53s
+  score svdd_prerope=4.75s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.47s
+  score knorm=0.12s
+  score leverage=0.70s
+  score random=0.02s
+  leverage   20% score=1.000 gen=0.12s '9396933'
+  streaming  20% score=0.000 gen=0.35s '42789321654789216547892165478921'
+  leverage   10% score=1.000 gen=0.10s '9396933'
+  keydiff    50% score=1.000 gen=0.15s '9396933'
+  streaming  10% score=0.000 gen=0.33s '42789321654789216547892165478921'
+  leverage   50% score=1.000 gen=0.15s '9396933'
+  random     50% score=0.000 gen=0.25s '9333933393339333'
+  svdd_prerope 50% score=1.000 gen=0.15s '9396933'
+  svdd_prerope 10% score=0.000 gen=0.10s '9393993'
+  snapkv     20% score=0.000 gen=0.36s '42735921047523912759374125974125'
+  svdd       20% score=0.000 gen=0.36s '93399999999999999999999999999999'
+  keydiff    20% score=1.000 gen=0.11s '9396933'
+  random     20% score=0.000 gen=0.09s '12345'
+  random     10% score=0.000 gen=0.07s '9372'
+  svdd       10% score=0.000 gen=0.13s '9399399399'
+  knorm      50% score=0.000 gen=0.44s '93728456127894561278945612789456'
+  full       100% score=1.000 gen=0.21s '9396933'
+  snapkv     50% score=0.000 gen=0.18s '1000\n98.24'
+  snapkv     10% score=0.000 gen=0.33s '42735698246578246578246578246578'
+  streaming  50% score=0.000 gen=0.44s '42759399842759408275939984275940'
+  svdd_prerope 20% score=0.000 gen=0.11s '9339939'
+  svdd       50% score=1.000 gen=0.14s '9396933'
+  knorm      20% score=0.000 gen=0.36s '937284561\n123456789\n987654321\n11'
+  knorm      10% score=0.000 gen=0.33s '93271564827395872349875239875239'
+  keydiff    10% score=1.000 gen=0.10s '9396933'
+  case_total=30.6s
+CASE 17/54 niah_single_16384_s29_d0.5 prefix=16128
+  prefill=11.97s KV=882.0MiB
+  score svdd=4.55s
+  score svdd_prerope=4.77s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.47s
+  score knorm=0.12s
+  score leverage=0.71s
+  score random=0.02s
+  leverage   10% score=1.000 gen=0.12s '3140977'
+  svdd       50% score=0.000 gen=0.15s '3140997'
+  svdd_prerope 50% score=0.000 gen=0.44s '31409777\n31409778\n31409779\n31409'
+  knorm      50% score=0.000 gen=0.43s '3140\n3141\n3142\n3143\n3144\n3145\n31'
+  leverage   50% score=1.000 gen=0.15s '3140977'
+  svdd_prerope 20% score=1.000 gen=0.11s '3140977'
+  snapkv     10% score=0.000 gen=0.08s '42069'
+  knorm      10% score=0.000 gen=0.33s '31415926535897932384626433832795'
+  streaming  20% score=0.000 gen=0.06s '42'
+  keydiff    20% score=1.000 gen=0.11s '3140977'
+  streaming  50% score=1.000 gen=0.15s '3140977'
+  random     20% score=0.000 gen=0.09s '42069'
+  svdd_prerope 10% score=0.000 gen=0.08s '31409'
+  svdd       10% score=0.000 gen=0.33s '31415926535897932384626433832795'
+  knorm      20% score=0.000 gen=0.36s '31415926535897932384626433832795'
+  random     10% score=0.000 gen=0.23s '420\n69\n1337\n7331\n9001'
+  leverage   20% score=1.000 gen=0.11s '3140977'
+  full       100% score=1.000 gen=0.21s '3140977'
+  streaming  10% score=0.000 gen=0.06s '420'
+  snapkv     50% score=0.000 gen=0.12s '31\n32'
+  svdd       20% score=0.000 gen=0.12s '31409977'
+  random     50% score=0.000 gen=0.43s '10010010010010010010010010010010'
+  keydiff    50% score=1.000 gen=0.15s '3140977'
+  keydiff    10% score=1.000 gen=0.10s '3140977'
+  snapkv     20% score=0.000 gen=0.17s '1029873456789'
+  case_total=29.9s
+CASE 18/54 niah_single_16384_s29_d0.9 prefix=16128
+  prefill=11.98s KV=882.0MiB
+  score svdd=4.53s
+  score svdd_prerope=4.77s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.47s
+  score knorm=0.12s
+  score leverage=0.71s
+  score random=0.03s
+  svdd_prerope 50% score=0.000 gen=0.15s '104273'
+  keydiff    20% score=1.000 gen=0.11s '1004273'
+  keydiff    10% score=1.000 gen=0.10s '1004273'
+  svdd       50% score=0.000 gen=0.15s '1042737'
+  snapkv     50% score=1.000 gen=0.15s '1004273'
+  snapkv     20% score=0.000 gen=0.36s '1034\n827\n1092\n753\n1012\n1089\n1034'
+  leverage   10% score=1.000 gen=0.10s '1004273'
+  knorm      20% score=0.000 gen=0.08s '1005'
+  random     50% score=0.000 gen=0.16s '10042795'
+  streaming  20% score=1.000 gen=0.11s '1004273'
+  keydiff    50% score=1.000 gen=0.15s '1004273'
+  streaming  10% score=0.000 gen=0.06s '427'
+  svdd_prerope 20% score=0.000 gen=0.10s '104273'
+  random     20% score=0.000 gen=0.09s '12345'
+  leverage   20% score=1.000 gen=0.11s '1004273'
+  full       100% score=1.000 gen=0.21s '1004273'
+  random     10% score=0.000 gen=0.33s '34567890123456789012345678901234'
+  svdd_prerope 10% score=0.000 gen=0.33s '1042759\n1042760\n1042761\n1042762\n'
+  knorm      10% score=0.000 gen=0.12s '104123579'
+  snapkv     10% score=0.000 gen=0.07s '1024'
+  leverage   50% score=1.000 gen=0.15s '1004273'
+  knorm      50% score=0.000 gen=0.44s '100427\n100428\n100429\n100430\n1004'
+  svdd       10% score=0.000 gen=0.22s '1234567890123456789'
+  streaming  50% score=1.000 gen=0.15s '1004273'
+  svdd       20% score=0.000 gen=0.10s '104273'
+  case_total=29.3s
+CASE 19/54 niah_multi_16384_s17_d0.1 prefix=16128
+  prefill=11.99s KV=882.0MiB
+  score svdd=4.50s
+  score svdd_prerope=4.75s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.47s
+  score knorm=0.12s
+  score leverage=0.71s
+  score random=0.02s
+  svdd       20% score=0.500 gen=0.21s '8049566\n4566789'
+  svdd_prerope 50% score=0.500 gen=0.25s '8049566\n4566789'
+  keydiff    20% score=1.000 gen=0.19s '8049566\n4560766'
+  svdd       50% score=0.500 gen=0.24s '8049566\n4566789'
+  keydiff    50% score=1.000 gen=0.24s '8049566\n4560766'
+  snapkv     10% score=0.000 gen=0.18s '4567890\n4567891'
+  leverage   20% score=1.000 gen=0.20s '8049566\n4560766'
+  full       100% score=1.000 gen=0.34s '8049566\n4560766'
+  knorm      50% score=0.000 gen=0.15s '804\n456'
+  knorm      10% score=0.000 gen=0.08s '80\n42'
+  leverage   10% score=1.000 gen=0.18s '8049566\n4560766'
+  streaming  20% score=0.500 gen=0.19s '4560766\n4560766'
+  streaming  50% score=0.500 gen=0.24s '4560766\n4560766'
+  svdd_prerope 20% score=0.500 gen=0.19s '8049566\n4566789'
+  leverage   50% score=1.000 gen=0.24s '8049566\n4560766'
+  random     50% score=0.500 gen=0.24s '8049566\n4570676'
+  svdd       10% score=0.500 gen=0.18s '8049566\n4569766'
+  snapkv     20% score=0.000 gen=0.19s '8046566\n4567666'
+  keydiff    10% score=1.000 gen=0.18s '8049566\n4560766'
+  snapkv     50% score=0.500 gen=0.24s '8049666\n4560766'
+  random     10% score=0.000 gen=0.14s '85210\n94327'
+  random     20% score=0.000 gen=0.20s '8045679\n4567890'
+  svdd_prerope 10% score=0.500 gen=0.18s '8049566\n4569766'
+  streaming  10% score=0.000 gen=0.10s '420 735'
+  knorm      20% score=0.000 gen=0.13s '8021\n4567'
+  case_total=30.1s
+CASE 20/54 niah_multi_16384_s17_d0.5 prefix=16128
+  prefill=11.97s KV=882.0MiB
+  score svdd=4.55s
+  score svdd_prerope=4.77s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.47s
+  score knorm=0.12s
+  score leverage=0.71s
+  score random=0.02s
+  leverage   10% score=1.000 gen=0.19s '2123474\n7964880'
+  leverage   20% score=1.000 gen=0.19s '2123474\n7964880'
+  knorm      50% score=0.000 gen=0.24s '2123457\n7964582'
+  streaming  50% score=0.500 gen=0.24s '2123474\n9876532'
+  keydiff    20% score=1.000 gen=0.20s '2123474\n7964880'
+  svdd       50% score=0.500 gen=0.22s '21234\n7964880'
+  leverage   50% score=1.000 gen=0.24s '2123474\n7964880'
+  random     20% score=0.000 gen=0.15s '44782\n76543'
+  keydiff    10% score=1.000 gen=0.18s '7964880\n2123474'
+  svdd_prerope 10% score=0.000 gen=0.18s '2134567\n7964890'
+  keydiff    50% score=1.000 gen=0.24s '2123474\n7964880'
+  knorm      20% score=0.000 gen=0.23s '213456789\n798456321'
+  svdd_prerope 50% score=0.500 gen=0.22s '21234\n7964880'
+  random     50% score=0.000 gen=0.24s '2123477 \n7968844'
+  streaming  20% score=0.000 gen=0.09s '42\n84'
+  snapkv     20% score=0.000 gen=0.17s '472389\n123456'
+  snapkv     10% score=0.000 gen=0.08s '42\n84'
+  svdd_prerope 20% score=0.500 gen=0.17s '21234\n7964880'
+  knorm      10% score=0.000 gen=0.12s '2345\n7890'
+  random     10% score=0.000 gen=0.10s '42\n1337'
+  svdd       20% score=0.500 gen=0.19s '2143457\n7964880'
+  snapkv     50% score=0.000 gen=0.22s '2127474\n79680'
+  full       100% score=1.000 gen=0.34s '2123474\n7964880'
+  svdd       10% score=0.000 gen=0.18s '7964342\n2134567'
+  streaming  10% score=0.000 gen=0.08s '42 73'
+  case_total=30.0s
+CASE 21/54 niah_multi_16384_s17_d0.9 prefix=16128
+  prefill=11.97s KV=882.0MiB
+  score svdd=4.59s
+  score svdd_prerope=4.79s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.47s
+  score knorm=0.12s
+  score leverage=0.71s
+  score random=0.02s
+  snapkv     20% score=0.000 gen=0.21s '6042897\n4589210'
+  knorm      50% score=0.000 gen=0.22s '698254\n824967'
+  knorm      20% score=0.000 gen=0.17s '623457\n823456'
+  keydiff    50% score=1.000 gen=0.24s '6982604\n8249966'
+  svdd_prerope 20% score=0.000 gen=0.19s '6982644\n8298647'
+  full       100% score=1.000 gen=0.34s '6982604\n8249966'
+  streaming  50% score=0.500 gen=0.24s '6982604\n8792501'
+  random     10% score=0.000 gen=0.10s '678\n945'
+  keydiff    10% score=1.000 gen=0.18s '6982604\n8249966'
+  random     50% score=0.000 gen=0.34s '692692692692\n8249982499'
+  svdd_prerope 50% score=0.500 gen=0.24s '6982644\n8249966'
+  svdd_prerope 10% score=0.000 gen=0.18s '6986984\n8299999'
+  snapkv     50% score=0.000 gen=0.19s '6980406\n824'
+  snapkv     10% score=0.000 gen=0.08s '47\n92'
+  streaming  10% score=0.000 gen=0.08s '42\n73'
+  svdd       50% score=1.000 gen=0.24s '6982604\n8249966'
+  keydiff    20% score=1.000 gen=0.19s '6982604\n8249966'
+  streaming  20% score=0.500 gen=0.19s '6982604\n8792501'
+  svdd       10% score=0.000 gen=0.18s '6982420\n8294753'
+  knorm      10% score=0.000 gen=0.14s '62345\n87654'
+  leverage   20% score=1.000 gen=0.19s '6982604\n8249966'
+  random     20% score=0.000 gen=0.12s '847\n1235'
+  svdd       20% score=0.000 gen=0.19s '6982640\n8294999'
+  leverage   10% score=1.000 gen=0.18s '6982604\n8249966'
+  leverage   50% score=1.000 gen=0.24s '6982604\n8249966'
+  case_total=30.2s
+CASE 22/54 niah_multi_16384_s29_d0.1 prefix=16128
+  prefill=11.97s KV=882.0MiB
+  score svdd=4.57s
+  score svdd_prerope=4.79s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.47s
+  score knorm=0.12s
+  score leverage=0.71s
+  score random=0.02s
+  svdd_prerope 10% score=0.500 gen=0.19s '7339512\n8507452'
+  leverage   10% score=1.000 gen=0.18s '7363293\n8507452'
+  svdd       50% score=1.000 gen=0.24s '7363293\n8507452'
+  random     10% score=0.000 gen=0.16s '735291\n876452'
+  full       100% score=1.000 gen=0.34s '7363293\n8507452'
+  svdd_prerope 50% score=1.000 gen=0.24s '7363293\n8507452'
+  snapkv     50% score=0.000 gen=0.13s '7\n8507'
+  keydiff    10% score=1.000 gen=0.18s '7363293\n8507452'
+  keydiff    20% score=1.000 gen=0.19s '7363293\n8507452'
+  streaming  50% score=0.500 gen=0.24s '8507452\n8507452'
+  svdd_prerope 20% score=0.500 gen=0.19s '7383932\n8507452'
+  knorm      20% score=0.000 gen=0.17s '735291\n864725'
+  svdd       10% score=0.500 gen=0.18s '7393723\n8507452'
+  random     20% score=0.000 gen=0.19s '7894562\n7894563'
+  knorm      10% score=0.000 gen=0.16s '789456\n876543'
+  leverage   50% score=1.000 gen=0.24s '7363293\n8507452'
+  knorm      50% score=0.500 gen=0.24s '7362859\n8507452'
+  svdd       20% score=0.500 gen=0.19s '7362937\n8507452'
+  streaming  10% score=0.000 gen=0.10s '420 735'
+  random     50% score=0.000 gen=0.24s '7365421\n8574210'
+  snapkv     10% score=0.000 gen=0.08s '42\n84'
+  leverage   20% score=1.000 gen=0.19s '7363293\n8507452'
+  streaming  20% score=0.500 gen=0.19s '8507452\n8507452'
+  snapkv     20% score=0.000 gen=0.11s '852\n947'
+  keydiff    50% score=1.000 gen=0.24s '7363293\n8507452'
+  case_total=30.1s
+CASE 23/54 niah_multi_16384_s29_d0.5 prefix=16128
+  prefill=11.97s KV=882.0MiB
+  score svdd=4.56s
+  score svdd_prerope=4.76s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.47s
+  score knorm=0.12s
+  score leverage=0.71s
+  score random=0.02s
+  leverage   10% score=1.000 gen=0.19s '3604181\n4622514'
+  svdd       10% score=0.000 gen=0.18s '3614257\n4625137'
+  keydiff    10% score=1.000 gen=0.18s '3604181\n4622514'
+  svdd_prerope 10% score=0.000 gen=0.18s '3614257\n4612354'
+  full       100% score=1.000 gen=0.34s '3604181\n4622514'
+  svdd       50% score=0.500 gen=0.24s '3604125\n4622514'
+  svdd       20% score=0.500 gen=0.20s '3604121\n4622514'
+  svdd_prerope 50% score=0.500 gen=0.24s '3604151\n4622514'
+  snapkv     50% score=0.500 gen=0.24s '3604181\n4625147'
+  leverage   50% score=1.000 gen=0.24s '3604181\n4622514'
+  streaming  10% score=0.000 gen=0.10s '420\n735'
+  random     20% score=0.000 gen=0.15s '34125\n98764'
+  knorm      50% score=0.000 gen=0.18s '3604\n46225'
+  keydiff    50% score=1.000 gen=0.24s '3604181\n4622514'
+  streaming  20% score=0.000 gen=0.11s '42\n1337'
+  keydiff    20% score=1.000 gen=0.20s '3604181\n4622514'
+  streaming  50% score=0.500 gen=0.24s '3604181\n4278953'
+  snapkv     20% score=0.000 gen=0.09s '23\n47'
+  random     10% score=0.000 gen=0.08s '42\n73'
+  leverage   20% score=1.000 gen=0.19s '3604181\n4622514'
+  random     50% score=0.000 gen=0.24s '3642789\n4251678'
+  svdd_prerope 20% score=0.000 gen=0.19s '3614251\n4652314'
+  knorm      20% score=0.000 gen=0.25s '3456789012\n1234567890'
+  knorm      10% score=0.000 gen=0.12s '3457\n4682'
+  snapkv     10% score=0.000 gen=0.14s '42019\n42023'
+  case_total=30.0s
+CASE 24/54 niah_multi_16384_s29_d0.9 prefix=16128
+  prefill=11.98s KV=882.0MiB
+  score svdd=4.53s
+  score svdd_prerope=4.75s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.47s
+  score knorm=0.12s
+  score leverage=0.71s
+  score random=0.02s
+  knorm      20% score=0.000 gen=0.20s '604829\n1062847'
+  keydiff    20% score=1.000 gen=0.19s '6049369\n1062159'
+  leverage   20% score=1.000 gen=0.19s '6049369\n1062159'
+  streaming  50% score=0.500 gen=0.26s '6049369\n10234578'
+  knorm      50% score=0.000 gen=0.23s '604532\n1062106'
+  random     50% score=0.500 gen=0.23s '604327\n1062159'
+  svdd       50% score=0.500 gen=0.24s '6049360\n1062159'
+  svdd_prerope 50% score=0.500 gen=0.24s '6049360\n1062159'
+  snapkv     50% score=0.500 gen=0.24s '6049369\n1062199'
+  full       100% score=1.000 gen=0.34s '6049369\n1062159'
+  streaming  10% score=0.000 gen=0.18s '4567890\n1234567'
+  snapkv     10% score=0.000 gen=0.13s '1024\n65536'
+  random     10% score=0.000 gen=0.11s '42\n73\n82'
+  svdd       20% score=0.000 gen=0.20s '6049360\n10615961'
+  leverage   50% score=1.000 gen=0.24s '6049369\n1062159'
+  leverage   10% score=1.000 gen=0.18s '6049369\n1062159'
+  svdd_prerope 20% score=0.000 gen=0.22s '6049360\n1061596159'
+  svdd_prerope 10% score=0.000 gen=0.18s '6049326\n1061596'
+  random     20% score=0.000 gen=0.20s '673829 \n123456789'
+  keydiff    10% score=1.000 gen=0.18s '6049369\n1062159'
+  streaming  20% score=0.500 gen=0.21s '6049369\n17234587'
+  keydiff    50% score=1.000 gen=0.24s '6049369\n1062159'
+  knorm      10% score=0.000 gen=0.10s '627\n106'
+  svdd       10% score=0.000 gen=0.17s '6049360\n106515'
+  snapkv     20% score=0.000 gen=0.20s '6049237\n8765412'
+  case_total=30.3s
+CASE 25/54 niah_single_32768_s17_d0.1 prefix=32512
+  prefill=29.70s KV=1778.0MiB
+  score svdd=8.90s
+  score svdd_prerope=9.54s
+  score snapkv=0.12s
+  score streaming=0.00s
+  score keydiff=0.96s
+  score knorm=0.24s
+  score leverage=1.44s
+  score random=0.05s
+  svdd_prerope 10% score=1.000 gen=0.12s '2859053'
+  knorm      10% score=0.000 gen=0.14s '2817394587'
+  keydiff    20% score=1.000 gen=0.14s '2859053'
+  leverage   50% score=1.000 gen=0.21s '2859053'
+  svdd       20% score=0.000 gen=0.16s '10pt\n1.10pt'
+  svdd_prerope 50% score=1.000 gen=0.21s '2859053'
+  svdd       10% score=0.000 gen=0.10s '285714'
+  random     10% score=0.000 gen=0.06s '29'
+  random     20% score=0.000 gen=0.11s '24571'
+  svdd       50% score=1.000 gen=0.20s '2859053'
+  full       100% score=1.000 gen=0.41s '2859053'
+  leverage   10% score=1.000 gen=0.12s '2859053'
+  keydiff    50% score=1.000 gen=0.21s '2859053'
+  streaming  20% score=0.000 gen=0.41s '42759382894759284759284759284759'
+  keydiff    10% score=1.000 gen=0.11s '2859053'
+  leverage   20% score=1.000 gen=0.14s '2859053'
+  snapkv     20% score=0.000 gen=0.09s '10pt'
+  knorm      20% score=0.000 gen=0.12s '285714'
+  snapkv     50% score=0.000 gen=0.14s '285'
+  knorm      50% score=0.000 gen=0.17s '28590'
+  random     50% score=0.000 gen=0.58s '24\n37\n28\n91\n25\n14\n32\n76\n45\n63\n29'
+  svdd_prerope 20% score=0.000 gen=0.14s '2850937'
+  snapkv     10% score=0.000 gen=0.09s '17\n31'
+  streaming  10% score=0.000 gen=0.36s '42735698246578924657892465789246'
+  streaming  50% score=0.000 gen=0.58s '42719958928222899999999999999999'
+  case_total=61.5s
+CASE 26/54 niah_single_32768_s17_d0.5 prefix=32512
+  prefill=29.70s KV=1778.0MiB
+  score svdd=8.91s
+  score svdd_prerope=9.49s
+  score snapkv=0.10s
+  score streaming=0.00s
+  score keydiff=0.96s
+  score knorm=0.24s
+  score leverage=1.43s
+  score random=0.05s
+  knorm      10% score=0.000 gen=0.11s '7\n8\n9'
+  streaming  50% score=1.000 gen=0.21s '7592280'
+  snapkv     50% score=1.000 gen=0.21s '7592280'
+  leverage   10% score=1.000 gen=0.11s '7592280'
+  knorm      50% score=0.000 gen=0.21s '7592289'
+  svdd_prerope 50% score=0.000 gen=0.21s '7592220'
+  svdd_prerope 20% score=0.000 gen=0.14s '7592220'
+  streaming  10% score=0.000 gen=0.09s '42069'
+  keydiff    50% score=1.000 gen=0.20s '7592280'
+  leverage   50% score=1.000 gen=0.20s '7592280'
+  streaming  20% score=0.000 gen=0.17s '4277599792'
+  knorm      20% score=0.000 gen=0.41s '7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18'
+  svdd       10% score=0.000 gen=0.13s '781245690'
+  keydiff    20% score=1.000 gen=0.14s '7592280'
+  random     10% score=0.000 gen=0.06s '42'
+  keydiff    10% score=1.000 gen=0.11s '7592280'
+  svdd       20% score=0.000 gen=0.14s '7592220'
+  random     20% score=0.000 gen=0.41s '75123456789012345678901234567890'
+  svdd_prerope 10% score=0.000 gen=0.05s '7'
+  random     50% score=0.000 gen=0.19s '456789'
+  snapkv     10% score=0.000 gen=0.21s '7523984567239857'
+  snapkv     20% score=0.000 gen=0.28s '75923456120987654321'
+  full       100% score=1.000 gen=0.35s '7592280'
+  svdd       50% score=0.000 gen=0.21s '7592220'
+  leverage   20% score=1.000 gen=0.14s '7592280'
+  case_total=60.9s
+CASE 27/54 niah_single_32768_s17_d0.9 prefix=32512
+  prefill=29.83s KV=1778.0MiB
+  score svdd=8.90s
+  score svdd_prerope=9.49s
+  score snapkv=0.10s
+  score streaming=0.00s
+  score keydiff=0.96s
+  score knorm=0.28s
+  score leverage=1.52s
+  score random=0.05s
+  svdd       20% score=0.000 gen=0.16s '41333959'
+  knorm      50% score=0.000 gen=0.21s '4173593'
+  snapkv     10% score=0.000 gen=0.36s '1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14'
+  leverage   50% score=1.000 gen=0.21s '4173359'
+  leverage   10% score=1.000 gen=0.11s '4173359'
+  knorm      10% score=0.000 gen=0.32s '42\n420\n1337\n42069\n6969\n1729'
+  random     50% score=1.000 gen=0.20s '4173359'
+  streaming  10% score=0.000 gen=0.09s '42069'
+  keydiff    10% score=1.000 gen=0.11s '4173359'
+  knorm      20% score=0.000 gen=0.39s '41\n42\n43\n44\n45\n46\n47\n48\n49\n50'
+  streaming  50% score=1.000 gen=0.21s '4173359'
+  svdd_prerope 20% score=0.000 gen=0.15s '41333959'
+  random     20% score=0.000 gen=0.33s '4123\n6547\n8912\n3456\n7890'
+  svdd_prerope 50% score=0.000 gen=0.21s '4133597'
+  snapkv     20% score=0.000 gen=0.07s '4'
+  full       100% score=1.000 gen=0.34s '4173359'
+  keydiff    50% score=1.000 gen=0.21s '4173359'
+  leverage   20% score=1.000 gen=0.14s '4173359'
+  svdd       50% score=0.000 gen=0.21s '4133597'
+  streaming  20% score=1.000 gen=0.14s '4173359'
+  keydiff    20% score=1.000 gen=0.14s '4173359'
+  svdd_prerope 10% score=0.000 gen=0.12s '41333959'
+  random     10% score=0.000 gen=0.07s '420'
+  snapkv     50% score=0.000 gen=0.21s '417\n359'
+  svdd       10% score=0.000 gen=0.36s '41357928347592375923759237592375'
+  case_total=61.6s
+CASE 28/54 niah_single_32768_s29_d0.1 prefix=32512
+  prefill=29.75s KV=1778.0MiB
+  score svdd=8.94s
+  score svdd_prerope=9.51s
+  score snapkv=0.11s
+  score streaming=0.00s
+  score keydiff=0.95s
+  score knorm=0.24s
+  score leverage=1.43s
+  score random=0.05s
+  streaming  20% score=0.000 gen=0.09s '42'
+  snapkv     20% score=0.000 gen=0.14s '5534927'
+  svdd       20% score=0.000 gen=0.14s '5538383'
+  leverage   50% score=1.000 gen=0.21s '5538348'
+  streaming  50% score=0.000 gen=0.58s '42759118979599748692784233899423'
+  knorm      50% score=0.000 gen=0.57s '55\n558\n5580\n55800\n558000\n5580000'
+  svdd_prerope 50% score=1.000 gen=0.20s '5538348'
+  random     20% score=0.000 gen=0.12s '456789'
+  random     10% score=0.000 gen=0.07s '55'
+  svdd_prerope 10% score=0.000 gen=0.09s '55383'
+  streaming  10% score=0.000 gen=0.06s '42'
+  keydiff    20% score=1.000 gen=0.14s '5538348'
+  svdd       10% score=0.000 gen=0.09s '55383'
+  leverage   10% score=1.000 gen=0.11s '5538348'
+  svdd_prerope 20% score=0.000 gen=0.14s '5538384'
+  svdd       50% score=1.000 gen=0.21s '5538348'
+  snapkv     10% score=0.000 gen=0.06s '55'
+  keydiff    10% score=1.000 gen=0.11s '5538348'
+  random     50% score=0.000 gen=0.58s '5534385\n5533285\n5534853\n5534854\n'
+  snapkv     50% score=0.000 gen=0.16s '5538'
+  knorm      10% score=0.000 gen=0.36s '55\n77\n99\n111\n222\n333\n444\n555\n666'
+  leverage   20% score=1.000 gen=0.14s '5538348'
+  keydiff    50% score=1.000 gen=0.20s '5538348'
+  full       100% score=1.000 gen=0.34s '5538348'
+  knorm      20% score=0.000 gen=0.08s '55'
+  case_total=61.3s
+CASE 29/54 niah_single_32768_s29_d0.5 prefix=32512
+  prefill=29.76s KV=1778.0MiB
+  score svdd=8.90s
+  score svdd_prerope=9.52s
+  score snapkv=0.12s
+  score streaming=0.00s
+  score keydiff=0.95s
+  score knorm=0.24s
+  score leverage=1.43s
+  score random=0.05s
+  random     10% score=0.000 gen=0.37s '42732919990999999999999999999999'
+  random     50% score=0.000 gen=0.24s '365789421'
+  keydiff    10% score=1.000 gen=0.11s '3369266'
+  leverage   50% score=1.000 gen=0.20s '3369266'
+  svdd_prerope 10% score=0.000 gen=0.09s '33333'
+  random     20% score=0.000 gen=0.16s '369754281'
+  svdd       50% score=1.000 gen=0.21s '3369266'
+  streaming  50% score=1.000 gen=0.20s '3369266'
+  svdd_prerope 20% score=0.000 gen=0.41s '335678924\n336926624\n336926625\n33'
+  snapkv     20% score=1.000 gen=0.14s '3369266'
+  svdd       20% score=1.000 gen=0.14s '3369266'
+  leverage   20% score=1.000 gen=0.14s '3369266'
+  keydiff    20% score=1.000 gen=0.14s '3369266'
+  knorm      20% score=0.000 gen=0.41s '337\n338\n339\n340\n341\n342\n343\n344\n'
+  svdd_prerope 50% score=0.000 gen=0.58s '33567892456789032567890325678903'
+  snapkv     50% score=1.000 gen=0.20s '3369266'
+  keydiff    50% score=1.000 gen=0.20s '3369266'
+  streaming  10% score=0.000 gen=0.09s '42069'
+  knorm      10% score=0.000 gen=0.11s '3789521'
+  snapkv     10% score=0.000 gen=0.12s '33668899'
+  full       100% score=1.000 gen=0.35s '3369266'
+  leverage   10% score=1.000 gen=0.11s '3369266'
+  knorm      50% score=0.000 gen=0.58s '3362\n3363\n3364\n3365\n3366\n3367\n33'
+  streaming  20% score=0.000 gen=0.41s '42775957923793373759823364323797'
+  svdd       10% score=0.000 gen=0.10s '335789'
+  case_total=62.2s
+CASE 30/54 niah_single_32768_s29_d0.9 prefix=32512
+  prefill=29.68s KV=1778.0MiB
+  score svdd=8.86s
+  score svdd_prerope=9.48s
+  score snapkv=0.10s
+  score streaming=0.00s
+  score keydiff=0.95s
+  score knorm=0.24s
+  score leverage=1.44s
+  score random=0.05s
+  svdd       20% score=1.000 gen=0.15s '2138879'
+  snapkv     20% score=0.000 gen=0.14s '2139999'
+  streaming  10% score=0.000 gen=0.36s '427\n13\n73\n21\n47\n19\n31\n23\n17\n37\n1'
+  svdd_prerope 20% score=1.000 gen=0.14s '2138879'
+  keydiff    50% score=1.000 gen=0.21s '2138879'
+  svdd       50% score=1.000 gen=0.20s '2138879'
+  full       100% score=1.000 gen=0.34s '2138879'
+  leverage   10% score=1.000 gen=0.11s '2138879'
+  keydiff    10% score=1.000 gen=0.11s '2138879'
+  random     50% score=0.000 gen=0.17s '21379'
+  snapkv     50% score=0.000 gen=0.58s '2137979\n2137989\n2137999\n2138009\n'
+  snapkv     10% score=0.000 gen=0.36s '2139\n2139\n2139\n2139\n2139\n2139\n21'
+  knorm      20% score=0.000 gen=0.42s '21\n213\n2134\n21345\n213456\n2134567'
+  knorm      10% score=0.000 gen=0.15s '21\n23\n42\n85'
+  svdd_prerope 10% score=0.000 gen=0.12s '21388879'
+  streaming  20% score=1.000 gen=0.14s '2138879'
+  streaming  50% score=1.000 gen=0.21s '2138879'
+  keydiff    20% score=1.000 gen=0.14s '2138879'
+  leverage   50% score=1.000 gen=0.21s '2138879'
+  svdd       10% score=0.000 gen=0.12s '21388879'
+  random     10% score=0.000 gen=0.10s '213579'
+  leverage   20% score=1.000 gen=0.14s '2138879'
+  random     20% score=0.000 gen=0.16s '213456789'
+  svdd_prerope 50% score=1.000 gen=0.20s '2138879'
+  knorm      50% score=0.000 gen=0.58s '2133\n2135\n2137\n2139\n2141\n2143\n21'
+  case_total=61.7s
+CASE 31/54 niah_multi_32768_s17_d0.1 prefix=32512
+  prefill=29.77s KV=1778.0MiB
+  score svdd=8.92s
+  score svdd_prerope=9.52s
+  score snapkv=0.12s
+  score streaming=0.00s
+  score keydiff=0.94s
+  score knorm=0.24s
+  score leverage=1.42s
+  score random=0.05s
+  svdd_prerope 20% score=0.500 gen=0.24s '8715250\n6904075'
+  random     50% score=0.500 gen=0.34s '8710523\n6940765'
+  leverage   50% score=1.000 gen=0.33s '8715250\n6940765'
+  snapkv     10% score=0.000 gen=0.22s '87654321\n69402587'
+  svdd_prerope 10% score=0.500 gen=0.19s '8715250\n6947565'
+  svdd       50% score=0.500 gen=0.33s '8715250\n6907352'
+  random     20% score=0.000 gen=0.26s '876543210987654321'
+  random     10% score=0.000 gen=0.36s '67890523467890523467890523467890'
+  svdd       10% score=0.500 gen=0.19s '8715250\n6907451'
+  keydiff    50% score=1.000 gen=0.33s '8715250\n6940765'
+  leverage   10% score=1.000 gen=0.19s '8715250\n6940765'
+  leverage   20% score=1.000 gen=0.23s '8715250\n6940765'
+  full       100% score=1.000 gen=0.55s '8715250\n6940765'
+  snapkv     50% score=1.000 gen=0.33s '8715250\n6940765'
+  svdd_prerope 50% score=0.500 gen=0.33s '8715250\n6904321'
+  streaming  50% score=0.500 gen=0.33s '6940765\n6940765'
+  knorm      10% score=0.000 gen=0.15s '87329\n65438'
+  snapkv     20% score=0.500 gen=0.23s '6940765\n8740765'
+  streaming  10% score=0.000 gen=0.10s '420 69'
+  knorm      50% score=0.000 gen=0.25s '87152\n6940'
+  keydiff    20% score=1.000 gen=0.23s '8715250\n6940765'
+  knorm      20% score=0.000 gen=0.14s '871\n640'
+  keydiff    10% score=1.000 gen=0.19s '8715250\n6940765'
+  svdd       20% score=0.500 gen=0.23s '8715250\n6940750'
+  streaming  20% score=0.500 gen=0.23s '6940765\n6940765'
+  case_total=62.9s
+CASE 32/54 niah_multi_32768_s17_d0.5 prefix=32512
+  prefill=29.68s KV=1778.0MiB
+  score svdd=8.92s
+  score svdd_prerope=9.51s
+  score snapkv=0.10s
+  score streaming=0.00s
+  score keydiff=0.95s
+  score knorm=0.24s
+  score leverage=1.44s
+  score random=0.05s
+  knorm      50% score=0.000 gen=0.29s '754321\n5717'
+  leverage   20% score=1.000 gen=0.23s '7549073\n5717075'
+  keydiff    50% score=1.000 gen=0.33s '7549073\n5717075'
+  random     10% score=0.000 gen=0.09s '42\n73'
+  full       100% score=1.000 gen=0.56s '7549073\n5717075'
+  streaming  20% score=0.000 gen=0.14s '420 735'
+  snapkv     20% score=0.000 gen=0.13s '42\n137'
+  keydiff    20% score=1.000 gen=0.23s '7549073\n5717075'
+  leverage   10% score=1.000 gen=0.19s '7549073\n5717075'
+  svdd       50% score=0.500 gen=0.33s '7349073\n5717075'
+  snapkv     10% score=0.000 gen=0.11s '427\n428'
+  svdd       10% score=0.000 gen=0.15s '749\n5710705'
+  random     20% score=0.000 gen=0.14s '751\n987'
+  streaming  50% score=0.500 gen=0.33s '7549073\n6458921'
+  svdd       20% score=1.000 gen=0.23s '7549073\n5717075'
+  svdd_prerope 20% score=0.500 gen=0.22s '759073\n5717075'
+  keydiff    10% score=0.500 gen=0.19s '7549075\n5717075'
+  svdd_prerope 50% score=1.000 gen=0.33s '7549073\n5717075'
+  knorm      10% score=0.000 gen=0.11s '717\n563'
+  snapkv     50% score=0.000 gen=0.19s '73\n112'
+  leverage   50% score=1.000 gen=0.33s '7549073\n5717075'
+  random     50% score=0.000 gen=0.30s '754075\n687459'
+  svdd_prerope 10% score=0.000 gen=0.19s '7395423\n5718294'
+  streaming  10% score=0.000 gen=0.11s '420 735'
+  knorm      20% score=0.000 gen=0.21s '754321\n543210'
+  case_total=62.0s
+CASE 33/54 niah_multi_32768_s17_d0.9 prefix=32512
+  prefill=29.69s KV=1778.0MiB
+  score svdd=8.91s
+  score svdd_prerope=9.50s
+  score snapkv=0.09s
+  score streaming=0.00s
+  score keydiff=0.96s
+  score knorm=0.24s
+  score leverage=1.45s
+  score random=0.05s
+  random     10% score=0.000 gen=0.15s '27\n43\n23'
+  streaming  50% score=0.500 gen=0.36s '4376207\n2845698'
+  knorm      50% score=0.500 gen=0.33s '4376207\n27270'
+  svdd_prerope 20% score=0.500 gen=0.25s '4362727\n2727020'
+  keydiff    20% score=1.000 gen=0.25s '4376207\n2727020'
+  svdd_prerope 10% score=0.000 gen=0.17s '4327\n2702027'
+  svdd_prerope 50% score=0.500 gen=0.39s '4362727020\n2727020'
+  leverage   50% score=1.000 gen=0.36s '4376207\n2727020'
+  snapkv     50% score=1.000 gen=0.35s '4376207\n2727020'
+  keydiff    50% score=1.000 gen=0.36s '4376207\n2727020'
+  leverage   20% score=1.000 gen=0.25s '4376207\n2727020'
+  full       100% score=1.000 gen=0.57s '4376207\n2727020'
+  random     20% score=0.000 gen=0.18s '4343\n4444'
+  snapkv     10% score=0.000 gen=0.21s '4372059\n2734561'
+  random     50% score=0.000 gen=0.32s '437207\n272702'
+  snapkv     20% score=0.500 gen=0.21s '4376207\n2720'
+  leverage   10% score=1.000 gen=0.21s '4376207\n2727020'
+  svdd       10% score=0.000 gen=0.18s '4362789\n2789'
+  knorm      10% score=0.000 gen=0.09s '42\n27'
+  knorm      20% score=0.000 gen=0.14s '42\n278'
+  streaming  10% score=0.000 gen=0.21s '2023777\n4012593'
+  svdd       50% score=0.500 gen=0.33s '436207\n2727020'
+  keydiff    10% score=1.000 gen=0.21s '4376207\n2727020'
+  streaming  20% score=0.500 gen=0.25s '4376207\n2845698'
+  svdd       20% score=0.000 gen=0.24s '4362789\n2756432'
+  case_total=62.9s
+CASE 34/54 niah_multi_32768_s29_d0.1 prefix=32512
+  prefill=30.10s KV=1778.0MiB
+  score svdd=8.86s
+  score svdd_prerope=9.45s
+  score snapkv=0.09s
+  score streaming=0.00s
+  score keydiff=0.95s
+  score knorm=0.24s
+  score leverage=1.43s
+  score random=0.05s
+  leverage   10% score=1.000 gen=0.21s '8047555\n2229614'
+  keydiff    50% score=1.000 gen=0.34s '8047555\n2229614'
+  svdd_prerope 50% score=1.000 gen=0.33s '8047555\n2229614'
+  random     50% score=0.000 gen=0.30s '807234\n222234'
+  snapkv     20% score=0.000 gen=0.18s '804219\n2229'
+  streaming  50% score=0.500 gen=0.33s '2229614\n2229614'
+  svdd       50% score=1.000 gen=0.33s '8047555\n2229614'
+  leverage   50% score=1.000 gen=0.33s '8047555\n2229614'
+  keydiff    10% score=1.000 gen=0.19s '8047555\n2229614'
+  svdd       10% score=0.500 gen=0.19s '2247777\n2229614'
+  leverage   20% score=1.000 gen=0.23s '8047555\n2229614'
+  streaming  10% score=0.000 gen=0.11s '420\n735'
+  svdd_prerope 10% score=0.000 gen=0.19s '8247755\n2229114'
+  full       100% score=1.000 gen=0.54s '8047555\n2229614'
+  random     10% score=0.000 gen=0.35s '23456789012345678901234567890123'
+  knorm      20% score=0.000 gen=0.41s '8732\n2245\n2245\n2245\n2245\n2245\n22'
+  knorm      10% score=0.000 gen=0.11s '893\n224'
+  random     20% score=0.000 gen=0.18s '84567\n22345'
+  streaming  20% score=0.500 gen=0.23s '2229614\n2229614'
+  snapkv     50% score=0.500 gen=0.33s '8047995\n2229614'
+  keydiff    20% score=1.000 gen=0.23s '8047555\n2229614'
+  snapkv     10% score=0.000 gen=0.12s '811\n1237'
+  svdd       20% score=0.500 gen=0.22s '847555\n2229614'
+  svdd_prerope 20% score=1.000 gen=0.23s '8047555\n2229614'
+  knorm      50% score=0.000 gen=0.30s '8048296\n22296'
+  case_total=63.1s
+CASE 35/54 niah_multi_32768_s29_d0.5 prefix=32512
+  prefill=29.70s KV=1778.0MiB
+  score svdd=8.88s
+  score svdd_prerope=9.42s
+  score snapkv=0.11s
+  score streaming=0.00s
+  score keydiff=0.94s
+  score knorm=0.24s
+  score leverage=1.42s
+  score random=0.05s
+  svdd_prerope 20% score=0.500 gen=0.24s '5508824\n1582610'
+  streaming  20% score=0.000 gen=0.11s '42\n73'
+  leverage   50% score=1.000 gen=0.34s '5507308\n1582610'
+  knorm      50% score=0.000 gen=0.27s '550\n1582650'
+  leverage   20% score=1.000 gen=0.23s '5507308\n1582610'
+  keydiff    10% score=1.000 gen=0.19s '5507308\n1582610'
+  snapkv     10% score=0.000 gen=0.09s '28\n11'
+  knorm      10% score=0.000 gen=0.13s '5472\n1583'
+  svdd       50% score=1.000 gen=0.33s '5507308\n1582610'
+  full       100% score=1.000 gen=0.54s '5507308\n1582610'
+  random     10% score=0.000 gen=0.09s '42\n73'
+  random     20% score=0.000 gen=0.27s '123456789\n987654321'
+  streaming  10% score=0.000 gen=0.09s '42\n73'
+  svdd       10% score=0.000 gen=0.19s '5007329\n1586247'
+  svdd_prerope 10% score=0.000 gen=0.23s '5000000\n1586245789'
+  svdd_prerope 50% score=0.500 gen=0.33s '5508320\n1582610'
+  knorm      20% score=0.000 gen=0.12s '50\n158'
+  leverage   10% score=1.000 gen=0.19s '5507308\n1582610'
+  streaming  50% score=0.500 gen=0.33s '5507308\n2435679'
+  svdd       20% score=0.500 gen=0.23s '5507308\n1582606'
+  keydiff    50% score=1.000 gen=0.33s '5507308\n1582610'
+  snapkv     20% score=0.000 gen=0.23s '8085728\n1928374'
+  snapkv     50% score=0.000 gen=0.33s '5082937\n1502947'
+  random     50% score=0.000 gen=0.30s '550730\n118256'
+  keydiff    20% score=1.000 gen=0.23s '5507308\n1582610'
+  case_total=62.1s
+CASE 36/54 niah_multi_32768_s29_d0.9 prefix=32512
+  prefill=29.66s KV=1778.0MiB
+  score svdd=8.87s
+  score svdd_prerope=9.48s
+  score snapkv=0.12s
+  score streaming=0.00s
+  score keydiff=0.94s
+  score knorm=0.24s
+  score leverage=1.43s
+  score random=0.05s
+  keydiff    20% score=1.000 gen=0.24s '1575750\n4718328'
+  random     20% score=0.000 gen=0.24s '456789\n123456789'
+  knorm      10% score=0.000 gen=0.11s '157\n158'
+  svdd_prerope 10% score=0.000 gen=0.18s '157575\n4713828'
+  knorm      50% score=0.000 gen=0.29s '1575\n4718315'
+  svdd_prerope 20% score=0.000 gen=0.20s '157575\n471838'
+  snapkv     50% score=0.500 gen=0.31s '1575750\n471828'
+  snapkv     10% score=0.000 gen=0.17s '157253\n157253'
+  random     50% score=0.000 gen=0.30s '157575\n412389'
+  svdd       10% score=0.000 gen=0.19s '157575\n4718828'
+  svdd       20% score=0.500 gen=0.22s '1575750\n471838'
+  streaming  10% score=0.000 gen=0.17s '543210\n123456'
+  random     10% score=0.000 gen=0.17s '456789\n123456'
+  keydiff    10% score=1.000 gen=0.19s '1575750\n4718328'
+  streaming  20% score=0.500 gen=0.24s '1575750\n24689753'
+  leverage   50% score=1.000 gen=0.33s '1575750\n4718328'
+  snapkv     20% score=0.500 gen=0.22s '1575750\n987654'
+  svdd_prerope 50% score=0.500 gen=0.31s '157575\n4718328'
+  full       100% score=1.000 gen=0.54s '1575750\n4718328'
+  knorm      20% score=0.000 gen=0.41s '157\n157\n432\n432\n157\n157\n432\n432\n'
+  streaming  50% score=0.500 gen=0.32s '1575750\n987654'
+  leverage   10% score=1.000 gen=0.20s '1575750\n4718328'
+  leverage   20% score=1.000 gen=0.23s '1575750\n4718328'
+  svdd       50% score=1.000 gen=0.33s '1575750\n4718328'
+  keydiff    50% score=1.000 gen=0.33s '1575750\n4718328'
+  case_total=62.6s
+CASE 37/54 longbench_hotpotqa_62 prefix=15821
+  prefill=11.70s KV=865.2MiB
+  score svdd=4.46s
+  score svdd_prerope=4.66s
+  score snapkv=0.13s
+  score streaming=0.00s
+  score keydiff=0.46s
+  score knorm=0.11s
+  score leverage=0.69s
+  score random=0.02s
+  keydiff    10% score=0.024 gen=1.27s 'The passage states that the show reran on Adult Swim in Canada between early 2021 and mid-'
+  svdd_prerope 50% score=0.000 gen=0.97s 'The passage does not provide a specific end date for the animated series that Kenn Scott w'
+  random     50% score=0.000 gen=1.22s 'The passage about Kenn Scott does not mention any animated series he wrote that began in S'
+  knorm      10% score=0.000 gen=0.54s 'The passage provided does not contain the specific end date for the animated series Kent S'
+  streaming  10% score=0.028 gen=1.05s 'The given information does not specify the exact end date of the series on "Nick on CBS," '
+  streaming  50% score=0.032 gen=1.20s 'Based on the information provided, the show "Iggy Arbuckle" that Kenn Scott wrote an episo'
+  svdd       10% score=0.000 gen=1.19s 'The passage does not explicitly state that Kent Scott wrote the series "Pelswick". Additio'
+  leverage   10% score=0.000 gen=0.58s 'The passage does not explicitly state that Kent Scott wrote the animated series, nor does '
+  svdd       50% score=0.000 gen=1.17s 'The passage does not provide a specific end date for the animated series that Scott wrote.'
+  streaming  20% score=0.045 gen=0.85s 'Based on the information provided, the show Pelswick, which was co-written by Kent Scott, '
+  snapkv     50% score=0.023 gen=1.57s 'The passage does not specify the end date for the animated series that Kenn Scott wrote. I'
+  knorm      20% score=0.000 gen=0.53s 'The passage provided does not contain the specific end date for the animated series Kent S'
+  keydiff    20% score=0.054 gen=0.70s 'Based on the passage, the show ended its run on Nick on CBS on November 23, 2002. The rele'
+  svdd_prerope 10% score=0.000 gen=0.81s 'The passage does not explicitly state that Kent Scott wrote the series or the exact end da'
+  random     10% score=0.000 gen=0.65s "The passage does not provide enough information to determine when Kent Scott's animated se"
+  full       100% score=0.026 gen=2.08s 'Based on the information provided, the show "Iggy Arbuckle" which Kenn Scott co-wrote won '
+  leverage   20% score=0.000 gen=1.35s 'The passage states that the show reran on Adult Swim in Canada between early 2021 and mid-'
+  random     20% score=0.000 gen=0.82s 'Based on the information provided, there is no mention of an animated series written by Ke'
+  leverage   50% score=0.022 gen=1.62s 'The passage does not explicitly state that Kenn Scott wrote the series Pelswick. The passa'
+  keydiff    50% score=0.025 gen=1.63s 'The passage does not provide a specific end date for the series that Kenn Scott wrote and '
+  knorm      50% score=0.000 gen=0.64s 'The passage does not provide a specific end date for the animated series Kent Scott wrote.'
+  snapkv     20% score=0.029 gen=1.06s 'The passage does not explicitly state that Kent Scott wrote the series Pelswick, nor does '
+  svdd_prerope 20% score=0.024 gen=1.35s 'The passage states that the show aired on Nick on CBS from September 2002 to November 2005'
+  svdd       20% score=0.000 gen=0.90s 'The passage does not explicitly state when the series ended. It only mentions that the ser'
+  snapkv     10% score=0.500 gen=0.15s 'November 23, 2002'
+  case_total=50.6s
+CASE 38/54 longbench_hotpotqa_182 prefix=12458
+  prefill=8.81s KV=681.3MiB
+  score svdd=3.58s
+  score svdd_prerope=3.72s
+  score snapkv=0.05s
+  score streaming=0.00s
+  score keydiff=0.36s
+  score knorm=0.09s
+  score leverage=0.55s
+  score random=0.02s
+  svdd       50% score=0.333 gen=0.10s 'University of Mississippi'
+  snapkv     20% score=0.111 gen=0.31s 'The punter for the Dallas Cowboys in the 1980s, Jim Miller, played college football at the'
+  streaming  10% score=0.000 gen=0.73s 'The information provided does not contain the name of the punter for the Dallas Cowboys in'
+  streaming  20% score=0.000 gen=1.29s 'Based on the information provided in the passages, the punter for the Dallas Cowboys in th'
+  full       100% score=0.333 gen=0.12s 'East Carolina University'
+  knorm      20% score=0.000 gen=0.46s 'The passage does not specify which punter played for the Dallas Cowboys in the 1980s or wh'
+  svdd_prerope 50% score=0.100 gen=0.42s 'The punter for the Dallas Cowboys in the 1980s, Jim Miller, played college football at the'
+  svdd       20% score=0.100 gen=0.36s 'The punter for the Dallas Cowboys in the 1980s, John Jett, played college football at the '
+  keydiff    50% score=0.095 gen=0.43s 'The punter for the Dallas Cowboys in the 1980s, James Gordon Miller, played college footba'
+  random     20% score=0.045 gen=1.29s 'Based on the information provided in the passage, the punter for the Dallas Cowboys in the'
+  knorm      10% score=0.000 gen=0.45s 'The passage does not provide the name of the punter for the Dallas Cowboys in the 1980s or'
+  random     50% score=0.111 gen=0.38s 'The punter for the Dallas Cowboys in the 1980s, Danny Jett, played college football at Eas'
+  keydiff    20% score=0.095 gen=0.37s 'The punter for the Dallas Cowboys in the 1980s, James Gordon Miller, played college footba'
+  snapkv     50% score=0.100 gen=0.42s 'The punter for the Dallas Cowboys in the 1980s, Jim Miller, played college football at the'
+  streaming  50% score=0.333 gen=0.36s 'The punter for the Dallas Cowboys in the 1980s, Danny White, played college football at Ar'
+  random     10% score=0.071 gen=1.21s 'Based on the information provided in the passage, the punter for the Dallas Cowboys in the'
+  keydiff    10% score=0.000 gen=0.08s 'Ripley, Mississippi'
+  svdd_prerope 10% score=0.027 gen=0.93s 'The punter for the Dallas Cowboys in the 1980s, Danny White, played college football at Ea'
+  leverage   10% score=0.400 gen=0.06s 'Rice University'
+  svdd_prerope 20% score=0.061 gen=0.95s 'The punter for the Dallas Cowboys in the 1980s, Danny White, played college football at th'
+  svdd       10% score=0.091 gen=0.62s 'Based on the information provided in the passages, the punter for the Dallas Cowboys in th'
+  snapkv     10% score=0.000 gen=0.45s 'The passage does not provide the name of the punter for the Dallas Cowboys in the 1980s or'
+  knorm      50% score=0.091 gen=0.46s 'The punter for the Dallas Cowboys in the 1980s, James Gordon "Jim" Miller, played college '
+  leverage   20% score=0.000 gen=0.39s 'The punter for the Dallas Cowboys in the 1980s, John Cornett, did not play college footbal'
+  leverage   50% score=0.333 gen=0.36s 'The punter for the Dallas Cowboys in the 1980s, Danny White, played college football at Ar'
+  case_total=32.1s
+CASE 39/54 longbench_hotpotqa_186 prefix=15918
+  prefill=11.81s KV=870.5MiB
+  score svdd=4.54s
+  score svdd_prerope=4.73s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.47s
+  score knorm=0.12s
+  score leverage=0.70s
+  score random=0.02s
+  snapkv     50% score=0.077 gen=0.94s 'Based on the information provided, Jake Kasdan won more awards compared to the Brothers Qu'
+  svdd       50% score=0.066 gen=1.14s 'Based on the information provided, Jake Kasdan won more awards compared to the Brothers Qu'
+  knorm      10% score=0.074 gen=0.84s 'Based on the information provided in the passages, Jake Kasdan won more awards than Brothe'
+  random     50% score=0.049 gen=1.47s 'Based on the information provided, Jake Kasdan has more awards listed compared to the Brot'
+  streaming  20% score=0.058 gen=0.96s 'Based on the information provided in the passages, Jake Kasdan won more awards compared to'
+  leverage   20% score=0.051 gen=1.13s 'Brothers Quay won more awards. While Jake Kasdan has received nominations and accolades, i'
+  keydiff    10% score=0.087 gen=0.57s 'Jake Kasdan won more awards. The Brothers Quay are known for their stop-motion animation a'
+  random     10% score=0.049 gen=1.23s 'To answer the question of who won more awards between the Brothers Quay and Jake Kasdan, w'
+  leverage   50% score=0.049 gen=1.40s 'Based on the information provided, Jake Kasdan won more awards. Jake Kasdan was nominated '
+  keydiff    20% score=0.047 gen=1.18s 'Based on the information provided in the passages, Jake Kasdan won more awards. Jake Kasda'
+  svdd       20% score=0.051 gen=1.18s 'Based on the information provided, Jake Kasdan won more awards compared to the Brothers Qu'
+  knorm      50% score=0.087 gen=0.90s 'Jake Kasdan won more awards. While the Brothers Quay received the 1998 Drama Desk Award fo'
+  svdd_prerope 50% score=0.053 gen=1.36s 'Based on the information provided, Jake Kasdan won more awards compared to the Brothers Qu'
+  keydiff    50% score=0.063 gen=1.13s 'Based on the information provided, Jake Kasdan won more awards compared to the Brothers Qu'
+  svdd       10% score=0.053 gen=1.10s 'Based on the information provided in the passages, Jake Kasdan won more awards than the Br'
+  streaming  50% score=0.043 gen=1.60s 'Based on the information provided in the passages, Jake Kasdan won more awards compared to'
+  full       100% score=0.047 gen=2.07s 'Based on the information provided, Jake Kasdan won more awards compared to the Brothers Qu'
+  svdd_prerope 10% score=0.061 gen=0.96s 'Based on the information provided in the passages, Jake Kasdan won more awards compared to'
+  snapkv     10% score=0.052 gen=0.96s 'Jake Kasdan won more awards. While Brothers Quay are known for their stop-motion animation'
+  leverage   10% score=0.049 gen=1.21s 'Jake Kasdan won more awards. While the Brothers Quay have won several awards for their wor'
+  svdd_prerope 20% score=0.049 gen=1.22s 'Based on the information provided, Jake Kasdan won more awards compared to the Brothers Qu'
+  streaming  10% score=0.043 gen=1.20s 'Based on the information provided in the passages, Jake Kasdan won more awards. Specifical'
+  snapkv     20% score=0.054 gen=1.08s 'Jake Kasdan won more awards. While the Brothers Quay have received recognition for their s'
+  random     20% score=0.041 gen=1.30s 'Based on the information provided, Brothers Quay won more awards. While Jake Kasdan is men'
+  knorm      20% score=0.070 gen=0.78s 'Based on the information provided in the passages, Jake Kasdan (who directed the film "Bad'
+  case_total=53.9s
+CASE 40/54 longbench_hotpotqa_117 prefix=16630
+  prefill=12.44s KV=909.5MiB
+  score svdd=4.66s
+  score svdd_prerope=4.87s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.49s
+  score knorm=0.12s
+  score leverage=0.73s
+  score random=0.02s
+  svdd_prerope 50% score=0.400 gen=0.70s 'Based on the information provided in the passages, the film where Susanne Pollatschek voic'
+  keydiff    20% score=0.067 gen=1.34s 'Based on the information provided, the film where Susanne Pollatschek voiced Olivia Flaver'
+  streaming  20% score=0.414 gen=0.36s 'The film where Susanne Pollatschek voiced Olivia Flaversham was directed by Burny Mattinso'
+  snapkv     20% score=0.044 gen=1.33s 'The film where Susanne Pollatschek voiced Olivia Flaversham, "The Great Mouse Detective," '
+  streaming  10% score=0.067 gen=0.38s 'The film where Susanne Pollatschek voiced Olivia Flaversham is "The Adventures of Tintin" '
+  snapkv     50% score=0.375 gen=0.52s 'The film where Susanne Pollatschek voiced Olivia Flaversham, "The Great Mouse Detective," '
+  keydiff    10% score=0.054 gen=0.40s 'Based on the information provided, there is no explicit mention of who directed the film w'
+  leverage   20% score=0.114 gen=0.48s 'Based on the information provided, the film where Susanne Pollatschek voiced Olivia Flaver'
+  random     50% score=0.471 gen=0.57s 'The film where Susanne Pollatschek voiced Olivia Flaversham, "The Great Mouse Detective," '
+  svdd       50% score=0.400 gen=0.65s 'Based on the information provided in the passage, Susanne Pollatschek voiced Olivia Flaver'
+  leverage   50% score=0.375 gen=0.50s 'Susanne Pollatschek voiced Olivia Flaversham in "The Great Mouse Detective," which was dir'
+  streaming  50% score=0.471 gen=0.57s 'The film where Susanne Pollatschek voiced Olivia Flaversham, "The Great Mouse Detective," '
+  svdd       10% score=0.022 gen=1.24s 'Based on the information provided in the passages, Susanne Pollatschek voiced Olivia Flave'
+  svdd_prerope 10% score=0.000 gen=1.24s 'Based on the information provided in the passages, Susanne Pollatschek voiced Olivia Flave'
+  knorm      20% score=0.044 gen=1.28s 'Based on the information provided, there is no direct mention of Susanne Pollatschek voici'
+  keydiff    50% score=0.264 gen=0.93s 'Based on the information provided, Susanne Pollatschek voiced Olivia Flaversham in the 198'
+  svdd_prerope 20% score=0.400 gen=0.54s 'Based on the information provided in the passages, Susanne Pollatschek voiced Olivia Flave'
+  svdd       20% score=0.278 gen=0.43s 'Based on the information provided in the passages, Susanne Pollatschek voiced Olivia Flave'
+  leverage   10% score=0.044 gen=0.66s 'Based on the information provided, the film where Susanne Pollatschek voiced Olivia Flaver'
+  random     10% score=0.026 gen=1.11s 'The film where Susanne Pollatschek voiced Olivia Flaversham, "The Great Mouse Detective," '
+  knorm      50% score=0.034 gen=1.05s 'Susanne Pollatschek did not voice Olivia Flaversham in any film. The character Olivia Flav'
+  knorm      10% score=0.051 gen=1.24s 'Based on the information provided in the passages, there is no direct mention of Susanne P'
+  snapkv     10% score=0.000 gen=0.66s 'The passage does not explicitly state who directed the film where Susanne Pollatschek voic'
+  random     20% score=0.130 gen=1.28s 'The film where Susanne Pollatschek voiced Olivia Flaversham, "The Great Mouse Detective" ('
+  full       100% score=0.471 gen=0.80s 'The film where Susanne Pollatschek voiced Olivia Flaversham, "The Great Mouse Detective," '
+  case_total=46.3s
+CASE 41/54 longbench_hotpotqa_71 prefix=15867
+  prefill=11.72s KV=867.7MiB
+  score svdd=4.47s
+  score svdd_prerope=4.71s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.46s
+  score knorm=0.11s
+  score leverage=0.69s
+  score random=0.02s
+  streaming  20% score=0.207 gen=0.54s 'Morgan Paull played Dave Holden in the 1982 film "Blade Runner," which was loosely adapted'
+  svdd_prerope 10% score=0.064 gen=1.23s 'Philip K. Dick adapted the novel "Do Androids Dream of Electric Sheep?" into a screenplay '
+  full       100% score=1.000 gen=0.16s 'Philip K. Dick'
+  snapkv     50% score=1.000 gen=0.11s 'Philip K. Dick'
+  knorm      10% score=0.207 gen=0.43s 'Morgan Paull played Dave Holden in the 1982 film "Blade Runner," which was loosely adapted'
+  svdd       10% score=0.200 gen=0.45s 'Philip K. Dick, based on the plot summary provided, which mentions the 1982 film Blade Run'
+  keydiff    20% score=1.000 gen=0.08s 'Philip K. Dick'
+  svdd       50% score=1.000 gen=0.11s 'Philip K. Dick'
+  keydiff    50% score=1.000 gen=0.11s 'Philip K. Dick'
+  random     50% score=0.207 gen=0.57s 'Morgan Paull played Dave Holden in the 1982 film "Blade Runner," which was loosely adapted'
+  knorm      20% score=0.000 gen=0.59s 'The information provided does not mention Morgan Paull or any specific 1982 film adaptatio'
+  svdd_prerope 50% score=1.000 gen=0.11s 'Philip K. Dick'
+  streaming  10% score=0.207 gen=0.43s 'Morgan Paull played Dave Holden in the 1982 film "Blade Runner," which was loosely adapted'
+  leverage   50% score=1.000 gen=0.11s 'Philip K. Dick'
+  random     10% score=0.207 gen=0.43s 'Morgan Paull played Dave Holden in the 1982 film "Blade Runner," which was loosely adapted'
+  snapkv     20% score=1.000 gen=0.08s 'Philip K. Dick'
+  knorm      50% score=0.207 gen=0.57s 'Morgan Paull played Dave Holden in the 1982 film "Blade Runner" which was loosely adapted '
+  streaming  50% score=0.194 gen=0.60s 'Morgan Paull played the role of Dave Holden in the 1982 film "Blade Runner," which is loos'
+  snapkv     10% score=1.000 gen=0.07s 'Philip K. Dick'
+  random     20% score=0.207 gen=0.46s 'Morgan Paull played Dave Holden in the 1982 film "Blade Runner," which was loosely adapted'
+  leverage   20% score=1.000 gen=0.08s 'Philip K. Dick'
+  svdd_prerope 20% score=1.000 gen=0.08s 'Philip K. Dick'
+  svdd       20% score=1.000 gen=0.08s 'Philip K. Dick'
+  leverage   10% score=1.000 gen=0.07s 'Philip K. Dick'
+  keydiff    10% score=1.000 gen=0.07s 'Philip K. Dick'
+  case_total=32.3s
+CASE 42/54 longbench_hotpotqa_142 prefix=17151
+  prefill=12.91s KV=937.9MiB
+  score svdd=4.82s
+  score svdd_prerope=5.10s
+  score snapkv=0.07s
+  score streaming=0.00s
+  score keydiff=0.50s
+  score knorm=0.12s
+  score leverage=0.75s
+  score random=0.03s
+  leverage   50% score=0.000 gen=1.33s 'The University Joe Odom played football for is located in Minden, Louisiana. However, the '
+  svdd       50% score=0.000 gen=0.32s 'The University Joe Odom played football for, Northwestern State University, is located in '
+  knorm      10% score=0.000 gen=0.40s 'The passage does not provide the location of the university Joe Odom played football for. '
+  svdd_prerope 50% score=0.000 gen=0.32s 'The University Joe Odom played football for, Northwestern State University, is located in '
+  snapkv     50% score=0.316 gen=0.32s 'The University Joe Odom played football for is Purdue University, which is located in West'
+  svdd_prerope 10% score=0.000 gen=0.92s 'The passage does not explicitly state that Joe Odom played football at Purdue University. '
+  streaming  10% score=0.000 gen=0.21s 'Joe Odom played football for Arkansas State University, which is located in Jonesboro, Ark'
+  snapkv     20% score=0.000 gen=0.83s 'The passage does not explicitly state which university Joe Odom played football for. Howev'
+  streaming  20% score=0.000 gen=0.51s 'The University Joe Odom played football for is Louisiana State University (LSU). Joe Odom '
+  random     50% score=0.000 gen=0.75s 'The University Joe Odom played football for is located in Houston, Texas. Specifically, Od'
+  snapkv     10% score=0.000 gen=0.43s 'The passage does not provide the location of the university Joe Odom played football for. '
+  keydiff    50% score=0.060 gen=1.62s 'The University Joe Odom played football for is located in Minden, Louisiana. However, the '
+  keydiff    20% score=0.000 gen=0.35s 'The passage about Joe Odom does not provide the location of the university where he played'
+  leverage   10% score=0.000 gen=0.48s 'The passage does not explicitly state the location of the university where Joe Odom played'
+  knorm      50% score=0.000 gen=0.73s 'The passage does not explicitly state the location of the university where Joe Odom played'
+  svdd_prerope 20% score=0.000 gen=0.58s 'The University Joe Odom played football for is located in Birmingham, Alabama, as it is pa'
+  random     20% score=0.000 gen=0.71s 'The information provided does not specify the location of the university where Joe Odom pl'
+  full       100% score=0.000 gen=0.45s 'The University Joe Odom played football for, Northwestern State University, is located in '
+  svdd       20% score=0.000 gen=0.20s 'The University Joe Odom played football for is located in Oxford, Ohio.'
+  svdd       10% score=0.032 gen=0.76s 'The passage does not mention Joe Odom playing football or attending a university. There is'
+  streaming  50% score=0.000 gen=0.66s 'The passage does not explicitly state where Joe Odom played football. However, it mentions'
+  random     10% score=0.000 gen=0.82s 'The information provided does not specify the location of the university where Joe Odom pl'
+  knorm      20% score=0.000 gen=0.38s 'The passage does not provide the location of the university where Joe Odom played football'
+  keydiff    10% score=0.000 gen=0.60s 'The passage does not provide the location of the university where Joe Odom played football'
+  leverage   20% score=0.000 gen=0.49s 'The passage about Joe Odom does not specify the location of the university he played footb'
+  case_total=42.2s
+CASE 43/54 longbench_qasper_67 prefix=10205
+  prefill=6.95s KV=558.1MiB
+  score svdd=2.98s
+  score svdd_prerope=3.06s
+  score snapkv=0.05s
+  score streaming=0.00s
+  score keydiff=0.30s
+  score knorm=0.07s
+  score leverage=0.45s
+  score random=0.02s
+  svdd_prerope 20% score=0.138 gen=0.38s 'Logistic Regression (LR) and Deep Learning models with GloVe word embeddings are used for '
+  random     50% score=0.083 gen=1.16s 'Two machine learning and deep learning methods are used for RQE:\n\n1. A deep learning model'
+  knorm      50% score=0.160 gen=0.83s 'Logistic Regression and neural networks (including Recurrent Neural Networks (RNN), Long S'
+  streaming  20% score=0.000 gen=1.26s 'The paper describes using both machine learning and deep learning methods for Recognizing '
+  streaming  50% score=0.042 gen=1.43s 'The paper describes using both machine learning and deep learning methods for Recognizing '
+  full       100% score=0.200 gen=0.44s 'Logistic Regression and a deep learning model (adapted from Bowman et al., 2015) are used '
+  svdd       50% score=0.200 gen=0.35s 'Logistic Regression and a deep learning model (adapted from Bowman et al., 2015) are used '
+  svdd       10% score=0.104 gen=0.98s 'For RQE, the study used both a Logistic Regression (Logistic) model and a Deep Learning mo'
+  leverage   10% score=0.154 gen=0.62s 'Unanswerable. The article does not discuss any specific machine learning or deep learning '
+  random     10% score=0.070 gen=1.20s 'The paper describes using two main approaches for RQE (Question Answering with Relation Ex'
+  knorm      20% score=0.000 gen=0.56s 'Unanswerable. The provided text does not mention any specific machine learning or deep lea'
+  svdd_prerope 50% score=0.211 gen=0.31s 'Logistic Regression and a deep learning model using three 600-dimensional ReLU layers are '
+  snapkv     10% score=0.000 gen=0.47s 'Unanswerable. The article does not specify the exact machine learning and deep learning me'
+  leverage   20% score=0.095 gen=0.58s 'Logistic Regression and a deep learning model using GloVe word embeddings are used for RQE'
+  snapkv     50% score=0.222 gen=0.26s 'Logistic Regression and a deep learning model using GloVe word embeddings are used for RQE'
+  streaming  10% score=0.000 gen=1.20s 'The paper describes using both machine learning and deep learning methods for Recognizing '
+  leverage   50% score=0.222 gen=0.26s 'Logistic Regression and a deep learning model using GloVe word embeddings are used for RQE'
+  random     20% score=0.065 gen=1.27s 'The study uses both deep learning and machine learning methods for RQE (Recognizing Questi'
+  knorm      10% score=0.000 gen=0.49s 'The article does not mention any specific machine learning or deep learning methods used f'
+  keydiff    20% score=0.000 gen=0.41s 'Unanswerable. The article does not specify any particular machine learning or deep learnin'
+  keydiff    10% score=0.000 gen=0.24s 'Unanswerable. The article does not mention any specific machine learning or deep learning '
+  keydiff    50% score=0.167 gen=0.78s 'Logistic Regression, Recurrent Neural Networks (RNNs), Long Short Term Memory cells (LSTMs'
+  svdd       20% score=0.421 gen=0.29s 'Logistic Regression and Recurrent Neural Networks (specifically, an end-to-end deep learni'
+  svdd_prerope 10% score=0.200 gen=0.57s 'Logistic Regression (ML) and Convolutional Neural Networks (CNN) are used for RQE. However'
+  snapkv     20% score=0.103 gen=0.54s 'Logistic Regression and end-to-end RQE-based approach using deep learning models are used '
+  case_total=32.3s
+CASE 44/54 longbench_qasper_178 prefix=8598
+  prefill=5.71s KV=470.2MiB
+  score svdd=2.52s
+  score svdd_prerope=2.58s
+  score snapkv=0.05s
+  score streaming=0.00s
+  score keydiff=0.25s
+  score knorm=0.06s
+  score leverage=0.38s
+  score random=0.01s
+  leverage   20% score=0.290 gen=0.54s 'The metrics used to establish that this makes chatbots more knowledgeable and better at le'
+  keydiff    10% score=0.108 gen=0.24s "Unanswerable. The article does not provide specific metrics used to evaluate the chatbots'"
+  svdd       20% score=0.262 gen=0.53s 'The paper uses Matthews correlation coefficient (MCC) and positive F1 score to measure the'
+  leverage   10% score=0.152 gen=0.59s "Unanswerable. The article does not provide specific metrics used to evaluate the chatbot's"
+  svdd_prerope 50% score=0.356 gen=0.82s 'The paper uses Matthews correlation coefficient (MCC) to measure the quality of binary cla'
+  snapkv     20% score=0.250 gen=0.70s 'Coverage and quality of responses, predictive performance on unseen data, and the ability '
+  svdd_prerope 20% score=0.211 gen=1.24s 'The paper uses several metrics to establish that this makes chatbots more knowledgeable an'
+  full       100% score=0.261 gen=1.63s 'The metrics used to establish that this makes chatbots more knowledgeable and better at le'
+  knorm      50% score=0.230 gen=0.59s 'The metrics used to establish that this makes chatbots more knowledgeable and better at le'
+  snapkv     10% score=0.091 gen=0.55s 'Unanswerable. The article does not provide specific metrics used to establish that the app'
+  streaming  20% score=0.275 gen=1.25s 'The paper uses several metrics to establish that the approach makes chatbots more knowledg'
+  random     20% score=0.139 gen=1.25s 'The metrics used to establish that this makes chatbots more knowledgeable and better at le'
+  svdd_prerope 10% score=0.147 gen=1.20s 'The paper uses several metrics to establish that this makes chatbots more knowledgeable an'
+  knorm      10% score=0.065 gen=0.47s 'The article does not provide specific metrics used to establish that the system makes chat'
+  keydiff    20% score=0.133 gen=0.64s "Unanswerable. The article does not detail specific metrics used to measure chatbots' knowl"
+  knorm      20% score=0.116 gen=0.60s 'Unanswerable. The provided text does not detail specific metrics used to evaluate the chat'
+  snapkv     50% score=0.218 gen=1.24s 'The metrics used to establish that this makes chatbots more knowledgeable and better at le'
+  random     50% score=0.235 gen=1.39s 'The metrics used to establish that this makes chatbots more knowledgeable and better at le'
+  streaming  50% score=0.267 gen=1.40s 'The paper uses several metrics to establish that the approach makes chatbots more knowledg'
+  streaming  10% score=0.139 gen=1.19s 'The paper establishes that the proposed lifelong interactive learning and inference (LiLi)'
+  keydiff    50% score=0.241 gen=1.39s 'The metrics used to establish that this makes chatbots more knowledgeable and better at le'
+  random     10% score=0.110 gen=1.20s 'The metrics used to establish that this makes chatbots more knowledgeable and better at le'
+  svdd       50% score=0.308 gen=0.90s 'The paper empirically verifies the effectiveness of LiLi on two standard real-world KBs: F'
+  svdd       10% score=0.148 gen=1.11s 'The paper uses several metrics to establish that this makes chatbots more knowledgeable an'
+  leverage   50% score=0.326 gen=1.09s 'The metrics used to establish that this makes chatbots more knowledgeable and better at le'
+  case_total=36.7s
+CASE 45/54 longbench_qasper_15 prefix=17811
+  prefill=13.62s KV=974.0MiB
+  score svdd=5.04s
+  score svdd_prerope=5.25s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.53s
+  score knorm=0.13s
+  score leverage=0.78s
+  score random=0.03s
+  leverage   10% score=0.059 gen=1.26s 'The article mentions two main datasets used:\n\n1. A set of dialogues for the DSTC (Dialog S'
+  leverage   20% score=0.083 gen=1.31s 'The article mentions two main datasets used for training the conversational systems:\n\n1. A'
+  streaming  10% score=0.118 gen=0.45s 'The document does not mention any specific datasets being used. It focuses on describing t'
+  streaming  20% score=0.042 gen=0.41s 'The document does not specify what datasets are used. It discusses testing with dialogues '
+  svdd_prerope 20% score=0.087 gen=0.47s 'Unanswerable. The article does not mention any specific datasets being used. It discusses '
+  snapkv     20% score=0.238 gen=1.35s 'The datasets used include:\n\n1. A set of 18,000 annotated Twitter posts and 1,000 annotated'
+  random     10% score=0.160 gen=0.42s 'The document does not specify any particular datasets used. It mentions creating a trainin'
+  svdd_prerope 10% score=0.078 gen=0.45s 'The article does not specify any particular datasets that were used. It discusses the deve'
+  snapkv     50% score=0.274 gen=1.64s 'The datasets used include:\n\n1. A set of 245,975 documents, comprising 180,111 Twitter post'
+  svdd_prerope 50% score=0.094 gen=1.30s 'The article mentions two well-known corpora used for datasets:\n\n1. Switchboard dataset, wh'
+  knorm      20% score=0.000 gen=0.21s 'Unanswerable. The provided text does not mention any specific datasets being used.'
+  svdd       20% score=0.085 gen=0.48s 'Unanswerable. The article does not mention any specific datasets being used. It discusses '
+  snapkv     10% score=0.059 gen=0.39s 'Unanswerable. The article does not mention any specific datasets being used. It discusses '
+  knorm      10% score=0.082 gen=0.46s 'The article does not mention any specific datasets being used. It focuses on the design an'
+  keydiff    50% score=0.341 gen=1.51s 'The article mentions using two main datasets:\n\n1. A set of 246,945 documents, consisting o'
+  streaming  50% score=0.325 gen=1.64s 'The datasets used include:\n\n1. **Training Set for Intent Classifier**:\n   - Collected usin'
+  keydiff    20% score=0.327 gen=0.70s 'The article mentions that the datasets used contain 246,945 documents, corresponding to 18'
+  random     50% score=0.360 gen=1.64s 'The datasets used include:\n\n1. A set of 246,945 documents, comprising 141,941 Twitter post'
+  svdd       10% score=0.074 gen=0.46s 'The article does not specify any particular datasets that were used. It discusses the deve'
+  knorm      50% score=0.151 gen=0.57s 'The article does not specify any particular datasets used. It mentions creating a training'
+  random     20% score=0.140 gen=0.53s 'The text does not explicitly mention any specific datasets used. It does state that they c'
+  keydiff    10% score=0.045 gen=0.37s 'Unanswerable. The provided text does not mention any specific datasets being used. It disc'
+  full       100% score=0.298 gen=2.23s 'The datasets used include:\n\n1. A set of 246,945 documents, consisting of 184,001 Twitter p'
+  svdd       50% score=0.116 gen=1.01s 'The article mentions two well-known corpora used for datasets:\n\n1. Switchboard dataset, wh'
+  leverage   50% score=0.118 gen=1.64s 'The article mentions using a few different datasets and methods for training and testing t'
+  case_total=51.3s
+CASE 46/54 longbench_qasper_127 prefix=8153
+  prefill=5.39s KV=445.9MiB
+  score svdd=2.38s
+  score svdd_prerope=2.43s
+  score snapkv=0.04s
+  score streaming=0.00s
+  score keydiff=0.24s
+  score knorm=0.06s
+  score leverage=0.36s
+  score random=0.01s
+  knorm      20% score=0.041 gen=0.36s 'The article does not explicitly list the specific baselines that were compared against. Th'
+  keydiff    10% score=0.172 gen=0.46s 'Unanswerable. The article does not specify which baselines were compared against their mod'
+  svdd_prerope 20% score=0.295 gen=0.97s 'The paper compares against several baselines, including recursive neural networks (RvNNs),'
+  random     50% score=0.295 gen=1.38s 'They compared their SATA Tree-LSTM model against several baselines, including other syntac'
+  leverage   50% score=0.282 gen=1.04s 'They compared against several baselines including syntactic tree-based models, latent tree'
+  knorm      10% score=0.074 gen=0.35s 'The article does not specify any particular baselines that were compared against. It focus'
+  snapkv     50% score=0.210 gen=1.37s 'They compared against previous syntactic tree-based models, latent tree-based models, and '
+  random     10% score=0.093 gen=1.19s 'The paper compares their model, the SATA-LSTM, against several baselines including:\n\n1. Ot'
+  snapkv     20% score=0.329 gen=0.79s 'The paper compares against several baselines including recursive neural networks, convolut'
+  svdd_prerope 10% score=0.055 gen=1.19s 'The paper compares against several baselines, including:\n\n1. Tree-LSTM\n2. Tree-CNN\n3. Bidi'
+  svdd       10% score=0.098 gen=1.18s 'The paper compares against several baselines, including:\n\n1. Tree-LSTM\n2. Bidirectional RN'
+  streaming  20% score=0.182 gen=1.24s 'The paper compares their model, SATA-LSTM, against several baselines including:\n\n1. Latent'
+  full       100% score=0.226 gen=0.67s 'They compared against previous syntactic tree-based models as well as other neural models.'
+  streaming  50% score=0.232 gen=1.38s 'The paper compares their model against several baselines, including:\n\n1. Previous syntacti'
+  leverage   10% score=0.038 gen=0.38s 'Unanswerable. The article does not specify which baselines were compared against their mod'
+  streaming  10% score=0.088 gen=1.09s 'Based on the ablation study described in the paper, the authors compared their model again'
+  keydiff    20% score=0.246 gen=0.71s 'The paper compares their model against several baselines, including latent syntax tree mod'
+  keydiff    50% score=0.262 gen=1.09s 'They compared against previous syntactic tree-based models, latent tree models, and non-tr'
+  leverage   20% score=0.206 gen=1.11s 'They compared against syntactic tree-based models, constituency-based models, and latent t'
+  knorm      50% score=0.175 gen=0.54s 'Unanswerable. The article does not explicitly list the specific baselines that were compar'
+  svdd       50% score=0.229 gen=0.18s 'They compared against syntactic tree-based models and latent tree models.'
+  svdd       20% score=0.444 gen=0.63s 'The paper compares their model against several baselines, including recursive neural netwo'
+  svdd_prerope 50% score=0.229 gen=0.18s 'They compared against syntactic tree-based models and latent tree models.'
+  random     20% score=0.214 gen=1.24s 'They compared their model against several baselines, including other recursive tree-based '
+  snapkv     10% score=0.012 gen=0.20s 'Unanswerable. The article does not mention any specific baselines that were compared again'
+  case_total=33.0s
+CASE 47/54 longbench_qasper_13 prefix=8658
+  prefill=5.77s KV=473.5MiB
+  score svdd=2.51s
+  score svdd_prerope=2.59s
+  score snapkv=0.05s
+  score streaming=0.00s
+  score keydiff=0.25s
+  score knorm=0.06s
+  score leverage=0.38s
+  score random=0.01s
+  snapkv     20% score=0.148 gen=0.56s 'Unanswerable. The article does not provide specific accuracy scores for the proposed syste'
+  streaming  10% score=0.273 gen=1.09s 'The document does not provide specific accuracy numbers for the proposed system. Instead, '
+  svdd       10% score=0.083 gen=0.43s 'The paper does not provide a specific accuracy number for the proposed system. It focuses '
+  full       100% score=0.037 gen=0.82s 'Unanswerable. The article does not provide specific accuracy or precision/recall/F1 score '
+  streaming  50% score=0.222 gen=1.40s 'The document does not provide specific accuracy or precision values for the proposed syste'
+  svdd_prerope 20% score=0.109 gen=0.58s 'Unanswerable. The article does not provide specific accuracy or F1 score numbers for the p'
+  random     50% score=0.120 gen=0.57s 'Unanswerable. The article does not provide specific accuracy or F1 scores for the proposed'
+  random     10% score=0.081 gen=0.77s 'The document does not provide specific accuracy numbers for the proposed system. It focuse'
+  svdd       50% score=0.133 gen=0.48s 'Unanswerable. The article does not provide specific accuracy numbers for the proposed syst'
+  leverage   20% score=0.095 gen=0.39s 'Unanswerable. The article does not provide specific accuracy or F1 score for the proposed '
+  knorm      10% score=0.098 gen=0.31s 'The article does not provide specific accuracy metrics for the proposed system. It focuses'
+  snapkv     50% score=0.190 gen=0.41s 'Unanswerable. The article does not provide specific accuracy or F1 scores for the proposed'
+  knorm      50% score=0.118 gen=0.54s 'Unanswerable. The article does not provide specific accuracy or F1 score numbers for the p'
+  svdd_prerope 50% score=0.074 gen=0.66s 'Unanswerable. The article does not provide specific accuracy or F1 score values for the pr'
+  keydiff    10% score=0.000 gen=0.22s 'Unanswerable. The article does not provide any accuracy metrics or performance results for'
+  leverage   10% score=0.000 gen=0.21s 'Unanswerable. The article does not provide any accuracy or performance metrics for the pro'
+  streaming  20% score=0.215 gen=1.25s 'The document does not provide specific accuracy percentages for the proposed system. Inste'
+  random     20% score=0.299 gen=1.25s 'The answer is not directly provided in the given text. However, the text does provide info'
+  snapkv     10% score=0.120 gen=0.50s 'Unanswerable. The article does not provide specific accuracy scores for the proposed syste'
+  keydiff    50% score=0.074 gen=0.63s 'Unanswerable. The article does not provide specific accuracy or F1 score values for the pr'
+  svdd_prerope 10% score=0.074 gen=0.54s 'Unanswerable. The paper does not provide an accuracy or F1 score for the proposed system. '
+  svdd       20% score=0.133 gen=0.42s 'Unanswerable. The article does not provide specific accuracy numbers for the proposed syst'
+  leverage   50% score=0.074 gen=0.66s 'Unanswerable. The article does not provide specific accuracy or F1 score values for the pr'
+  keydiff    20% score=0.000 gen=0.20s 'Unanswerable. The article does not provide specific accuracy metrics for the proposed syst'
+  knorm      20% score=0.136 gen=0.38s 'Unanswerable. The article does not provide specific accuracy or performance metrics for th'
+  case_total=28.2s
+CASE 48/54 longbench_qasper_73 prefix=9737
+  prefill=6.60s KV=532.5MiB
+  score svdd=2.85s
+  score svdd_prerope=2.91s
+  score snapkv=0.05s
+  score streaming=0.00s
+  score keydiff=0.28s
+  score knorm=0.07s
+  score leverage=0.43s
+  score random=0.01s
+  svdd       10% score=0.000 gen=0.27s 'The highest recall score mentioned in the document for the list-type questions is 75% in t'
+  svdd_prerope 50% score=0.000 gen=0.44s 'Unanswerable. The article mentions achieving the highest recall score for the fourth test '
+  keydiff    50% score=0.118 gen=0.33s 'Their highest recall score was 0.7033 for the List-type question answering task in the fou'
+  random     50% score=0.143 gen=0.30s 'Their highest recall score was 0.7033 for the List-type questions in the fourth test batch'
+  knorm      20% score=0.000 gen=0.58s 'Unanswerable. The provided text does not contain any information about recall scores. It f'
+  snapkv     20% score=0.000 gen=0.35s 'Unanswerable. The article does not provide specific recall scores. It mentions precision a'
+  random     10% score=0.000 gen=0.71s 'Based on the information provided in the summary, their highest recall score was 0.31 (or '
+  svdd       50% score=0.000 gen=0.44s 'Unanswerable. The article mentions achieving the highest recall score for the fourth test '
+  knorm      50% score=0.000 gen=0.77s "Unanswerable. The document does not provide any recall scores for the systems' performance"
+  snapkv     10% score=0.000 gen=0.16s 'Unanswerable. The article does not provide any specific recall scores.'
+  full       100% score=0.118 gen=0.40s 'Their highest recall score was 0.7033 for the List-type question answering task in the fou'
+  knorm      10% score=0.000 gen=0.27s 'The article does not provide specific recall scores, so it is not possible to determine th'
+  leverage   20% score=0.133 gen=0.26s 'Their highest recall score was 0.7033 for the List type questions in the fourth batch set.'
+  streaming  20% score=0.000 gen=0.81s 'The document does not provide specific recall scores. It discusses various methods and exp'
+  svdd_prerope 10% score=0.000 gen=0.39s 'The highest recall score mentioned in the document is 75% for the fourth test batch in the'
+  keydiff    20% score=0.000 gen=0.35s 'Unanswerable. The article does not provide any recall scores, only mentioning MRR (Mean Re'
+  leverage   50% score=0.118 gen=0.33s 'Their highest recall score was 0.7033 for the List-type question answering task in the fou'
+  svdd_prerope 20% score=0.000 gen=0.47s 'Unanswerable. The article does not provide specific recall scores for any of their submiss'
+  streaming  50% score=0.143 gen=0.30s 'Their highest recall score was 0.7033 for the List-type questions in test batch 4.'
+  leverage   10% score=0.000 gen=0.15s 'Unanswerable. The article does not provide specific recall scores.'
+  snapkv     50% score=0.000 gen=1.33s 'Their highest recall score was 0.91, achieved by their system called FACTOIDS for the List'
+  streaming  10% score=0.000 gen=0.36s 'The provided text does not contain any information about recall scores or performance metr'
+  random     20% score=0.000 gen=0.44s 'Their highest recall score was 0.303 (or 30.3%) in the List questions task, achieved by th'
+  keydiff    10% score=0.000 gen=0.16s 'Unanswerable. The article does not provide specific recall score details.'
+  svdd       20% score=0.000 gen=0.46s 'Unanswerable. The article does not provide specific recall scores for any of their submiss'
+  case_total=25.5s
+CASE 49/54 longbench_passage_retrieval_en_62 prefix=13302
+  prefill=9.55s KV=727.5MiB
+  score svdd=3.80s
+  score svdd_prerope=3.97s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.39s
+  score knorm=0.10s
+  score leverage=0.58s
+  score random=0.02s
+  knorm      20% score=0.000 gen=0.17s 'Paragraph 3'
+  leverage   50% score=1.000 gen=0.18s 'Paragraph 1'
+  snapkv     10% score=1.000 gen=0.15s 'Paragraph 1'
+  streaming  20% score=0.000 gen=0.28s 'In December 1856, Snowden wrote to Representative Phelps about the public'
+  svdd_prerope 10% score=1.000 gen=0.22s 'Paragraph most relevant to the summary: Paragraph 1'
+  snapkv     50% score=1.000 gen=0.18s 'Paragraph 1'
+  full       100% score=1.000 gen=0.22s 'Paragraph 1'
+  svdd       20% score=1.000 gen=0.16s 'Paragraph 1'
+  svdd       10% score=0.000 gen=0.15s 'Paragraph 7'
+  keydiff    50% score=1.000 gen=0.18s 'Paragraph 1'
+  keydiff    20% score=1.000 gen=0.16s 'Paragraph 1'
+  keydiff    10% score=1.000 gen=0.15s 'Paragraph 1'
+  knorm      10% score=1.000 gen=0.27s 'The paragraph most relevant to the summary is Paragraph 1. It discusses the legislative'
+  svdd_prerope 20% score=1.000 gen=0.16s 'Paragraph 1'
+  leverage   20% score=1.000 gen=0.16s 'Paragraph 1'
+  knorm      50% score=1.000 gen=0.18s 'Paragraph 1'
+  random     50% score=1.000 gen=0.18s 'Paragraph 1'
+  svdd_prerope 50% score=1.000 gen=0.18s 'Paragraph 1'
+  leverage   10% score=0.000 gen=0.15s 'Paragraph 7'
+  svdd       50% score=1.000 gen=0.18s 'Paragraph 1'
+  streaming  10% score=0.000 gen=0.27s 'In December 1856, the public was looking forward to the introduction'
+  random     20% score=0.000 gen=0.28s 'The summary of the given text can be derived from the fifth paragraph:\n\nIn December'
+  random     10% score=1.000 gen=0.26s 'The summary of the given text can be described as follows:\n\nIn December 1'
+  streaming  50% score=0.000 gen=0.32s 'In December 1856, Snowden wrote to Representative Phelps about the public'
+  snapkv     20% score=1.000 gen=0.16s 'Paragraph 1'
+  case_total=25.4s
+CASE 50/54 longbench_passage_retrieval_en_182 prefix=14912
+  prefill=10.91s KV=815.5MiB
+  score svdd=4.23s
+  score svdd_prerope=4.45s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.43s
+  score knorm=0.11s
+  score leverage=0.65s
+  score random=0.02s
+  streaming  10% score=0.000 gen=0.32s "The text provides a summary of Thomas' coaching career in basketball, highlighting his var"
+  streaming  20% score=0.000 gen=0.32s "The text provides a summary of Thomas' coaching and scouting career in basketball. Here"
+  svdd       20% score=1.000 gen=0.21s 'Paragraph 10'
+  svdd_prerope 10% score=1.000 gen=0.21s 'Paragraph 10:'
+  leverage   50% score=1.000 gen=0.25s 'Paragraph 10'
+  leverage   10% score=1.000 gen=0.20s 'Paragraph 10'
+  svdd_prerope 50% score=1.000 gen=0.25s 'Paragraph 10'
+  random     20% score=0.000 gen=0.32s 'The summary does not directly correspond to any of the provided paragraphs. However, it'
+  snapkv     20% score=1.000 gen=0.21s 'Paragraph 10'
+  random     50% score=1.000 gen=0.25s 'Paragraph 10'
+  knorm      20% score=0.000 gen=0.32s "The summary of Thomas' coaching career in basketball includes his roles at the University "
+  snapkv     10% score=1.000 gen=0.20s 'Paragraph 10'
+  svdd       50% score=1.000 gen=0.25s 'Paragraph 10'
+  svdd       10% score=1.000 gen=0.30s 'Paragraph 10: While the summary does not directly correspond to any of the'
+  streaming  50% score=0.000 gen=0.38s "The text provides a summary of Thomas' coaching and scouting career in basketball. Here"
+  svdd_prerope 20% score=1.000 gen=0.21s 'Paragraph 10'
+  snapkv     50% score=1.000 gen=0.25s 'Paragraph 10'
+  knorm      10% score=0.000 gen=0.30s "The summary is about Thomas' coaching career in basketball. Here are the key points"
+  leverage   20% score=1.000 gen=0.21s 'Paragraph 10'
+  knorm      50% score=0.000 gen=0.23s 'Paragraph 7'
+  keydiff    20% score=1.000 gen=0.21s 'Paragraph 10'
+  keydiff    50% score=1.000 gen=0.25s 'Paragraph 10'
+  random     10% score=0.000 gen=0.30s "Thomas' coaching career spans multiple levels and countries, starting with his work at the"
+  full       100% score=1.000 gen=0.31s 'Paragraph 10'
+  keydiff    10% score=0.000 gen=0.20s 'Paragraph 28'
+  case_total=29.5s
+CASE 51/54 longbench_passage_retrieval_en_186 prefix=10789
+  prefill=7.42s KV=590.0MiB
+  score svdd=3.10s
+  score svdd_prerope=3.25s
+  score snapkv=0.05s
+  score streaming=0.00s
+  score keydiff=0.32s
+  score knorm=0.08s
+  score leverage=0.48s
+  score random=0.02s
+  snapkv     20% score=1.000 gen=0.19s 'Paragraph 8'
+  keydiff    50% score=1.000 gen=0.20s 'Paragraph 8'
+  keydiff    10% score=0.000 gen=0.18s 'Paragraph 22'
+  svdd       20% score=1.000 gen=0.18s 'Paragraph 8'
+  streaming  20% score=0.000 gen=0.30s 'The text discusses the history of railroads in Spokane, Washington, from the early'
+  knorm      50% score=0.000 gen=0.20s 'Paragraph 2'
+  snapkv     50% score=1.000 gen=0.20s 'Paragraph 8'
+  svdd_prerope 10% score=0.000 gen=0.17s 'Paragraph 7'
+  svdd_prerope 50% score=1.000 gen=0.20s 'Paragraph 8'
+  snapkv     10% score=0.000 gen=0.17s 'Paragraph 2'
+  svdd       50% score=1.000 gen=0.20s 'Paragraph 8'
+  streaming  50% score=0.000 gen=0.34s 'The text discusses the history of railroads in Spokane, Washington, focusing on their'
+  leverage   20% score=1.000 gen=0.18s 'Paragraph 8'
+  random     10% score=0.000 gen=0.28s 'The text discusses the industrialization and railroad development in Spokane, Washington, '
+  random     50% score=1.000 gen=0.20s 'Paragraph 8'
+  full       100% score=1.000 gen=0.24s 'Paragraph 8'
+  svdd_prerope 20% score=1.000 gen=0.18s 'Paragraph 8'
+  keydiff    20% score=1.000 gen=0.18s 'Paragraph 8'
+  knorm      10% score=0.000 gen=0.28s 'The paragraph most relevant to the summary is:\n\nParagraph 1: Ellen is an'
+  streaming  10% score=0.000 gen=0.28s 'The text discusses the history of railroads in Spokane, Washington, from the early'
+  random     20% score=1.000 gen=0.18s 'Paragraph 8'
+  knorm      20% score=0.000 gen=0.29s 'Paragraph 2: The history of Judas Iscariot is a complex'
+  leverage   50% score=1.000 gen=0.20s 'Paragraph 8'
+  leverage   10% score=1.000 gen=0.17s 'Paragraph 8'
+  svdd       10% score=0.000 gen=0.17s 'Paragraph 2'
+  case_total=21.7s
+CASE 52/54 longbench_passage_retrieval_en_22 prefix=12473
+  prefill=8.81s KV=682.1MiB
+  score svdd=3.58s
+  score svdd_prerope=3.71s
+  score snapkv=0.05s
+  score streaming=0.00s
+  score keydiff=0.36s
+  score knorm=0.09s
+  score leverage=0.55s
+  score random=0.02s
+  random     50% score=1.000 gen=0.27s 'Paragraph 6'
+  random     10% score=0.000 gen=0.32s "The text discusses Canada's involvement in the Congo Crisis from 1960"
+  snapkv     20% score=1.000 gen=0.22s 'Paragraph 6'
+  leverage   50% score=1.000 gen=0.25s 'Paragraph 6'
+  random     20% score=0.000 gen=0.34s "The relevant summary about Canada's involvement in the Congo Crisis can be extracted from "
+  keydiff    50% score=1.000 gen=0.25s 'Paragraph 6'
+  streaming  10% score=0.000 gen=0.32s "The text provides an overview of Canada's involvement in the Congo Crisis from 1"
+  svdd       20% score=1.000 gen=0.22s 'Paragraph 6'
+  streaming  20% score=0.000 gen=0.34s "The text provides an overview of Canada's involvement in the Congo Crisis from 1"
+  knorm      20% score=0.000 gen=0.22s 'Paragraph 1'
+  leverage   10% score=1.000 gen=0.21s 'Paragraph 6'
+  svdd_prerope 20% score=1.000 gen=0.22s 'Paragraph 6'
+  knorm      50% score=0.000 gen=0.25s 'Paragraph 3'
+  full       100% score=1.000 gen=0.29s 'Paragraph 6'
+  svdd       10% score=0.000 gen=0.32s "Summary: This text discusses Canada's involvement in the Congo Crisis from 19"
+  svdd_prerope 10% score=1.000 gen=0.21s 'Paragraph 6'
+  keydiff    20% score=1.000 gen=0.22s 'Paragraph 6'
+  knorm      10% score=0.000 gen=0.32s 'The paragraph most relevant to the summary is:\n\nParagraph 1: Originally, trans'
+  svdd_prerope 50% score=1.000 gen=0.25s 'Paragraph 6'
+  streaming  50% score=0.000 gen=0.39s "The text discusses Canada's involvement in the Congo Crisis from 1960"
+  leverage   20% score=1.000 gen=0.22s 'Paragraph 6'
+  keydiff    10% score=0.000 gen=0.22s 'Paragraph 28'
+  snapkv     50% score=1.000 gen=0.25s 'Paragraph 6'
+  svdd       50% score=1.000 gen=0.25s 'Paragraph 6'
+  snapkv     10% score=0.000 gen=0.32s "None of the provided paragraphs directly summarize the given summary about Canada's involv"
+  case_total=25.7s
+CASE 53/54 longbench_passage_retrieval_en_117 prefix=12405
+  prefill=8.76s KV=678.4MiB
+  score svdd=3.54s
+  score svdd_prerope=3.74s
+  score snapkv=0.05s
+  score streaming=0.00s
+  score keydiff=0.36s
+  score knorm=0.09s
+  score leverage=0.55s
+  score random=0.02s
+  snapkv     10% score=0.000 gen=0.19s 'Paragraph 11'
+  snapkv     50% score=1.000 gen=0.21s 'Paragraph 9'
+  random     20% score=0.000 gen=0.30s 'The summary provided does not match any of the given paragraphs. However, it appears'
+  random     10% score=0.000 gen=0.28s 'The text describes the format and rules of a game played on a no-line court'
+  streaming  20% score=0.000 gen=0.30s 'The text describes the format and rules of a game played on a no-line court'
+  full       100% score=1.000 gen=0.25s 'Paragraph 9'
+  leverage   20% score=1.000 gen=0.18s 'Paragraph 9'
+  svdd_prerope 10% score=0.000 gen=0.28s 'None of the paragraphs directly summarize the rules of the game described in the provided '
+  streaming  10% score=0.000 gen=0.28s 'The text provided does not appear to be a summary of a game played on a'
+  svdd_prerope 50% score=1.000 gen=0.21s 'Paragraph 9'
+  keydiff    20% score=1.000 gen=0.18s 'Paragraph 9'
+  svdd       10% score=0.000 gen=0.28s 'None of the paragraphs directly summarize the given summary about the format and rules of '
+  svdd_prerope 20% score=0.000 gen=0.18s 'Paragraph 8'
+  leverage   10% score=1.000 gen=0.17s 'Paragraph 9'
+  keydiff    50% score=1.000 gen=0.21s 'Paragraph 9'
+  knorm      20% score=0.000 gen=0.18s 'Paragraph 3'
+  streaming  50% score=0.000 gen=0.34s 'The text does not provide a summary of a game or event. Instead, it'
+  svdd       50% score=1.000 gen=0.20s 'Paragraph 9'
+  snapkv     20% score=0.000 gen=0.30s 'None of the paragraphs provided directly match the summary given about the no-line court g'
+  knorm      10% score=0.000 gen=0.28s 'The paragraph most relevant to the summary is:\n\nParagraph 1: The text describes'
+  keydiff    10% score=0.000 gen=0.18s 'Paragraph 29'
+  leverage   50% score=1.000 gen=0.21s 'Paragraph 9'
+  svdd       20% score=0.000 gen=0.18s 'Paragraph 8'
+  knorm      50% score=1.000 gen=0.20s 'Paragraph 9'
+  random     50% score=1.000 gen=0.20s 'Paragraph 9'
+  case_total=24.7s
+CASE 54/54 longbench_passage_retrieval_en_71 prefix=12289
+  prefill=8.64s KV=672.1MiB
+  score svdd=3.51s
+  score svdd_prerope=3.68s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.36s
+  score knorm=0.09s
+  score leverage=0.54s
+  score random=0.02s
+  keydiff    50% score=1.000 gen=0.19s 'Paragraph 9'
+  random     10% score=0.000 gen=0.27s 'The provided text does not correspond to any of the numbered paragraphs. Instead, it'
+  leverage   10% score=0.000 gen=0.15s 'Paragraph 7'
+  knorm      10% score=0.000 gen=0.26s 'The paragraph provided does not match the summary requested. The summary describes a baseb'
+  keydiff    10% score=0.000 gen=0.15s 'Paragraph 7'
+  snapkv     50% score=1.000 gen=0.18s 'Paragraph 9'
+  keydiff    20% score=0.000 gen=0.16s 'Paragraph 7'
+  svdd       50% score=1.000 gen=0.18s 'Paragraph 9'
+  knorm      50% score=1.000 gen=0.18s 'Paragraph 9'
+  random     50% score=0.000 gen=0.19s 'Paragraph 12'
+  svdd_prerope 10% score=0.000 gen=0.15s 'Paragraph 7'
+  svdd       10% score=0.000 gen=0.15s 'Paragraph 7'
+  leverage   50% score=1.000 gen=0.18s 'Paragraph 9'
+  snapkv     10% score=1.000 gen=0.15s 'Paragraph 9'
+  svdd_prerope 50% score=1.000 gen=0.18s 'Paragraph 9'
+  streaming  50% score=0.000 gen=0.32s 'The provided text does not fit the requested summary format. Instead, it appears to'
+  full       100% score=1.000 gen=0.21s 'Paragraph 9'
+  snapkv     20% score=1.000 gen=0.16s 'Paragraph 9'
+  knorm      20% score=0.000 gen=0.28s 'Paragraph 3 is most relevant to the summary. The paragraph discusses Monte Irvin'
+  svdd       20% score=0.000 gen=0.16s 'Paragraph 7'
+  random     20% score=0.000 gen=0.22s 'The relevant paragraph is Paragraph 12.'
+  streaming  20% score=0.000 gen=0.28s 'The summary of the provided text is as follows:\n\nMonte Irvin of the'
+  streaming  10% score=0.000 gen=0.26s 'In the first inning of the game, Monte Irvin of the New York Giants'
+  leverage   20% score=0.000 gen=0.16s 'Paragraph 7'
+  svdd_prerope 20% score=1.000 gen=0.16s 'Paragraph 9'
+  case_total=23.6s

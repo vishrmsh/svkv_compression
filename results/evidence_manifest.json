@@ -1,0 +1,26 @@
+[
+  {
+    "raw_path": "results/pilot/solver_diagnostics.jsonl",
+    "raw_bytes": 102327182,
+    "raw_sha256": "e874b957ac800ec43043f3b81d50a8876bb039b98b329a62da95df8bca92b09c",
+    "compressed_path": "results/pilot/solver_diagnostics.jsonl.gz",
+    "compressed_bytes": 5879203,
+    "compressed_sha256": "bea1eed6542588261a11def83b18382cdfbb6b55d71c9ecce2c63deeabbacbf6"
+  },
+  {
+    "raw_path": "results/pre_separator_check/solver_diagnostics.jsonl",
+    "raw_bytes": 28348826,
+    "raw_sha256": "e60161754ad8b3e719a909ad23c790dbd259ccc1e8613a4293f18f417cdc7e31",
+    "compressed_path": "results/pre_separator_check/solver_diagnostics.jsonl.gz",
+    "compressed_bytes": 1542714,
+    "compressed_sha256": "a0dcfb3903d49bef5c8005aac69350d7b05209a446a6e40afb313627b2ba40fb"
+  },
+  {
+    "raw_path": "results/smoke/solver_diagnostics.jsonl",
+    "raw_bytes": 465154,
+    "raw_sha256": "3d147567eeb51d219c4c1c19664822527c96389f73ca45abc607fa41269de2e4",
+    "compressed_path": "results/smoke/solver_diagnostics.jsonl.gz",
+    "compressed_bytes": 27050,
+    "compressed_sha256": "ac1848d255003113a413d389cd199366619cdd16baf7bc038b9f248e8c2262ec"
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "cases": 54,
+  "prediction_rows": 1350,
+  "task_case_counts": {
+    "niah_single": 18,
+    "niah_multi": 18,
+    "hotpotqa": 6,
+    "qasper": 6,
+    "passage_retrieval_en": 6
+  },
+  "checked": [
+    "all expected arms exactly once",
+    "input hashes and model context limits",
+    "all scores recomputed",
+    "exact physical KV byte counts before and after generation",
+    "SVDD support accounting",
+    "solver record completeness",
+    "archived code and input hashes match run invocations"
+  ],
+  "solver_summary": {
+    "svdd": {
+      "blocks": 399840,
+      "unconverged_blocks": 0,
+      "mean_layer_support_fraction": 0.16033916313485116
+    },
+    "svdd_prerope": {
+      "blocks": 399840,
+      "unconverged_blocks": 0,
+      "mean_layer_support_fraction": 0.14866342262226204
+    }
+  }
+}

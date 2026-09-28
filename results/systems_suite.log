@@ -1,0 +1,72 @@
+Waiting for quality process 45798; no GPU work starts until it exits.
+SYSTEMS 1/14 svdd repeat=1
+Loading models/Qwen2.5-7B-Instruct-4bit; method=svdd fraction=0.2
+Prefill 32512 tokens
+Decode with 355.58 MiB active KV
+Saved results/systems/svdd_r1.json; prefill=29.572s compression=10.014s decode=102.26 forwards/s
+SYSTEMS 2/14 streaming repeat=0
+Loading models/Qwen2.5-7B-Instruct-4bit; method=streaming fraction=0.2
+Prefill 32512 tokens
+Decode with 355.58 MiB active KV
+Saved results/systems/streaming_r0.json; prefill=29.454s compression=0.033s decode=101.71 forwards/s
+SYSTEMS 3/14 leverage repeat=0
+Loading models/Qwen2.5-7B-Instruct-4bit; method=leverage fraction=0.2
+Prefill 32512 tokens
+Decode with 355.58 MiB active KV
+Saved results/systems/leverage_r0.json; prefill=29.640s compression=1.926s decode=101.39 forwards/s
+SYSTEMS 4/14 leverage repeat=1
+Loading models/Qwen2.5-7B-Instruct-4bit; method=leverage fraction=0.2
+Prefill 32512 tokens
+Decode with 355.58 MiB active KV
+Saved results/systems/leverage_r1.json; prefill=29.462s compression=1.939s decode=101.12 forwards/s
+SYSTEMS 5/14 full repeat=0
+Loading models/Qwen2.5-7B-Instruct-4bit; method=full fraction=1.0
+Prefill 32512 tokens
+Decode with 1778.00 MiB active KV
+Saved results/systems/full_r0.json; prefill=29.480s compression=0.000s decode=70.89 forwards/s
+SYSTEMS 6/14 svdd_prerope repeat=0
+Loading models/Qwen2.5-7B-Instruct-4bit; method=svdd_prerope fraction=0.2
+Prefill 32512 tokens
+Decode with 355.58 MiB active KV
+Saved results/systems/svdd_prerope_r0.json; prefill=29.461s compression=10.376s decode=101.36 forwards/s
+SYSTEMS 7/14 streaming repeat=1
+Loading models/Qwen2.5-7B-Instruct-4bit; method=streaming fraction=0.2
+Prefill 32512 tokens
+Decode with 355.58 MiB active KV
+Saved results/systems/streaming_r1.json; prefill=29.532s compression=0.033s decode=101.29 forwards/s
+SYSTEMS 8/14 snapkv repeat=1
+Loading models/Qwen2.5-7B-Instruct-4bit; method=snapkv fraction=0.2
+Prefill 32512 tokens
+Decode with 355.58 MiB active KV
+Saved results/systems/snapkv_r1.json; prefill=29.608s compression=0.417s decode=101.95 forwards/s
+SYSTEMS 9/14 svdd_prerope repeat=1
+Loading models/Qwen2.5-7B-Instruct-4bit; method=svdd_prerope fraction=0.2
+Prefill 32512 tokens
+Decode with 355.58 MiB active KV
+Saved results/systems/svdd_prerope_r1.json; prefill=29.452s compression=10.220s decode=101.13 forwards/s
+SYSTEMS 10/14 keydiff repeat=1
+Loading models/Qwen2.5-7B-Instruct-4bit; method=keydiff fraction=0.2
+Prefill 32512 tokens
+Decode with 355.58 MiB active KV
+Saved results/systems/keydiff_r1.json; prefill=29.501s compression=1.324s decode=102.57 forwards/s
+SYSTEMS 11/14 svdd repeat=0
+Loading models/Qwen2.5-7B-Instruct-4bit; method=svdd fraction=0.2
+Prefill 32512 tokens
+Decode with 355.58 MiB active KV
+Saved results/systems/svdd_r0.json; prefill=29.579s compression=9.782s decode=101.38 forwards/s
+SYSTEMS 12/14 snapkv repeat=0
+Loading models/Qwen2.5-7B-Instruct-4bit; method=snapkv fraction=0.2
+Prefill 32512 tokens
+Decode with 355.58 MiB active KV
+Saved results/systems/snapkv_r0.json; prefill=29.471s compression=0.420s decode=100.94 forwards/s
+SYSTEMS 13/14 full repeat=1
+Loading models/Qwen2.5-7B-Instruct-4bit; method=full fraction=1.0
+Prefill 32512 tokens
+Decode with 1778.00 MiB active KV
+Saved results/systems/full_r1.json; prefill=29.561s compression=0.000s decode=71.37 forwards/s
+SYSTEMS 14/14 keydiff repeat=0
+Loading models/Qwen2.5-7B-Instruct-4bit; method=keydiff fraction=0.2
+Prefill 32512 tokens
+Decode with 355.58 MiB active KV
+Saved results/systems/keydiff_r0.json; prefill=29.649s compression=1.334s decode=101.64 forwards/s
+Systems suite complete

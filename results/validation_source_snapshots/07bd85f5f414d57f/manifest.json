@@ -1,0 +1,9 @@
+{
+  "scripts/benchmark_systems.py": "7cb685b4ce322cb78bdd0bd59943bdb4f5cc8e838062444ad1d470c6fadd944a",
+  "src/svkv/__init__.py": "53e833c396cfa69f302b8a43898c3fb7565ff60699a60f7b0b9b5b6ece73c935",
+  "src/svkv/geometry.py": "ee374da6dd64be326cdf1c442b283b5ebbe653986059e575577db1c705f87e01",
+  "src/svkv/runtime.py": "bc4069d5d26c5430d06a50719dfb4feec76bd7dc0833b5328976660c9a843611",
+  "src/svkv/selectors.py": "44092bb8489e133a6460ff5c874b0bff9c3e1c9375e4b8e1ddcab46151858210",
+  "src/svkv/systems_cache.py": "2f512b7e1dfdd051ba17214ad23979bcdb9f761d027aaf1e4d408978218b2d4c",
+  "src/svkv/tasks.py": "eb0ee0e1e46a3467eb8fface4bad6c005b4968234dad947b2bc88be34372bad7"
+}

@@ -1,0 +1,42 @@
+{
+  "model": "models/Qwen2.5-7B-Instruct-4bit",
+  "cases": "data/pilot_cases.jsonl",
+  "output": "results/smoke",
+  "methods": [
+    "svdd",
+    "snapkv",
+    "streaming",
+    "keydiff",
+    "knorm",
+    "random"
+  ],
+  "budgets": [
+    0.1,
+    0.2,
+    0.5
+  ],
+  "ids": null,
+  "limit": 1,
+  "chunk_size": 512,
+  "code_sha256": {
+    "src/svkv/__init__.py": "53e833c396cfa69f302b8a43898c3fb7565ff60699a60f7b0b9b5b6ece73c935",
+    "src/svkv/runtime.py": "33f86e35a42ed79e0d76c6e7f7b429e6d4a46fad3235d82d34a0d28411a7b615",
+    "src/svkv/selectors.py": "2f16eb88abc5d9c955fbf8d98bb57679988d35347c87cbaba7f74c0255381513",
+    "src/svkv/tasks.py": "059eac02f88cc6a33cf5f805cb548fc33eb16eb423a99cf890e27ecde5c4f7ac"
+  },
+  "case_file_sha256": "5f6dc36dc134d7c1238bcec73881c1f431a49817814ea991de09cc6b9f5d3604",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "packages": {
+    "mlx": "0.32.2",
+    "mlx-lm": "0.31.3",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1",
+    "transformers": "5.17.0"
+  },
+  "selection_protocol": "post-prefill, pre-question; same full prefix for every method",
+  "weight_quantization_bits": 4,
+  "kv_quantization": false,
+  "position_policy": "original absolute RoPE, physical chronological selected rows",
+  "run_started_local": "2026-09-27T20:39:47-0700"
+}

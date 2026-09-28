@@ -1,0 +1,12 @@
+.venv/
+.cache/
+models/
+data/longbench/
+data/pilot_cases.jsonl
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.DS_Store
+results/**/cache_*.safetensors
+results/**/solver_diagnostics.jsonl

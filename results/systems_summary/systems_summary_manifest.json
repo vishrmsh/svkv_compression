@@ -1,0 +1,25 @@
+{
+  "input_directory": "results/systems",
+  "source_file_sha256": {
+    "suite.json": "ea7175bda7f1b452a68c926aa932476e305c727420177706db75acaf9029909f",
+    "full_r0.json": "820c5365e39cfe3a48ff602018986ce2f6593d6326c451ec6af75e88b861c6f5",
+    "full_r1.json": "b634b22c0e455947705ee7dca76ecbea478dc5fa111b6b4c238f038962ad2ae7",
+    "keydiff_r0.json": "cafd3370cbe03c5860ff2d059816307cada8963f176ad8d411172786477ba20f",
+    "keydiff_r1.json": "dbb08b7dab8d0e110597020b77cd0c407586afef4828d4605028d37c3e7c32ed",
+    "leverage_r0.json": "c3d91b1b3298b86bd6b87f6e438676ccb627d442af7e44f53835678e1b9cf548",
+    "leverage_r1.json": "30a9ebc057b7fc057f75a56969323cf32934776972df71bb324cc37460949377",
+    "snapkv_r0.json": "db66a88983ac05edb73447ea0f1fbd073cf6c7553400c734a96adfbc8d15e2f9",
+    "snapkv_r1.json": "554012afe635928b40a2419e7a775f34d3b63226d7acc6d2339c564386e4c5ca",
+    "streaming_r0.json": "fecfb7369cd0a3578e044fb87fe7a72c670893b5480b9dfdc6e15f2c42607584",
+    "streaming_r1.json": "bee7b6ae36295130c168ec42cae3b39294154fb0e8f3991a8983c7febf2524b5",
+    "svdd_prerope_r0.json": "3f445fd473db3c961a16afb945e8fa8f21e4d96242a35da7e2261c0dc6532f6c",
+    "svdd_prerope_r1.json": "1b1e1a4f816e6e884017bd12c78a8b19313a759bc4859c3b625a2634a684cadc",
+    "svdd_r0.json": "774ffc8a94e912b296508cdf03c565444d187ed7da825fa784424ef3145658ed",
+    "svdd_r1.json": "0e46ea1cfef23d5cb870a8f81cb88cbc8928c4739132be126baed1dee284ed0b"
+  },
+  "analysis_script_sha256": "2097eb09a6625e30a08b0cf70aed16881457415ebaee5784b4cc21e9a99e6a96",
+  "run_count": 14,
+  "method_count": 7,
+  "expected_repetitions": 2,
+  "aggregation": "median, minimum, maximum over fresh-process repetitions; no confidence intervals"
+}

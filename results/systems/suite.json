@@ -1,0 +1,76 @@
+{
+  "arguments": {
+    "wait_pid": 45798,
+    "repeats": 2,
+    "methods": [
+      "full",
+      "svdd",
+      "svdd_prerope",
+      "keydiff",
+      "leverage",
+      "snapkv",
+      "streaming"
+    ],
+    "fraction": 0.2
+  },
+  "order": [
+    [
+      "svdd",
+      1
+    ],
+    [
+      "streaming",
+      0
+    ],
+    [
+      "leverage",
+      0
+    ],
+    [
+      "leverage",
+      1
+    ],
+    [
+      "full",
+      0
+    ],
+    [
+      "svdd_prerope",
+      0
+    ],
+    [
+      "streaming",
+      1
+    ],
+    [
+      "snapkv",
+      1
+    ],
+    [
+      "svdd_prerope",
+      1
+    ],
+    [
+      "keydiff",
+      1
+    ],
+    [
+      "svdd",
+      0
+    ],
+    [
+      "snapkv",
+      0
+    ],
+    [
+      "full",
+      1
+    ],
+    [
+      "keydiff",
+      0
+    ]
+  ],
+  "policy": "serial, fresh process per measurement, fixed 32 decode forwards; no simultaneous quality job",
+  "started_local": "2026-09-27T21:23:48-0700"
+}

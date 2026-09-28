@@ -1,0 +1,804 @@
+Loading model
+CASE 1/54 niah_single_8192_s17_d0.1 prefix=7936
+  prefill=5.22s KV=434.0MiB
+  score svdd=2.77s
+  score svdd_prerope=2.27s
+  score snapkv=0.04s
+  score streaming=0.00s
+  score keydiff=0.22s
+  score knorm=0.06s
+  score leverage=0.35s
+  score random=0.01s
+  keydiff    20% score=1.000 gen=0.12s '7587050'
+  svdd       20% score=1.000 gen=0.10s '7587050'
+  leverage   20% score=1.000 gen=0.12s '7587050'
+  snapkv     10% score=0.000 gen=0.06s '3 7'
+  keydiff    50% score=1.000 gen=0.13s '7587050'
+  streaming  10% score=0.000 gen=0.12s '42 89 1337'
+  svdd       10% score=0.000 gen=0.18s '7852937654789256'
+  streaming  50% score=0.000 gen=0.11s '42069'
+  leverage   10% score=1.000 gen=0.10s '7587050'
+  knorm      50% score=0.000 gen=0.39s '75892345789234578923457892345789'
+  svdd_prerope 10% score=0.000 gen=0.13s '789456123'
+  random     20% score=0.000 gen=0.09s '777777'
+  leverage   50% score=1.000 gen=0.13s '7587050'
+  svdd_prerope 50% score=1.000 gen=0.13s '7587050'
+  random     50% score=0.000 gen=0.14s '750750750'
+  full       100% score=1.000 gen=0.16s '7587050'
+  svdd       50% score=1.000 gen=0.14s '7587050'
+  snapkv     20% score=0.000 gen=0.06s '420'
+  knorm      20% score=0.000 gen=0.20s '7532910478293758'
+  svdd_prerope 20% score=0.000 gen=0.35s '70570507777777777777777777777777'
+  random     10% score=0.000 gen=0.19s '420\n666\n1337\n9001'
+  streaming  20% score=0.000 gen=0.09s '42069'
+  snapkv     50% score=0.000 gen=0.24s '7\n512\n256\n250\n750'
+  keydiff    10% score=1.000 gen=0.11s '7587050'
+  knorm      10% score=0.000 gen=0.18s '753291047892561'
+  case_total=15.9s
+CASE 2/54 niah_single_8192_s17_d0.5 prefix=7936
+  prefill=5.63s KV=434.0MiB
+  score svdd=2.18s
+  score svdd_prerope=2.27s
+  score snapkv=0.04s
+  score streaming=0.00s
+  score keydiff=0.23s
+  score knorm=0.06s
+  score leverage=0.35s
+  score random=0.01s
+  leverage   20% score=1.000 gen=0.11s '3905301'
+  svdd       20% score=0.000 gen=0.35s '257\n512\n32\n500\n75003\n512897234\n3'
+  full       100% score=1.000 gen=0.16s '3905301'
+  knorm      50% score=0.000 gen=0.41s '39874259874259874259874259874259'
+  snapkv     20% score=0.000 gen=0.12s '1024\n759'
+  streaming  50% score=1.000 gen=0.12s '3905301'
+  snapkv     50% score=1.000 gen=0.22s '3905301\n3905302'
+  knorm      10% score=0.000 gen=0.35s '300\n256\n300000\n250000\n1000000\n10'
+  svdd       10% score=0.000 gen=0.33s '35325719876543218765432187654321'
+  streaming  20% score=0.000 gen=0.15s '42 735 200'
+  random     20% score=0.000 gen=0.23s '3562079875749862387'
+  keydiff    10% score=1.000 gen=0.10s '3905301'
+  random     10% score=0.000 gen=0.08s '25600'
+  svdd_prerope 10% score=0.000 gen=0.33s '32\n718\n500\n250\n150\n32768\n1024\n20'
+  leverage   10% score=1.000 gen=0.10s '3905301'
+  random     50% score=0.000 gen=0.40s '39053018452376875382537687538253'
+  knorm      20% score=0.000 gen=0.34s '35792105837921058379210583792105'
+  keydiff    50% score=1.000 gen=0.13s '3905301'
+  svdd_prerope 50% score=0.000 gen=0.40s '256\n512\n257\n2500\n32\n512\n98.43\n5\n'
+  snapkv     10% score=0.000 gen=0.11s '136\n1327'
+  streaming  10% score=0.000 gen=0.33s '1785855\n848196\n1327\n290841\n136'
+  keydiff    20% score=1.000 gen=0.10s '3905301'
+  leverage   50% score=1.000 gen=0.23s '3905301 1327 136'
+  svdd       50% score=0.000 gen=0.40s '256\n512\n257\n2500\n500\n32\n512\n257\n'
+  svdd_prerope 20% score=0.000 gen=0.35s '32\n500\n257\n500\n750\n256\n257\n500\n3'
+  case_total=17.8s
+CASE 3/54 niah_single_8192_s17_d0.9 prefix=7936
+  prefill=5.65s KV=434.0MiB
+  score svdd=2.29s
+  score svdd_prerope=2.32s
+  score snapkv=0.05s
+  score streaming=0.00s
+  score keydiff=0.22s
+  score knorm=0.06s
+  score leverage=0.34s
+  score random=0.01s
+  streaming  10% score=0.000 gen=0.33s '42758912345678901234567890123456'
+  random     50% score=1.000 gen=0.39s '478239\n4728478\n4784728\n4728747\n4'
+  snapkv     10% score=0.000 gen=0.06s '444'
+  knorm      50% score=0.000 gen=0.10s '4728'
+  snapkv     20% score=0.000 gen=0.10s '4728787'
+  full       100% score=1.000 gen=0.15s '4728478'
+  keydiff    10% score=1.000 gen=0.11s '4728478'
+  svdd_prerope 20% score=1.000 gen=0.10s '4728478'
+  leverage   10% score=1.000 gen=0.10s '4728478'
+  knorm      20% score=0.000 gen=0.10s '4728391'
+  random     20% score=0.000 gen=0.34s '47892531759238745923874923874923'
+  svdd_prerope 10% score=0.000 gen=0.09s '478478'
+  keydiff    20% score=1.000 gen=0.10s '4728478'
+  svdd       20% score=0.000 gen=0.11s '472847'
+  keydiff    50% score=1.000 gen=0.12s '4728478'
+  snapkv     50% score=1.000 gen=0.14s '4728478'
+  leverage   20% score=1.000 gen=0.10s '4728478'
+  streaming  20% score=1.000 gen=0.10s '4728478'
+  streaming  50% score=1.000 gen=0.14s '4728478'
+  svdd_prerope 50% score=1.000 gen=0.12s '4728478'
+  random     10% score=0.000 gen=0.08s '42 87'
+  svdd       50% score=0.000 gen=0.15s '472847847'
+  knorm      10% score=0.000 gen=0.05s '42'
+  svdd       10% score=0.000 gen=0.09s '4784727'
+  leverage   50% score=1.000 gen=0.12s '4728478'
+  case_total=15.4s
+CASE 4/54 niah_single_8192_s29_d0.1 prefix=7936
+  prefill=5.29s KV=434.0MiB
+  score svdd=2.33s
+  score svdd_prerope=2.38s
+  score snapkv=0.04s
+  score streaming=0.00s
+  score keydiff=0.23s
+  score knorm=0.06s
+  score leverage=0.34s
+  score random=0.01s
+  leverage   10% score=1.000 gen=0.10s '4197743'
+  leverage   50% score=1.000 gen=0.12s '4197743'
+  random     20% score=0.000 gen=0.05s '41'
+  knorm      20% score=0.000 gen=0.35s '41782397417239741723974172397417'
+  knorm      10% score=0.000 gen=0.05s '42'
+  streaming  20% score=0.000 gen=0.06s '4.6'
+  random     10% score=0.000 gen=0.05s '42'
+  random     50% score=0.000 gen=0.10s '41977'
+  streaming  50% score=0.000 gen=0.14s '42.5 75.2'
+  keydiff    10% score=1.000 gen=0.11s '4197743'
+  leverage   20% score=1.000 gen=0.10s '4197743'
+  keydiff    20% score=1.000 gen=0.10s '4197743'
+  knorm      50% score=0.000 gen=0.12s '4197892'
+  svdd_prerope 20% score=0.000 gen=0.10s '4197778'
+  snapkv     20% score=0.000 gen=0.17s '427.5632456789'
+  streaming  10% score=0.000 gen=0.07s '4.5'
+  svdd       50% score=1.000 gen=0.12s '4197743'
+  svdd       10% score=0.000 gen=0.31s '41983985292374272329388721841237'
+  full       100% score=1.000 gen=0.15s '4197743'
+  keydiff    50% score=1.000 gen=0.12s '4197743'
+  snapkv     10% score=0.000 gen=0.06s '42'
+  snapkv     50% score=0.000 gen=0.09s '4197'
+  svdd_prerope 10% score=0.000 gen=0.10s '4325789'
+  svdd_prerope 50% score=1.000 gen=0.12s '4197743'
+  svdd       20% score=0.000 gen=0.11s '41578923'
+  case_total=14.8s
+CASE 5/54 niah_single_8192_s29_d0.5 prefix=7936
+  prefill=5.35s KV=434.0MiB
+  score svdd=2.31s
+  score svdd_prerope=2.42s
+  score snapkv=0.04s
+  score streaming=0.00s
+  score keydiff=0.23s
+  score knorm=0.06s
+  score leverage=0.34s
+  score random=0.01s
+  random     50% score=0.000 gen=0.38s '87492909472949729479274972947927'
+  snapkv     50% score=0.000 gen=0.15s '87\n98.24'
+  streaming  20% score=0.000 gen=0.05s '42'
+  full       100% score=1.000 gen=0.15s '8747290'
+  svdd       50% score=0.000 gen=0.12s '8747270'
+  keydiff    10% score=1.000 gen=0.10s '8747290'
+  svdd       20% score=0.000 gen=0.10s '8747270'
+  svdd_prerope 50% score=1.000 gen=0.31s '8747270\n8747280\n8747290'
+  keydiff    20% score=1.000 gen=0.10s '8747290'
+  svdd       10% score=0.000 gen=0.07s '8742'
+  svdd_prerope 10% score=0.000 gen=0.10s '87472000'
+  streaming  50% score=1.000 gen=0.17s '8747290\n9824'
+  leverage   50% score=1.000 gen=0.13s '8747290'
+  random     10% score=0.000 gen=0.31s '42017392856802195555291957051728'
+  leverage   10% score=1.000 gen=0.10s '8747290'
+  streaming  10% score=0.000 gen=0.06s '2-4'
+  random     20% score=0.000 gen=0.14s '42013728394'
+  knorm      10% score=0.000 gen=0.33s '8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n1'
+  knorm      20% score=0.000 gen=0.33s '87429137498723749872397498723974'
+  keydiff    50% score=1.000 gen=0.12s '8747290'
+  snapkv     20% score=0.000 gen=0.13s '2345678910'
+  snapkv     10% score=0.000 gen=0.07s '42'
+  leverage   20% score=1.000 gen=0.10s '8747290'
+  svdd_prerope 20% score=0.000 gen=0.10s '8747270'
+  knorm      50% score=0.000 gen=0.22s '87654321987654321'
+  case_total=15.9s
+CASE 6/54 niah_single_8192_s29_d0.9 prefix=7936
+  prefill=5.35s KV=434.0MiB
+  score svdd=2.31s
+  score svdd_prerope=2.40s
+  score snapkv=0.04s
+  score streaming=0.00s
+  score keydiff=0.25s
+  score knorm=0.07s
+  score leverage=0.35s
+  score random=0.01s
+  svdd       50% score=0.000 gen=0.11s '160563'
+  keydiff    50% score=1.000 gen=0.12s '1600563'
+  svdd_prerope 50% score=0.000 gen=0.11s '160563'
+  streaming  10% score=0.000 gen=0.15s '42017\n42018'
+  leverage   10% score=1.000 gen=0.10s '1600563'
+  leverage   20% score=1.000 gen=0.10s '1600563'
+  knorm      20% score=0.000 gen=0.18s '16289\n128\n16289'
+  keydiff    20% score=1.000 gen=0.10s '1600563'
+  random     10% score=0.000 gen=0.06s '128'
+  random     50% score=0.000 gen=0.12s '160213'
+  snapkv     20% score=0.000 gen=0.10s '1600633'
+  snapkv     50% score=1.000 gen=0.12s '1600563'
+  svdd       10% score=0.000 gen=0.09s '160563'
+  svdd_prerope 20% score=0.000 gen=0.09s '160563'
+  svdd_prerope 10% score=0.000 gen=0.09s '160563'
+  keydiff    10% score=1.000 gen=0.10s '1600563'
+  svdd       20% score=0.000 gen=0.09s '160563'
+  random     20% score=0.000 gen=0.08s '42017'
+  streaming  50% score=1.000 gen=0.12s '1600563'
+  leverage   50% score=1.000 gen=0.12s '1600563'
+  snapkv     10% score=0.000 gen=0.33s '1600567\n1600568\n1600569\n1600570\n'
+  full       100% score=1.000 gen=0.15s '1600563'
+  knorm      50% score=0.000 gen=0.37s '1628735\n1628736\n1628737\n1628738\n'
+  streaming  20% score=1.000 gen=0.10s '1600563'
+  knorm      10% score=0.000 gen=0.08s '16825'
+  case_total=15.1s
+CASE 7/54 niah_multi_8192_s17_d0.1 prefix=7936
+  prefill=5.35s KV=434.0MiB
+  score svdd=2.32s
+  score svdd_prerope=2.39s
+  score snapkv=0.04s
+  score streaming=0.00s
+  score keydiff=0.23s
+  score knorm=0.06s
+  score leverage=0.35s
+  score random=0.01s
+  keydiff    20% score=1.000 gen=0.18s '6517512\n3307403'
+  leverage   20% score=1.000 gen=0.18s '6517512\n3307403'
+  svdd       10% score=0.500 gen=0.19s '6517512\n7007512'
+  snapkv     20% score=0.000 gen=0.14s '65342\n34567'
+  svdd_prerope 20% score=0.500 gen=0.18s '6517512\n3307434'
+  svdd_prerope 50% score=0.500 gen=0.20s '6517512\n3307434'
+  leverage   10% score=1.000 gen=0.19s '6517512\n3307403'
+  streaming  10% score=0.000 gen=0.10s '168 172'
+  knorm      20% score=0.000 gen=0.16s '654321\n321654'
+  leverage   50% score=1.000 gen=0.20s '6517512\n3307403'
+  snapkv     10% score=0.000 gen=0.11s '417 418'
+  svdd_prerope 10% score=0.000 gen=0.17s '6543210\n6543211'
+  svdd       50% score=0.500 gen=0.20s '6517512\n3307432'
+  keydiff    50% score=1.000 gen=0.20s '6517512\n3307403'
+  random     10% score=0.000 gen=0.11s '3456\n1234'
+  streaming  20% score=0.500 gen=0.19s '3307403\n3307403'
+  knorm      10% score=0.000 gen=0.22s '6789054321\n1234567890'
+  streaming  50% score=0.500 gen=0.20s '3307403\n3307403'
+  keydiff    10% score=1.000 gen=0.17s '6517512\n3307403'
+  random     20% score=0.000 gen=0.26s '6512345789\n34567891011'
+  knorm      50% score=0.000 gen=0.14s '6517\n3478'
+  full       100% score=1.000 gen=0.25s '6517512\n3307403'
+  svdd       20% score=0.500 gen=0.19s '6517512\n3307413'
+  snapkv     50% score=0.500 gen=0.20s '6512123\n3307403'
+  random     50% score=0.000 gen=0.20s '6517521\n3337523'
+  case_total=16.5s
+CASE 8/54 niah_multi_8192_s17_d0.5 prefix=7936
+  prefill=5.33s KV=434.0MiB
+  score svdd=2.33s
+  score svdd_prerope=2.43s
+  score snapkv=0.04s
+  score streaming=0.00s
+  score keydiff=0.23s
+  score knorm=0.06s
+  score leverage=0.35s
+  score random=0.01s
+  random     50% score=0.500 gen=0.22s '2143361\n2141499'
+  knorm      20% score=0.000 gen=0.16s '214758\n214758'
+  knorm      10% score=0.000 gen=0.31s '23456789012345678901234567890123'
+  svdd       50% score=0.500 gen=0.20s '2143331\n2141491'
+  snapkv     20% score=0.000 gen=0.16s '45872 45873'
+  keydiff    20% score=1.000 gen=0.18s '2143361\n2141491'
+  streaming  10% score=0.000 gen=0.15s '345721 678945'
+  svdd       10% score=0.000 gen=0.18s '2141414, 2141414'
+  snapkv     50% score=0.000 gen=0.24s '234567890\n234567891'
+  snapkv     10% score=0.000 gen=0.17s '456789 123456'
+  full       100% score=1.000 gen=0.25s '2143361\n2141491'
+  keydiff    10% score=1.000 gen=0.17s '2143361\n2141491'
+  keydiff    50% score=1.000 gen=0.20s '2143361\n2141491'
+  streaming  20% score=0.000 gen=0.11s '427, 428'
+  random     20% score=0.000 gen=0.16s '21475\n21475'
+  svdd_prerope 10% score=0.000 gen=0.17s '2143391\n2149891'
+  svdd       20% score=0.500 gen=0.18s '2143314\n2141491'
+  leverage   10% score=1.000 gen=0.17s '2143361\n2141491'
+  leverage   20% score=1.000 gen=0.18s '2143361\n2141491'
+  leverage   50% score=1.000 gen=0.20s '2143361\n2141491'
+  svdd_prerope 50% score=0.500 gen=0.20s '2143311\n2141491'
+  svdd_prerope 20% score=0.500 gen=0.18s '2143310\n2141491'
+  knorm      50% score=0.000 gen=0.20s '2143856\n2143856'
+  streaming  50% score=0.500 gen=0.22s '2143361\n2141985'
+  random     10% score=0.000 gen=0.31s '21456789012345678901234567890123'
+  case_total=16.9s
+CASE 9/54 niah_multi_8192_s17_d0.9 prefix=7936
+  prefill=5.34s KV=434.0MiB
+  score svdd=2.32s
+  score svdd_prerope=2.41s
+  score snapkv=0.04s
+  score streaming=0.00s
+  score keydiff=0.23s
+  score knorm=0.06s
+  score leverage=0.35s
+  score random=0.01s
+  random     20% score=0.000 gen=0.13s '3257\n4821'
+  snapkv     10% score=0.000 gen=0.13s '60469\n45723'
+  knorm      20% score=0.000 gen=0.16s '627389\n384621'
+  svdd       20% score=0.500 gen=0.18s '6044293\n3892613'
+  svdd_prerope 10% score=0.500 gen=0.17s '6044269\n3893613'
+  streaming  10% score=0.000 gen=0.19s '2879377\n2879378'
+  keydiff    10% score=1.000 gen=0.17s '6044269\n3892613'
+  svdd_prerope 20% score=0.000 gen=0.18s '6044293\n3891357'
+  svdd       50% score=0.500 gen=0.20s '6044291\n3892613'
+  streaming  20% score=0.500 gen=0.19s '6044269\n7895432'
+  random     50% score=0.000 gen=0.18s '604264\n389261'
+  keydiff    20% score=1.000 gen=0.18s '6044269\n3892613'
+  knorm      10% score=0.000 gen=0.15s '654321\n123456'
+  random     10% score=0.000 gen=0.10s '345\n789'
+  leverage   10% score=1.000 gen=0.17s '6044269\n3892613'
+  leverage   50% score=1.000 gen=0.21s '6044269\n3892613'
+  knorm      50% score=0.000 gen=0.20s '6042397\n3897451'
+  snapkv     20% score=0.500 gen=0.21s '6044269\n23456789'
+  svdd       10% score=0.000 gen=0.17s '6044299\n3893637'
+  keydiff    50% score=1.000 gen=0.20s '6044269\n3892613'
+  leverage   20% score=1.000 gen=0.18s '6044269\n3892613'
+  snapkv     50% score=0.500 gen=0.20s '6044269\n3893123'
+  svdd_prerope 50% score=0.500 gen=0.20s '6044293\n3892613'
+  full       100% score=1.000 gen=0.25s '6044269\n3892613'
+  streaming  50% score=0.500 gen=0.20s '6044269\n7895432'
+  case_total=16.5s
+CASE 10/54 niah_multi_8192_s29_d0.1 prefix=7936
+  prefill=5.36s KV=434.0MiB
+  score svdd=2.32s
+  score svdd_prerope=2.40s
+  score snapkv=0.04s
+  score streaming=0.00s
+  score keydiff=0.23s
+  score knorm=0.06s
+  score leverage=0.35s
+  score random=0.01s
+  streaming  10% score=0.000 gen=0.13s '4321 7890'
+  full       100% score=1.000 gen=0.26s '1433722\n8168467'
+  random     50% score=0.000 gen=0.20s '1437722\n8168477'
+  knorm      10% score=0.000 gen=0.13s '14723\n86549'
+  leverage   50% score=1.000 gen=0.20s '1433722\n8168467'
+  snapkv     20% score=0.000 gen=0.35s '42 73591234567890123456789012345'
+  svdd_prerope 50% score=0.500 gen=0.21s '1433722\n81486457'
+  snapkv     10% score=0.000 gen=0.08s '42 43'
+  knorm      20% score=0.000 gen=0.34s '14723987592387492387492387492387'
+  knorm      50% score=0.000 gen=0.31s '1437\n81234567890987654321'
+  streaming  50% score=0.500 gen=0.20s '8168467\n8168467'
+  svdd_prerope 10% score=0.000 gen=0.16s '1437722\n817722'
+  random     10% score=0.000 gen=0.20s '1234567890123456789'
+  keydiff    50% score=1.000 gen=0.20s '1433722\n8168467'
+  snapkv     50% score=0.000 gen=0.22s '1. 8167\n2. 8167'
+  svdd_prerope 20% score=0.000 gen=0.18s '1437722\n8148477'
+  svdd       10% score=0.000 gen=0.17s '1437722\n8178178'
+  leverage   10% score=1.000 gen=0.17s '1433722\n8168467'
+  keydiff    20% score=1.000 gen=0.20s '1433722\n8168467'
+  streaming  20% score=0.500 gen=0.18s '8168467\n8168467'
+  svdd       20% score=0.000 gen=0.18s '1437722\n8148477'
+  svdd       50% score=0.500 gen=0.20s '1433722\n8148235'
+  random     20% score=0.000 gen=0.18s '142357\n864215'
+  keydiff    10% score=1.000 gen=0.17s '1433722\n8168467'
+  leverage   20% score=1.000 gen=0.18s '1433722\n8168467'
+  case_total=17.0s
+CASE 11/54 niah_multi_8192_s29_d0.5 prefix=7936
+  prefill=5.34s KV=434.0MiB
+  score svdd=2.35s
+  score svdd_prerope=2.42s
+  score snapkv=0.04s
+  score streaming=0.00s
+  score keydiff=0.25s
+  score knorm=0.06s
+  score leverage=0.35s
+  score random=0.01s
+  keydiff    20% score=1.000 gen=0.21s '4360765\n8884000'
+  snapkv     50% score=0.000 gen=0.14s '8432\n8820'
+  leverage   20% score=1.000 gen=0.18s '4360765\n8884000'
+  knorm      10% score=0.000 gen=0.20s '876543210987654321'
+  keydiff    10% score=1.000 gen=0.17s '4360765\n8884000'
+  svdd       50% score=1.000 gen=0.22s '4360765\n8884000'
+  leverage   10% score=0.500 gen=0.17s '4360765\n8840000'
+  knorm      50% score=0.000 gen=0.14s '4321\n8888'
+  svdd_prerope 20% score=1.000 gen=0.18s '4360765\n8884000'
+  svdd       10% score=0.000 gen=0.19s '43065789\n88097654'
+  streaming  10% score=0.000 gen=0.12s '24.5, 18.2'
+  svdd_prerope 10% score=0.000 gen=0.19s '4306789\n8840000'
+  knorm      20% score=0.000 gen=0.14s '42\n87654321'
+  svdd       20% score=0.500 gen=0.18s '4360755\n8884000'
+  keydiff    50% score=1.000 gen=0.20s '4360765\n8884000'
+  streaming  20% score=0.000 gen=0.13s '23.4, 15.7'
+  random     20% score=0.000 gen=0.12s '4321\n8765'
+  leverage   50% score=1.000 gen=0.20s '4360765\n8884000'
+  random     10% score=0.000 gen=0.13s '42069\n78953'
+  snapkv     10% score=0.000 gen=0.08s '42 73'
+  random     50% score=0.500 gen=0.22s '4360765\n8877991'
+  full       100% score=1.000 gen=0.25s '4360765\n8884000'
+  streaming  50% score=0.500 gen=0.20s '4360765\n3457892'
+  snapkv     20% score=0.000 gen=0.08s '23 47'
+  svdd_prerope 50% score=1.000 gen=0.22s '4360765\n8884000'
+  case_total=16.3s
+CASE 12/54 niah_multi_8192_s29_d0.9 prefix=7936
+  prefill=5.36s KV=434.0MiB
+  score svdd=2.31s
+  score svdd_prerope=2.39s
+  score snapkv=0.05s
+  score streaming=0.00s
+  score keydiff=0.24s
+  score knorm=0.06s
+  score leverage=0.36s
+  score random=0.01s
+  leverage   10% score=1.000 gen=0.18s '6007669\n2794734'
+  leverage   50% score=1.000 gen=0.21s '6007669\n2794734'
+  random     20% score=0.000 gen=0.19s '23457\n1234567890'
+  streaming  10% score=0.000 gen=0.08s '42 73'
+  streaming  50% score=0.500 gen=0.20s '6007669\n7894521'
+  svdd_prerope 20% score=0.000 gen=0.18s '6076967\n2734568'
+  knorm      20% score=0.000 gen=0.18s '603258\n234579'
+  svdd       50% score=0.500 gen=0.20s '6007676\n2794734'
+  keydiff    10% score=1.000 gen=0.17s '6007669\n2794734'
+  svdd       20% score=0.000 gen=0.18s '6007676\n2734567'
+  keydiff    50% score=1.000 gen=0.22s '6007669\n2794734'
+  full       100% score=1.000 gen=0.25s '6007669\n2794734'
+  leverage   20% score=1.000 gen=0.18s '6007669\n2794734'
+  random     10% score=0.000 gen=0.11s '4273\n8945'
+  random     50% score=0.000 gen=0.18s '600600\n271828'
+  snapkv     20% score=0.000 gen=0.33s '66999999999999999999999999999999'
+  streaming  20% score=0.500 gen=0.18s '6007669\n7894521'
+  svdd_prerope 10% score=0.000 gen=0.19s '6007607\n2747603'
+  svdd_prerope 50% score=0.500 gen=0.20s '6076695\n2794734'
+  snapkv     50% score=0.000 gen=0.20s '6000769\n2345678'
+  snapkv     10% score=0.000 gen=0.08s '42\n73'
+  svdd       10% score=0.000 gen=0.07s '6007'
+  knorm      10% score=0.000 gen=0.14s '67890\n12345'
+  knorm      50% score=0.000 gen=0.20s '6078945\n2738947'
+  keydiff    20% score=1.000 gen=0.18s '6007669\n2794734'
+  case_total=16.5s
+CASE 13/54 niah_single_16384_s17_d0.1 prefix=16128
+  prefill=12.23s KV=882.0MiB
+  score svdd=4.62s
+  score svdd_prerope=4.83s
+  score snapkv=0.07s
+  score streaming=0.00s
+  score keydiff=0.49s
+  score knorm=0.12s
+  score leverage=0.72s
+  score random=0.02s
+  streaming  10% score=0.000 gen=0.12s '43.7997'
+  keydiff    50% score=1.000 gen=0.15s '6220744'
+  snapkv     20% score=0.000 gen=0.36s '62478953127895327895327895327895'
+  keydiff    20% score=1.000 gen=0.11s '6220744'
+  svdd_prerope 10% score=0.000 gen=0.08s '62207'
+  knorm      50% score=0.000 gen=0.46s '6220773\n6220774\n6220775\n6220776\n'
+  leverage   20% score=1.000 gen=0.11s '6220744'
+  random     50% score=1.000 gen=0.15s '6220744'
+  svdd_prerope 20% score=0.000 gen=0.13s '6220774'
+  svdd       50% score=1.000 gen=0.15s '6220744'
+  snapkv     10% score=0.000 gen=0.05s '42'
+  svdd       10% score=0.000 gen=0.10s '6220724'
+  keydiff    10% score=1.000 gen=0.10s '6220744'
+  full       100% score=1.000 gen=0.23s '6220744'
+  svdd_prerope 50% score=1.000 gen=0.15s '6220744'
+  streaming  50% score=0.000 gen=0.20s '43.43 43.44'
+  random     10% score=0.000 gen=0.05s '74'
+  knorm      10% score=0.000 gen=0.35s '62735498723478923478923478923478'
+  random     20% score=0.000 gen=0.09s '62771'
+  snapkv     50% score=1.000 gen=0.15s '6220744'
+  leverage   50% score=1.000 gen=0.15s '6220744'
+  leverage   10% score=1.000 gen=0.10s '6220744'
+  streaming  20% score=0.000 gen=0.17s '43.0425325429'
+  svdd       20% score=0.000 gen=0.11s '6220774'
+  knorm      20% score=0.000 gen=0.38s '62478953127894532789453278945327'
+  case_total=29.9s
+CASE 14/54 niah_single_16384_s17_d0.5 prefix=16128
+  prefill=12.22s KV=882.0MiB
+  score svdd=4.55s
+  score svdd_prerope=4.76s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.48s
+  score knorm=0.12s
+  score leverage=0.72s
+  score random=0.02s
+  leverage   20% score=1.000 gen=0.12s '7017506'
+  svdd_prerope 20% score=0.000 gen=0.14s '7017565847'
+  keydiff    10% score=1.000 gen=0.10s '7017506'
+  random     20% score=0.000 gen=0.36s '71705932541259876549876549876549'
+  svdd_prerope 10% score=0.000 gen=0.10s '7571757'
+  keydiff    50% score=1.000 gen=0.16s '7017506'
+  streaming  20% score=0.000 gen=0.12s '420\n9001'
+  keydiff    20% score=1.000 gen=0.11s '7017506'
+  svdd       50% score=0.000 gen=0.26s '7\n5\n175\n756\n7560'
+  knorm      50% score=0.000 gen=0.15s '7017501'
+  leverage   50% score=1.000 gen=0.15s '7017506'
+  snapkv     10% score=0.000 gen=0.08s '43 59'
+  random     50% score=1.000 gen=0.15s '7017506'
+  svdd       20% score=0.000 gen=0.38s '7\n5\n7\n8\n5\n7\n5\n7\n5\n7\n5\n7\n8\n5\n7\n5\n'
+  streaming  10% score=0.000 gen=0.11s '420\n9001'
+  knorm      10% score=0.000 gen=0.22s '7\n5\n3\n2\n1\n4\n6\n8\n9\n0'
+  streaming  50% score=1.000 gen=0.17s '7017506\n2'
+  svdd       10% score=0.000 gen=0.12s '7175706'
+  snapkv     20% score=0.000 gen=0.08s '4321'
+  svdd_prerope 50% score=0.000 gen=0.15s '7017565'
+  random     10% score=0.000 gen=0.33s '42069878378947893749874987498749'
+  full       100% score=1.000 gen=0.26s '7017506\n2'
+  leverage   10% score=1.000 gen=0.10s '7017506'
+  snapkv     50% score=0.000 gen=0.44s '701\n702\n703\n704\n705\n706\n707\n708\n'
+  knorm      20% score=0.000 gen=0.37s '70325947522878944481854385759999'
+  case_total=30.2s
+CASE 15/54 niah_single_16384_s17_d0.9 prefix=16128
+  prefill=12.19s KV=882.0MiB
+  score svdd=4.53s
+  score svdd_prerope=4.78s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.47s
+  score knorm=0.12s
+  score leverage=0.72s
+  score random=0.03s
+  svdd_prerope 50% score=1.000 gen=0.25s '6024166\n6024168'
+  snapkv     50% score=1.000 gen=0.15s '6024168'
+  svdd_prerope 20% score=0.000 gen=0.13s '6024166'
+  keydiff    10% score=1.000 gen=0.10s '6024168'
+  leverage   10% score=1.000 gen=0.10s '6024168'
+  snapkv     20% score=0.000 gen=0.14s '6024137833'
+  random     20% score=0.000 gen=0.08s '4200'
+  knorm      10% score=0.000 gen=0.34s '60824\n60825\n60826\n60827\n60828\n60'
+  knorm      20% score=0.000 gen=0.38s '60208069336960208069336960208069'
+  keydiff    20% score=1.000 gen=0.11s '6024168'
+  leverage   50% score=1.000 gen=0.15s '6024168'
+  streaming  10% score=0.000 gen=0.08s '42 37'
+  random     50% score=0.000 gen=0.15s '6024178'
+  streaming  20% score=1.000 gen=0.11s '6024168'
+  svdd       20% score=1.000 gen=0.11s '6024168'
+  knorm      50% score=1.000 gen=0.15s '6024168'
+  snapkv     10% score=0.000 gen=0.10s '6089547'
+  random     10% score=0.000 gen=0.33s '12345678901234567890123456789012'
+  leverage   20% score=1.000 gen=0.13s '6024168'
+  svdd       10% score=0.000 gen=0.33s '6\n24\n1234567890123456789\n6060606'
+  svdd_prerope 10% score=0.000 gen=0.12s '6\n241\n616'
+  streaming  50% score=1.000 gen=0.15s '6024168'
+  svdd       50% score=1.000 gen=0.25s '6024168\n6024169'
+  keydiff    50% score=1.000 gen=0.15s '6024168'
+  full       100% score=1.000 gen=0.21s '6024168'
+  case_total=29.8s
+CASE 16/54 niah_single_16384_s29_d0.1 prefix=16128
+  prefill=12.21s KV=882.0MiB
+  score svdd=4.58s
+  score svdd_prerope=4.77s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.47s
+  score knorm=0.12s
+  score leverage=0.72s
+  score random=0.02s
+  leverage   20% score=1.000 gen=0.12s '9396933'
+  streaming  20% score=0.000 gen=0.10s '427.55'
+  leverage   10% score=1.000 gen=0.10s '9396933'
+  keydiff    50% score=1.000 gen=0.15s '9396933'
+  streaming  10% score=0.000 gen=0.14s '427.5 855.0'
+  leverage   50% score=1.000 gen=0.15s '9396933'
+  random     50% score=0.000 gen=0.18s '9333933933'
+  svdd_prerope 50% score=1.000 gen=0.16s '9396933'
+  svdd_prerope 10% score=0.000 gen=0.33s '93939393939393939393939393939393'
+  snapkv     20% score=0.000 gen=0.08s '4321'
+  svdd       20% score=0.000 gen=0.37s '93399999999999999999999999999999'
+  keydiff    20% score=1.000 gen=0.11s '9396933'
+  random     20% score=0.000 gen=0.16s '123456789012'
+  random     10% score=0.000 gen=0.07s '9371'
+  svdd       10% score=0.000 gen=0.35s '93939393939393939393939393939393'
+  knorm      50% score=0.000 gen=0.44s '93728456123789456127894561237894'
+  full       100% score=1.000 gen=0.21s '9396933'
+  snapkv     50% score=0.000 gen=0.14s '10.08'
+  snapkv     10% score=0.000 gen=0.08s '43 57'
+  streaming  50% score=0.000 gen=0.10s '420'
+  svdd_prerope 20% score=0.000 gen=0.36s '93399399399399399399399399399399'
+  svdd       50% score=1.000 gen=0.15s '9396933'
+  knorm      20% score=0.000 gen=0.36s '93728456123789456123789456123789'
+  knorm      10% score=0.000 gen=0.33s '93725648237654982756458723654876'
+  keydiff    10% score=1.000 gen=0.10s '9396933'
+  case_total=30.4s
+CASE 17/54 niah_single_16384_s29_d0.5 prefix=16128
+  prefill=12.20s KV=882.0MiB
+  score svdd=4.59s
+  score svdd_prerope=4.79s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.48s
+  score knorm=0.12s
+  score leverage=0.72s
+  score random=0.02s
+  leverage   10% score=1.000 gen=0.11s '3140977'
+  svdd       50% score=0.000 gen=0.17s '31409977'
+  svdd_prerope 50% score=0.000 gen=0.44s '31409777\n31409778\n31409779\n31409'
+  knorm      50% score=0.000 gen=0.45s '3140\n3140\n3140\n3140\n3140\n3140\n31'
+  leverage   50% score=1.000 gen=0.15s '3140977'
+  svdd_prerope 20% score=1.000 gen=0.11s '3140977'
+  snapkv     10% score=0.000 gen=0.10s '420 720'
+  knorm      10% score=0.000 gen=0.33s '31415926535897932384626433832795'
+  streaming  20% score=0.000 gen=0.21s '420\n1337\n666\n9001'
+  keydiff    20% score=1.000 gen=0.11s '3140977'
+  streaming  50% score=1.000 gen=0.16s '3140977'
+  random     20% score=0.000 gen=0.09s '42069'
+  svdd_prerope 10% score=0.000 gen=0.08s '31409'
+  svdd       10% score=0.000 gen=0.08s '31409'
+  knorm      20% score=0.000 gen=0.38s '31415926535897932384626433832795'
+  random     10% score=0.000 gen=0.08s '42069'
+  leverage   20% score=1.000 gen=0.11s '3140977'
+  full       100% score=1.000 gen=0.21s '3140977'
+  streaming  10% score=0.000 gen=0.08s '42069'
+  snapkv     50% score=0.000 gen=0.17s '31\n32\n789'
+  svdd       20% score=1.000 gen=0.11s '3140977'
+  random     50% score=0.000 gen=0.45s '10077777899999999999999999999999'
+  keydiff    50% score=1.000 gen=0.15s '3140977'
+  keydiff    10% score=1.000 gen=0.10s '3140977'
+  snapkv     20% score=0.000 gen=0.19s '1089 1357 1753'
+  case_total=30.2s
+CASE 18/54 niah_single_16384_s29_d0.9 prefix=16128
+  prefill=12.22s KV=882.0MiB
+  score svdd=4.54s
+  score svdd_prerope=4.81s
+  score snapkv=0.05s
+  score streaming=0.00s
+  score keydiff=0.47s
+  score knorm=0.12s
+  score leverage=0.72s
+  score random=0.02s
+  svdd_prerope 50% score=0.000 gen=0.17s '104273'
+  keydiff    20% score=1.000 gen=0.11s '1004273'
+  keydiff    10% score=1.000 gen=0.10s '1004273'
+  svdd       50% score=0.000 gen=0.15s '1042737'
+  snapkv     50% score=1.000 gen=0.15s '1004273'
+  snapkv     20% score=0.000 gen=0.36s '1032579\n1032580\n1032581\n1032582\n'
+  leverage   10% score=1.000 gen=0.10s '1004273'
+  knorm      20% score=0.000 gen=0.09s '1005'
+  random     50% score=0.000 gen=0.16s '10042357'
+  streaming  20% score=1.000 gen=0.11s '1004273'
+  keydiff    50% score=1.000 gen=0.15s '1004273'
+  streaming  10% score=0.000 gen=0.08s '43.43'
+  svdd_prerope 20% score=0.000 gen=0.10s '104273'
+  random     20% score=0.000 gen=0.22s '10423\n10425\n10427'
+  leverage   20% score=1.000 gen=0.11s '1004273'
+  full       100% score=1.000 gen=0.22s '1004273'
+  random     10% score=0.000 gen=0.05s '42'
+  svdd_prerope 10% score=0.000 gen=0.33s '1042759\n1042760\n1042761\n1042762\n'
+  knorm      10% score=0.000 gen=0.09s '104170'
+  snapkv     10% score=0.000 gen=0.33s '1024\n16384\n1024\n16384\n1024\n16384'
+  leverage   50% score=1.000 gen=0.15s '1004273'
+  knorm      50% score=0.000 gen=0.46s '1002345\n1004567\n1008901\n1009876\n'
+  svdd       10% score=0.000 gen=0.22s '1234567890123456789'
+  streaming  50% score=1.000 gen=0.15s '1004273'
+  svdd       20% score=0.000 gen=0.10s '104273'
+  case_total=29.8s
+CASE 19/54 niah_multi_16384_s17_d0.1 prefix=16128
+  prefill=12.20s KV=882.0MiB
+  score svdd=4.53s
+  score svdd_prerope=4.79s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.48s
+  score knorm=0.12s
+  score leverage=0.72s
+  score random=0.02s
+  svdd       20% score=0.500 gen=0.20s '8049566\n4566789'
+  svdd_prerope 50% score=0.500 gen=0.24s '8049566\n4566789'
+  keydiff    20% score=1.000 gen=0.21s '8049566\n4560766'
+  svdd       50% score=0.500 gen=0.24s '8049566\n4566789'
+  keydiff    50% score=1.000 gen=0.24s '8049566\n4560766'
+  snapkv     10% score=0.000 gen=0.20s '4567890\n1234567'
+  leverage   20% score=1.000 gen=0.20s '8049566\n4560766'
+  full       100% score=1.000 gen=0.34s '8049566\n4560766'
+  knorm      50% score=0.000 gen=0.26s '8046579\n4567890'
+  knorm      10% score=0.000 gen=0.08s '80\n70'
+  leverage   10% score=1.000 gen=0.18s '8049566\n4560766'
+  streaming  20% score=0.500 gen=0.20s '4560766\n4560766'
+  streaming  50% score=0.500 gen=0.26s '4560766\n4560766'
+  svdd_prerope 20% score=0.500 gen=0.20s '8049566\n4566789'
+  leverage   50% score=1.000 gen=0.25s '8049566\n4560766'
+  random     50% score=0.000 gen=0.26s '8045679\n4567890'
+  svdd       10% score=0.000 gen=0.18s '8045678\n4567890'
+  snapkv     20% score=0.000 gen=0.20s '8046629\n4567662'
+  keydiff    10% score=1.000 gen=0.20s '8049566\n4560766'
+  snapkv     50% score=0.500 gen=0.25s '8049666\n4560766'
+  random     10% score=0.000 gen=0.14s '85210\n45678'
+  random     20% score=0.000 gen=0.17s '80567\n45678'
+  svdd_prerope 10% score=0.000 gen=0.14s '804566\n4566'
+  streaming  10% score=0.000 gen=0.14s '453.2\n456.7'
+  knorm      20% score=0.000 gen=0.11s '802\n456'
+  case_total=30.6s
+CASE 20/54 niah_multi_16384_s17_d0.5 prefix=16128
+  prefill=12.26s KV=882.0MiB
+  score svdd=4.57s
+  score svdd_prerope=4.75s
+  score snapkv=0.05s
+  score streaming=0.00s
+  score keydiff=0.47s
+  score knorm=0.12s
+  score leverage=0.72s
+  score random=0.02s
+  leverage   10% score=1.000 gen=0.20s '2123474\n7964880'
+  leverage   20% score=1.000 gen=0.20s '2123474\n7964880'
+  knorm      50% score=0.000 gen=0.25s '2123456\n7964582'
+  streaming  50% score=0.500 gen=0.25s '2123474\n4562389'
+  keydiff    20% score=1.000 gen=0.20s '2123474\n7964880'
+  svdd       50% score=0.500 gen=0.22s '21234\n7964880'
+  leverage   50% score=1.000 gen=0.25s '2123474\n7964880'
+  random     20% score=0.000 gen=0.15s '43210\n76543'
+  keydiff    10% score=1.000 gen=0.18s '2123474\n7964880'
+  svdd_prerope 10% score=0.000 gen=0.20s '2134567\n7964890'
+  keydiff    50% score=1.000 gen=0.24s '2123474\n7964880'
+  knorm      20% score=0.000 gen=0.25s '2147589343\n798542167'
+  svdd_prerope 50% score=0.500 gen=0.24s '21234\n7964880'
+  random     50% score=0.000 gen=0.24s '2123477\n7968848'
+  streaming  20% score=0.000 gen=0.11s '42\n1337'
+  snapkv     20% score=0.000 gen=0.17s '472389\n123456'
+  snapkv     10% score=0.000 gen=0.10s '42\n73'
+  svdd_prerope 20% score=0.500 gen=0.20s '2134457\n7964880'
+  knorm      10% score=0.000 gen=0.14s '23456\n78901'
+  random     10% score=0.000 gen=0.10s '42\n1337'
+  svdd       20% score=0.500 gen=0.21s '2143457\n7964880'
+  snapkv     50% score=0.500 gen=0.24s '2127474\n7964880'
+  full       100% score=1.000 gen=0.34s '2123474\n7964880'
+  svdd       10% score=0.000 gen=0.18s '7964879\n2134567'
+  streaming  10% score=0.000 gen=0.10s '451\n452'
+  case_total=30.5s
+CASE 21/54 niah_multi_16384_s17_d0.9 prefix=16128
+  prefill=12.16s KV=882.0MiB
+  score svdd=4.62s
+  score svdd_prerope=4.77s
+  score snapkv=0.06s
+  score streaming=0.00s
+  score keydiff=0.47s
+  score knorm=0.12s
+  score leverage=0.72s
+  score random=0.02s
+  snapkv     20% score=0.000 gen=0.20s '6042897\n4582109'
+  knorm      50% score=0.000 gen=0.22s '698247\n824972'
+  knorm      20% score=0.000 gen=0.20s '6245789\n8234567'
+  keydiff    50% score=1.000 gen=0.24s '6982604\n8249966'
+  svdd_prerope 20% score=0.000 gen=0.19s '6982640\n8299999'
+  full       100% score=1.000 gen=0.35s '6982604\n8249966'
+  streaming  50% score=0.500 gen=0.24s '6982604\n8267593'
+  random     10% score=0.000 gen=0.24s '6789054321\n1234567890'
+  keydiff    10% score=1.000 gen=0.18s '6982604\n8249966'
+  random     50% score=0.500 gen=0.24s '6926547\n8249966'
+  svdd_prerope 50% score=0.500 gen=0.24s '6982644\n8249966'
+  svdd_prerope 10% score=0.000 gen=0.15s '698698499989'
+  snapkv     50% score=0.000 gen=0.20s '6980404\n824'
+  snapkv     10% score=0.000 gen=0.16s '427389\n123456'
+  streaming  10% score=0.000 gen=0.10s '405\n407'
+  svdd       50% score=1.000 gen=0.24s '6982604\n8249966'
+  keydiff    20% score=1.000 gen=0.20s '6982604\n8249966'
+  streaming  20% score=0.500 gen=0.20s '6982604\n8592741'
+  svdd       10% score=0.000 gen=0.20s '6982249\n8294999'
+  knorm      10% score=0.000 gen=0.14s '67890\n12345'
+  leverage   20% score=1.000 gen=0.19s '6982604\n8249966'
+  random     20% score=0.000 gen=0.36s '45678901234567890123456789012345'
+  svdd       20% score=0.500 gen=0.19s '6982604\n8299999'
+  leverage   10% score=1.000 gen=0.20s '6982604\n8249966'
+  leverage   50% score=1.000 gen=0.25s '6982604\n8249966'
+  case_total=30.8s
+CASE 22/54 niah_multi_16384_s29_d0.1 prefix=16128
+  prefill=12.23s KV=882.0MiB
+  score svdd=4.55s
+Traceback (most recent call last):
+  File "/Users/vishrmsh/Documents/svkv_compression/scripts/run_pilot.py", line 149, in <module>
+    main()
+  File "/Users/vishrmsh/Documents/svkv_compression/scripts/run_pilot.py", line 92, in main
+    s,d = compute_scores(method_keys, score_method, seed=case["seed"] + layer_i * 1009)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishrmsh/Documents/svkv_compression/src/svkv/selectors.py", line 209, in compute_scores
+    scores, details = _svdd_scores(keys, seed)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishrmsh/Documents/svkv_compression/src/svkv/selectors.py", line 97, in _svdd_scores
+    estimator.fit(normalized[head, start:stop])
+  File "/Users/vishrmsh/Documents/svkv_compression/.venv/lib/python3.11/site-packages/sklearn/svm/_classes.py", line 1774, in fit
+    super().fit(X, np.ones(_num_samples(X)), sample_weight=sample_weight)
+  File "/Users/vishrmsh/Documents/svkv_compression/.venv/lib/python3.11/site-packages/sklearn/base.py", line 1403, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishrmsh/Documents/svkv_compression/.venv/lib/python3.11/site-packages/sklearn/svm/_base.py", line 221, in fit
+    y = self._validate_targets(y)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishrmsh/Documents/svkv_compression/.venv/lib/python3.11/site-packages/sklearn/svm/_base.py", line 332, in _validate_targets
+    return column_or_1d(y, warn=True).astype(np.float64, copy=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishrmsh/Documents/svkv_compression/.venv/lib/python3.11/site-packages/sklearn/utils/validation.py", line 1421, in column_or_1d
+    y = check_array(
+        ^^^^^^^^^^^^
+  File "/Users/vishrmsh/Documents/svkv_compression/.venv/lib/python3.11/site-packages/sklearn/utils/validation.py", line 888, in check_array
+    if _nw_into_df_or_series(array):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishrmsh/Documents/svkv_compression/.venv/lib/python3.11/site-packages/sklearn/utils/validation.py", line 45, in _nw_into_df_or_series
+    return nw.dependencies.is_into_dataframe(x) or nw.dependencies.is_into_series(x)
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishrmsh/Documents/svkv_compression/.venv/lib/python3.11/site-packages/narwhals/stable/v2/dependencies.py", line 80, in is_into_series
+    return isinstance(native_series, Series) or _is_native_series(native_series)
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishrmsh/Documents/svkv_compression/.venv/lib/python3.11/site-packages/narwhals/dependencies.py", line 601, in _is_native_series
+    or plugins.is_native_series(obj)
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishrmsh/Documents/svkv_compression/.venv/lib/python3.11/site-packages/narwhals/plugins.py", line 145, in is_native_series
+    return is_compliant_series(from_native(native_object, Version.MAIN))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishrmsh/Documents/svkv_compression/.venv/lib/python3.11/site-packages/narwhals/plugins.py", line 104, in from_native
+    def from_native(native_object: Any, version: Version) -> CompliantAny | None:
+    
+KeyboardInterrupt

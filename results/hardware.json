@@ -1,0 +1,13 @@
+{
+  "collected_date": "2026-09-27",
+  "machine": "Mac Studio Mac15,14",
+  "soc": "Apple M3 Ultra",
+  "cpu_cores": 32,
+  "cpu_performance_cores": 24,
+  "cpu_efficiency_cores": 8,
+  "gpu_cores": 80,
+  "unified_memory_gib": 512,
+  "backend": "MLX Metal",
+  "os": "macOS Darwin 25.6.0 arm64",
+  "privacy_note": "No serial number or hardware UUID recorded"
+}

@@ -1,0 +1,45 @@
+{
+  "model": "models/Qwen2.5-7B-Instruct-4bit",
+  "cases": "data/pilot_cases.jsonl",
+  "output": "results/pilot",
+  "methods": [
+    "svdd",
+    "svdd_prerope",
+    "snapkv",
+    "streaming",
+    "keydiff",
+    "knorm",
+    "leverage",
+    "random"
+  ],
+  "budgets": [
+    0.1,
+    0.2,
+    0.5
+  ],
+  "ids": null,
+  "limit": null,
+  "chunk_size": 512,
+  "code_sha256": {
+    "src/svkv/__init__.py": "53e833c396cfa69f302b8a43898c3fb7565ff60699a60f7b0b9b5b6ece73c935",
+    "src/svkv/geometry.py": "ee374da6dd64be326cdf1c442b283b5ebbe653986059e575577db1c705f87e01",
+    "src/svkv/runtime.py": "bc4069d5d26c5430d06a50719dfb4feec76bd7dc0833b5328976660c9a843611",
+    "src/svkv/selectors.py": "44092bb8489e133a6460ff5c874b0bff9c3e1c9375e4b8e1ddcab46151858210",
+    "src/svkv/tasks.py": "eb0ee0e1e46a3467eb8fface4bad6c005b4968234dad947b2bc88be34372bad7"
+  },
+  "case_file_sha256": "bbf5d6cae25ebd44a8bd99b6ae93dc7c92ffac76f2c4ee8194e97fcb9d32af40",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "packages": {
+    "mlx": "0.32.2",
+    "mlx-lm": "0.31.3",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1",
+    "transformers": "5.17.0"
+  },
+  "selection_protocol": "post-prefill, pre-question; same full prefix for every method",
+  "weight_quantization_bits": 4,
+  "kv_quantization": false,
+  "position_policy": "original absolute RoPE, physical chronological selected rows",
+  "run_started_local": "2026-09-27T20:52:00-0700"
+}

@@ -1,0 +1,55 @@
+{
+  "source": "/Users/vishrmsh/Documents/svkv_compression/results/pilot/predictions.jsonl",
+  "source_sha256": "d8127ad80e5d55489bd984f739aca79c3de2f06be36e8cc83974e726a05f415b",
+  "script_sha256": "b062476e62f08c3d9d9e84e03eeaebb47d68e7ebd64bb684a63ace54805c6f1f",
+  "python": "3.11.14",
+  "numpy": "2.4.6",
+  "bootstrap_reps": 2000,
+  "seed": 20260927,
+  "expected_methods": [
+    "svdd",
+    "svdd_prerope",
+    "snapkv",
+    "streaming",
+    "keydiff",
+    "knorm",
+    "random",
+    "leverage"
+  ],
+  "expected_budgets": [
+    0.1,
+    0.2,
+    0.5
+  ],
+  "baselines": [
+    "full",
+    "keydiff",
+    "knorm",
+    "leverage",
+    "random",
+    "snapkv",
+    "streaming",
+    "svdd",
+    "svdd_prerope"
+  ],
+  "n_rows": 1350,
+  "n_cases": 54,
+  "n_missing_expected_rows": 0,
+  "artifacts": [
+    "aggregate_by_task.csv",
+    "niah_by_length.csv",
+    "niah_systems_by_length.csv",
+    "full_cache_correct_retrieval.csv",
+    "paired_deltas.csv",
+    "missing_predictions.csv",
+    "results_summary.md",
+    "summary_manifest.json",
+    "quality_by_task.png",
+    "quality_by_task.pdf",
+    "niah_by_length.png",
+    "niah_by_length.pdf",
+    "niah_quality_cost.png",
+    "niah_quality_cost.pdf"
+  ],
+  "matplotlib": "3.11.2"
+}

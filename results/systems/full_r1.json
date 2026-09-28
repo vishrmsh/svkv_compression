@@ -1,0 +1,211 @@
+{
+  "arguments": {
+    "method": "full",
+    "fraction": 0.2,
+    "model": "models/Qwen2.5-7B-Instruct-4bit",
+    "cases": "data/pilot_cases.jsonl",
+    "case_id": null,
+    "output_directory": "results/systems",
+    "output": "results/systems/full_r1.json",
+    "chunk_size": 512,
+    "decode_steps": 32,
+    "skip_weight_hash": true
+  },
+  "method": "full",
+  "budget_fraction": 1.0,
+  "pid": 47091,
+  "started_local": "2026-09-27T21:30:51-0700",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.11.14",
+  "system_memory_bytes": 549755813888,
+  "packages": {
+    "mlx": "0.32.2",
+    "mlx-lm": "0.31.3",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1",
+    "psutil": "7.2.2"
+  },
+  "case_id": "niah_single_32768_s17_d0.1",
+  "prefix_sha256": "036003e1f2d1c9bdd27b0052a1282a4934888012d1d57644649afb059a7480cc",
+  "case_file_sha256": "bbf5d6cae25ebd44a8bd99b6ae93dc7c92ffac76f2c4ee8194e97fcb9d32af40",
+  "model_files": {
+    ".gitattributes": {
+      "bytes": 1519,
+      "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361"
+    },
+    "README.md": {
+      "bytes": 732,
+      "sha256": "bcc928c815d856439e238f1977b50c93580ec5e79118e588b20f03aba1a215f5"
+    },
+    "added_tokens.json": {
+      "bytes": 605,
+      "sha256": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b"
+    },
+    "config.json": {
+      "bytes": 787,
+      "sha256": "1661a349986919d13820d3981623776138d50783d13e247cdc5b075a22b62698"
+    },
+    "merges.txt": {
+      "bytes": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    "model.safetensors": {
+      "bytes": 4284346255
+    },
+    "model.safetensors.index.json": {
+      "bytes": 51711,
+      "sha256": "23cd562592dd96686d2e799eb02e4b578a4038b6045eaefe860d270cc060e24f"
+    },
+    "special_tokens_map.json": {
+      "bytes": 613,
+      "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+    },
+    "tokenizer.json": {
+      "bytes": 7031673,
+      "sha256": "a8506e7111b80c6d8635951a02eab0f4e1a8e4e5772da83846579e97b16f61bf"
+    },
+    "tokenizer_config.json": {
+      "bytes": 7280,
+      "sha256": "4921d4cbae33349a9cb3b2ad3a7622efdea10a5d208c9f333c77b154aa714888"
+    },
+    "vocab.json": {
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  },
+  "source_snapshot": "results/systems/source_snapshots/3f0219aa8361220c",
+  "source_sha256": {
+    "scripts/benchmark_systems.py": "70205beea083187dbd07b4149f221244d1aefdf191e314012e7b99391860415c",
+    "src/svkv/__init__.py": "53e833c396cfa69f302b8a43898c3fb7565ff60699a60f7b0b9b5b6ece73c935",
+    "src/svkv/geometry.py": "ee374da6dd64be326cdf1c442b283b5ebbe653986059e575577db1c705f87e01",
+    "src/svkv/runtime.py": "bc4069d5d26c5430d06a50719dfb4feec76bd7dc0833b5328976660c9a843611",
+    "src/svkv/selectors.py": "44092bb8489e133a6460ff5c874b0bff9c3e1c9375e4b8e1ddcab46151858210",
+    "src/svkv/systems_cache.py": "2f512b7e1dfdd051ba17214ad23979bcdb9f761d027aaf1e4d408978218b2d4c",
+    "src/svkv/tasks.py": "eb0ee0e1e46a3467eb8fface4bad6c005b4968234dad947b2bc88be34372bad7"
+  },
+  "protocol": "one fresh process, post-prefill selection, original cache released before decode",
+  "cache_backend": "reserved_append_prefill_and_decode",
+  "cache_capacity_policy": "physical prefix rows + suffix token count + fixed decode forwards",
+  "weight_quantization_bits": 4,
+  "kv_quantization": false,
+  "warmup": "short prefill, one suffix forward and two one-token forwards",
+  "notes": [
+    "Peak allocator memory includes full prefill and overlapping old/new caches.",
+    "RSS includes allocator and library retention; active MLX bytes are separate.",
+    "Allocated KV tensor bytes describe backing-array capacity; Metal allocation alignment is included in active MLX memory, not tensor nbytes.",
+    "Timing is one measurement per fresh process; repeat invocations for uncertainty.",
+    "Fixed decode continues after EOS and is not an answer-quality evaluation.",
+    "All systems arms reserve fixed append capacity; no full-cache concatenation during decode.",
+    "Quality-harness concatenate timings are separate and are not systems speedup evidence."
+  ],
+  "model_load_s": 0.3622727910114918,
+  "prefix_tokens": 32512,
+  "suffix_tokens": 24,
+  "nominal_length": 32768,
+  "tokens_per_head_before": 32512,
+  "tokens_per_head_after_compression": 32512,
+  "actual_retained_fraction": 1.0,
+  "full_kv_tensor_bytes": 1864368128,
+  "compressed_kv_tensor_bytes": 1864368128,
+  "full_allocated_kv_tensor_bytes_including_reserve": 1867579392,
+  "allocated_kv_tensor_bytes_including_reserve": 1867579392,
+  "allocated_kv_tensor_bytes_after_decode": 1867579392,
+  "append_reserve_tokens_per_head": 56,
+  "allocated_capacity_tokens_per_head": 32568,
+  "unused_reserve_bytes_at_decode_start": 3211264,
+  "kv_tensor_bytes_after_decode": 1867579392,
+  "prefill_s": 29.561267249984667,
+  "compression_total_s": 7.332972018048167e-06,
+  "selection_and_compaction_s": 7.332972018048167e-06,
+  "selected_cache_reserve_allocation_s": 0.0,
+  "compression": {
+    "transfer_s": 0.0,
+    "score_s": 0.0,
+    "select_and_gather_s": 0.0,
+    "layers": [],
+    "tokens_per_head": 32512
+  },
+  "timing": {
+    "suffix_ttft_s": 0.16763233300298452,
+    "decode_forward_steps": 32,
+    "decode_s": 0.44834583398187533,
+    "decode_forwards_per_s": 71.37347461400438,
+    "generated_token_count_including_suffix_prediction": 33,
+    "generated_token_ids": [
+      17,
+      23,
+      20,
+      24,
+      15,
+      20,
+      18,
+      151645,
+      198,
+      151643,
+      33975,
+      25,
+      2980,
+      498,
+      3410,
+      279,
+      3281,
+      10963,
+      1372,
+      369,
+      33828,
+      3145,
+      14147,
+      465,
+      504,
+      279,
+      1467,
+      582,
+      14078,
+      6788,
+      5267,
+      127964,
+      81133
+    ],
+    "eos_stopping": false,
+    "suffix_plus_decode_s": 0.6159781669848599
+  },
+  "memory": {
+    "model_and_runtime_after_warmup": {
+      "mlx_active_bytes": 4287507464,
+      "mlx_allocator_cache_bytes": 0,
+      "mlx_peak_active_bytes_since_reset": 0,
+      "process_rss_bytes": 4585160704,
+      "process_peak_rss_bytes_lifetime": 4617617408
+    },
+    "after_full_prefill": {
+      "mlx_active_bytes": 6155545608,
+      "mlx_allocator_cache_bytes": 608701776,
+      "mlx_peak_active_bytes_since_reset": 6556626140,
+      "process_rss_bytes": 4585930752,
+      "process_peak_rss_bytes_lifetime": 4617617408
+    },
+    "after_compaction_and_reserve_before_release": {
+      "mlx_active_bytes": 6155545608,
+      "mlx_allocator_cache_bytes": 608701776,
+      "mlx_peak_active_bytes_since_reset": 6556626140,
+      "process_rss_bytes": 4585930752,
+      "process_peak_rss_bytes_lifetime": 4617617408
+    },
+    "after_original_cache_and_temporaries_released": {
+      "mlx_active_bytes": 6155545608,
+      "mlx_allocator_cache_bytes": 0,
+      "mlx_peak_active_bytes_since_reset": 6556626140,
+      "process_rss_bytes": 4585930752,
+      "process_peak_rss_bytes_lifetime": 4617617408
+    },
+    "after_fixed_decode": {
+      "mlx_active_bytes": 6155545608,
+      "mlx_allocator_cache_bytes": 91576100,
+      "mlx_peak_active_bytes_since_reset": 6556626140,
+      "process_rss_bytes": 4586160128,
+      "process_peak_rss_bytes_lifetime": 4617617408
+    }
+  },
+  "prefill_selection_suffix_and_decode_s": 30.177252749941545
+}

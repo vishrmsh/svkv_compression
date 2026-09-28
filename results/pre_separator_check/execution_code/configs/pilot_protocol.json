@@ -1,0 +1,20 @@
+{
+  "frozen_before_first_quality_run": "2026-09-27",
+  "model": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+  "backend": "MLX Apple Metal",
+  "weight_bits": 4,
+  "kv_bits": 16,
+  "context_windows": [8192, 16384, 32768],
+  "context_reserved_for_suffix_and_generation": 256,
+  "retained_fractions": [0.1, 0.2, 0.5],
+  "methods": ["full", "svdd", "svdd_prerope", "snapkv", "streaming", "keydiff", "knorm", "leverage", "random"],
+  "preflight_addition": "After one 8k smoke case, added a pre-RoPE SVDD ablation and a pre-RoPE leverage baseline on literature-review grounds. Main pilot still uses the frozen nu/bandwidth/block/budget settings; smoke is excluded from pooled results.",
+  "question_visibility": "none during compression, including SnapKV observation window",
+  "svdd": {"kernel": "RBF", "key_normalization": "L2", "key_space": "post-RoPE", "block_size": 256, "nu": 0.05, "bandwidth": "per-head sampled median positive squared distance", "selection": "rank block_length*alpha, exact budget with common reserves"},
+  "common_reserves": {"sink_tokens": 4, "recent_tokens": 32},
+  "snapkv": {"observation_window": 32, "pooling": "average", "kernel": 5, "GQA": "mean"},
+  "synthetic": {"tasks": ["niah_single", "niah_multi"], "seeds": [17, 29], "depths": [0.1, 0.5, 0.9], "official_RULER": false},
+  "longbench": {"tasks": ["hotpotqa", "qasper", "passage_retrieval_en"], "examples_per_task": 6, "selection_seed": 20260927, "minimum_prefix_tokens": 7900, "maximum_prefix_tokens": 32000, "truncation": false},
+  "decision_rule": "Proceed only to larger validation if SVDD is competitive with SnapKV and beats random/recency at tight budgets on full-cache-capable retrieval, adds value over KeyDiff/Knorm, and preprocessing cost is plausible. Pilot cannot establish publication significance.",
+  "limitations": ["one older open model, four-bit weights", "small exploratory subsets", "post-prefill compaction not bounded-memory streaming", "SnapKV-style and sink/recency adaptations, not official CUDA implementations", "shared full cache retained in paired harness; KV tensor byte savings do not imply peak process memory savings"]
+}
